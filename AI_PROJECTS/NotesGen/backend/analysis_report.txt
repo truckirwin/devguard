@@ -1,0 +1,2247 @@
+================================================================================
+POWERPOINT SPEAKER NOTES XML ANALYSIS REPORT
+================================================================================
+
+File: ./uploads/MLMLEA_Mod05_Choosing_a_Modeling_Approach.pptx
+Total Slides: 46
+Slides with Notes: 46
+
+FORMATTING PATTERNS FOUND:
+----------------------------------------
+Bullet Types: auto_number, none, custom_character
+Special Characters: |, ~
+Indentation Levels: 1
+
+SLIDE 1 ANALYSIS:
+------------------------------
+Paragraphs: 14
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html
+~
+~Alt text:
+~No images on this slide.
+~
+|INSTRUCTOR NOTES:
+|TIMING: 65 minutes (Including Activity 3: 10 minutes)
+|Introduce module on choosing modeling approach.
+|Highlight key topics covered.
+|
+|STUDENT NOTES:
+This module focuses on an important aspect of machine learning (ML) engineering: choosing the right modeling approach. In this module, you explore the various layers of the AWS ML stack ...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html
+~
+~Alt text:
+~No images on this slide.
+~
+|INSTRUCTOR NOTES:
+• |TIMING: 65 minutes (Including Activity 3: 10 minutes)
+• |Introduce module on choosing modeling approach.
+• |Highlight key topics covered.
+|
+|STUDENT NOTES:
+This module focuses on an important aspect of machine learning (ML) engineering: choosing the right modeling approach. In this module, you explore the various layers of the AWS ML ...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 2 ANALYSIS:
+------------------------------
+Paragraphs: 16
+
+Raw Text:
+~Alt text:~The ML Lifecicle illustrating that this module focuses on Model development.
+~
+|INSTRUCTOR NOTES:
+|Explain each stage of the ML lifecycle.
+|Explain that this course covers how AWS services support ML engineers in each stage.
+|Highlight where security considerations fit into the ML lifecycle.
+|
+|STUDENT NOTES:
+Security is a significant consideration throughout the entire machine learning lifecycle. In this module, you learn how to implement security measures at various stages of ML dev...
+
+Formatted Text:
+~Alt text:~The ML Lifecicle illustrating that this module focuses on Model development.
+~
+|INSTRUCTOR NOTES:
+• |Explain each stage of the ML lifecycle.
+• |Explain that this course covers how AWS services support ML engineers in each stage.
+• |Highlight where security considerations fit into the ML lifecycle.
+|
+|STUDENT NOTES:
+Security is a significant consideration throughout the entire machine learning lifecycle. In this module, you learn how to implement security measures at various stages of ...
+
+  Paragraph 1:
+    Text: ~Alt text:~The ML Lifecicle illustrating that this module focuses on Model development.
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Alt text:~The ML Lifecicle illustrating that this module focuses on Model development.
+
+  Paragraph 2:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+  Paragraph 3:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+
+SLIDE 3 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~No references provided.
+~
+~Alt text:
+~No images on this slide.
+~
+|INSTRUCTOR NOTES:
+|Outline topics covered in this module.
+|
+|STUDENT NOTES:
+This module covers a comprehensive range of topics related to choosing a modeling approach in AWS:
+Topic A: Amazon SageMaker AI built-in algorithms
+Topic B: Amazon SageMaker Autopilot
+Topic C: Selecting built-in training algorithms
+Topic C: Amazon SageMaker Autopilot
+Topic D: Model selection considerations
+Topic E: ML cost considerations...
+
+Formatted Text:
+~Developer Notes:
+~No references provided.
+~
+~Alt text:
+~No images on this slide.
+~
+|INSTRUCTOR NOTES:
+• |Outline topics covered in this module.
+|
+|STUDENT NOTES:
+This module covers a comprehensive range of topics related to choosing a modeling approach in AWS:
+  • Topic A: Amazon SageMaker AI built-in algorithms
+  • Topic B: Amazon SageMaker Autopilot
+  • Topic C: Selecting built-in training algorithms
+  • Topic C: Amazon SageMaker Autopilot
+  • Topic D: Model selection considerations
+  • Topic...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~No references provided.
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~No references provided.
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 4 ANALYSIS:
+------------------------------
+Paragraphs: 16
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+|Introduce Amazon SageMaker AI built-in algorithms.
+|Highlight different categories (supervised, unsupervised, etc.).
+|Mention ability to bring custom algorithms.
+|
+|STUDENT NOTES:
+Amazon SageMaker AI provides a comprehensive suite of built-in algorithms that cover a wide range of ML tasks. These algorithms are preconfigured and optimized for efficient training...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+• |Introduce Amazon SageMaker AI built-in algorithms.
+• |Highlight different categories (supervised, unsupervised, etc.).
+• |Mention ability to bring custom algorithms.
+|
+|STUDENT NOTES:
+Amazon SageMaker AI provides a comprehensive suite of built-in algorithms that cover a wide range of ML tasks. These algorithms are preconfigured and optimized for efficient tr...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 5 ANALYSIS:
+------------------------------
+Paragraphs: 8
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Highlight model development as a key step.
+|Explain transition from data preparation.
+|
+|STUDENT NOTES:
+The ML lifecycle represents the complete journey of a machine learning project, from defining business goals through to monitoring deployed solutions. This module focuses specifically on the model development phase, where you learn about the built-in algorithms in Amazon SageMaker AI and how to choose the right ones for different business problems.
+The model development pro...
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Highlight model development as a key step.
+• |Explain transition from data preparation.
+|
+|STUDENT NOTES:
+The ML lifecycle represents the complete journey of a machine learning project, from defining business goals through to monitoring deployed solutions. This module focuses specifically on the model development phase, where you learn about the built-in algorithms in Amazon SageMaker AI and how to choose the right ones for different business problems.
+The model development...
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Highlight model development as a key step.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight model development as a key step.
+
+  Paragraph 3:
+    Text: |Explain transition from data preparation.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain transition from data preparation.
+
+
+SLIDE 6 ANALYSIS:
+------------------------------
+Paragraphs: 58
+
+Raw Text:
+|Instructor notes
+|Structured data (vs unstructured data)
+|Supervised (vs unsupervised, reinforcement learning)
+|Flip to the slide with supervised algorithms tree
+|Recommendation model type
+|Factorization machine
+||STUDENT NOTES
+Activity scenario: Ecommerce recommendation discussion
+A large online retailer wants to enhance their product recommendation system. They have access to the following:
+Customer purchase history (what items were bought together)
+Browsing patterns (time spent on pages and ...
+
+Formatted Text:
+|Instructor notes
+• |Structured data (vs unstructured data)
+• |Supervised (vs unsupervised, reinforcement learning)
+• |Flip to the slide with supervised algorithms tree
+• |Recommendation model type
+• |Factorization machine
+||STUDENT NOTES
+Activity scenario: Ecommerce recommendation discussion
+A large online retailer wants to enhance their product recommendation system. They have access to the following:
+• Customer purchase history (what items were bought together)
+• Browsing patterns (time spent...
+
+  Paragraph 1:
+    Text: |Instructor notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes
+
+  Paragraph 2:
+    Text: |Structured data (vs unstructured data)
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Structured data (vs unstructured data)
+
+  Paragraph 3:
+    Text: |Supervised (vs unsupervised, reinforcement learning)
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Supervised (vs unsupervised, reinforcement learning)
+
+
+SLIDE 7 ANALYSIS:
+------------------------------
+Paragraphs: 29
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A set of icons representing different model types: a line graph, a tree diagram, a neural network, clusters of data points, a bar chart, a wave pattern, an image with a bounding box, and a sequence of connected squares.
+~
+|INSTRUCTOR NOTES:
+|Briefly review the different model types available in SageMaker AI.
+|Highlight the diversity of options for various use cases.
+|Encourage students to explore the docu...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A set of icons representing different model types: a line graph, a tree diagram, a neural network, clusters of data points, a bar chart, a wave pattern, an image with a bounding box, and a sequence of connected squares.
+~
+|INSTRUCTOR NOTES:
+• |Briefly review the different model types available in SageMaker AI.
+• |Highlight the diversity of options for various use cases.
+• |Encourage students to explore th...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 8 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A diagram showing four options for algorithms in SageMaker: Built-in algorithms, Script mode, AWS Marketplace, and Bring your own.
+~
+|INSTRUCTOR NOTES:
+|Explain the four options for algorithms in SageMaker AI.
+|Highlight the flexibility and choice provided.
+|Mention the ability to use custom algorithms.
+|
+|STUDENT NOTES:
+When building ML models with SageMaker AI, you have several options to choose how you...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A diagram showing four options for algorithms in SageMaker: Built-in algorithms, Script mode, AWS Marketplace, and Bring your own.
+~
+|INSTRUCTOR NOTES:
+• |Explain the four options for algorithms in SageMaker AI.
+• |Highlight the flexibility and choice provided.
+• |Mention the ability to use custom algorithms.
+|
+|STUDENT NOTES:
+When building ML models with SageMaker AI, you have several options to choose h...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 9 ANALYSIS:
+------------------------------
+Paragraphs: 21
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+|Discuss the various factors to consider when selecting algorithms.
+|Emphasize the importance of understanding the problem and data characteristics.
+|Highlight the trade-offs between different considerations.
+|
+|STUDENT NOTES:
+Selecting the appropriate ML algorithm is an essential step in building accurate and effective models. When choosing an algorithm in Sag...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+• |Discuss the various factors to consider when selecting algorithms.
+• |Emphasize the importance of understanding the problem and data characteristics.
+• |Highlight the trade-offs between different considerations.
+|
+|STUDENT NOTES:
+Selecting the appropriate ML algorithm is an essential step in building accurate and effective models. When choosing an algorithm ...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 10 ANALYSIS:
+------------------------------
+Paragraphs: 24
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/model-selection.html
+~
+~Alt text:
+~A conceptual diagram illustrating various factors to consider in model selection, such as data characteristics, performance requirements, interpretability, and computational resources.
+~
+|INSTRUCTOR NOTES:
+|Discuss key factors in model selection.
+|Emphasize importance of balancing different considerations.
+|Provide examples of trade-offs in real-world scenarios.
+|
+|STUDENT NOTES:
+Selecting ...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/model-selection.html
+~
+~Alt text:
+~A conceptual diagram illustrating various factors to consider in model selection, such as data characteristics, performance requirements, interpretability, and computational resources.
+~
+|INSTRUCTOR NOTES:
+• |Discuss key factors in model selection.
+• |Emphasize importance of balancing different considerations.
+• |Provide examples of trade-offs in real-world scenarios.
+|
+|STUDENT NOTES:
+Sele...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/model-selection.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/model-selection.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 11 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+~
+~Alt text:
+~A flowchart showing the steps of the Amazon SageMaker Autopilot process: Data analysis, Feature engineering, Model selection, Hyperparameter optimization, and Model evaluation.
+~
+|INSTRUCTOR NOTES:
+|Introduce Amazon SageMaker Autopilot.
+|Explain the automated ML process.
+|Highlight benefits for both novice and experienced users.
+|
+|STUDENT NOTES:
+The powerful automation capa...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+~
+~Alt text:
+~A flowchart showing the steps of the Amazon SageMaker Autopilot process: Data analysis, Feature engineering, Model selection, Hyperparameter optimization, and Model evaluation.
+~
+|INSTRUCTOR NOTES:
+• |Introduce Amazon SageMaker Autopilot.
+• |Explain the automated ML process.
+• |Highlight benefits for both novice and experienced users.
+|
+|STUDENT NOTES:
+The powerful automatio...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 12 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+~
+~Alt text:
+~A flowchart showing the steps to implement AutoML using SageMaker Autopilot: Data preparation, Job creation, Candidate generation, Model training, and Model deployment.
+~
+|INSTRUCTOR NOTES:
+|Explain the process of using SageMaker Autopilot.
+|Highlight key steps in the AutoML workflow.
+|Discuss the benefits of using Autopilot for ML projects.
+||
+|STUDENT NOTES:
+Implementing A...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+~
+~Alt text:
+~A flowchart showing the steps to implement AutoML using SageMaker Autopilot: Data preparation, Job creation, Candidate generation, Model training, and Model deployment.
+~
+|INSTRUCTOR NOTES:
+• |Explain the process of using SageMaker Autopilot.
+• |Highlight key steps in the AutoML workflow.
+• |Discuss the benefits of using Autopilot for ML projects.
+||
+|STUDENT NOTES:
+Implemen...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 13 ANALYSIS:
+------------------------------
+Paragraphs: 23
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html
+~
+~Alt text:
+~A diagram showing different interpretability strategies: Interpretable Model Approximation, Local Interpretability, Modular Design, and Ensemble Methods.
+~
+|INSTRUCTOR NOTES:
+|Methods to run SageMaker Autopilot.
+|Pros and cons of each.
+|Examples of when to use each.
+|
+|STUDENT NOTES:
+You can run Amazon SageMaker Autopilot from multiple SageMaker AI features.
+SageMaker Canvas provides a no-code ...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html
+~
+~Alt text:
+~A diagram showing different interpretability strategies: Interpretable Model Approximation, Local Interpretability, Modular Design, and Ensemble Methods.
+~
+|INSTRUCTOR NOTES:
+• |Methods to run SageMaker Autopilot.
+• |Pros and cons of each.
+• |Examples of when to use each.
+|
+|STUDENT NOTES:
+You can run Amazon SageMaker Autopilot from multiple SageMaker AI features.
+SageMaker Canvas provides a no...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 14 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+|20 minutes.
+|Students will likely be eager to learn more about the various built-in algorithms available in Amazon SageMaker. DO NOT GO DEEP into each algorithm.
+|We'll take some extra time to explain XGBoost in more depth, because we use it in the lab.
+|Slides 18-20 walk students through the considerations involved when moving through the decision tree.|Slide...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+• |20 minutes.
+• |Students will likely be eager to learn more about the various built-in algorithms available in Amazon SageMaker. DO NOT GO DEEP into each algorithm.
+• |We'll take some extra time to explain XGBoost in more depth, because we use it in the lab.
+• |Slides 18-20 walk students through the considerations involved when moving through the decision tre...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 15 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+|Introduce Amazon SageMaker AI built-in algorithms.
+|Highlight different categories (supervised, unsupervised, etc.).
+|Mention ability to bring custom algorithms.
+|
+|STUDENT NOTES:
+SageMaker AI built-in algorithms are pre-configured and optimized for efficient training and deployment, so you can quickly build and deploy models without the need for extensive cus...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+• |Introduce Amazon SageMaker AI built-in algorithms.
+• |Highlight different categories (supervised, unsupervised, etc.).
+• |Mention ability to bring custom algorithms.
+|
+|STUDENT NOTES:
+SageMaker AI built-in algorithms are pre-configured and optimized for efficient training and deployment, so you can quickly build and deploy models without the need for extensi...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 16 ANALYSIS:
+------------------------------
+Paragraphs: 29
+
+Raw Text:
+~Developer Notes:
+~Alt text: Supervised learning algorithm decision tree. highlighting the choices between classification, regression and recommendation algorithms.
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+|INSTRUCTOR NOTES:
+|Introduce the built-in algorithms for supervised learning.
+|Highlight the different model types and their applications.
+|Mention the pre-trained models and solution templates available.|
+|** Animation:  Highlight around XGBoost.
+|
+|STUDENT NOTES:
+S...
+
+Formatted Text:
+~Developer Notes:
+~Alt text: Supervised learning algorithm decision tree. highlighting the choices between classification, regression and recommendation algorithms.
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+|INSTRUCTOR NOTES:
+• |Introduce the built-in algorithms for supervised learning.
+• |Highlight the different model types and their applications.
+• |Mention the pre-trained models and solution templates available.|
+• |** Animation:  Highlight around XGBoost.
+|
+|STUDENT ...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Alt text: Supervised learning algorithm decision tree. highlighting the choices between classificat
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Alt text: Supervised learning algorithm decision tree. highlighting the choices between classification, regression and recommendation algorithms.
+
+  Paragraph 3:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+
+SLIDE 17 ANALYSIS:
+------------------------------
+Paragraphs: 11
+
+Raw Text:
+|INSTRUCTOR NOTES
+|Labeled dataset -> supervised learning
+Guided activity – step 1
+Identify the type of ML problem.
+Predict whether an income is above a threshold.
+The CSV dataset includes a labeled column containing the values of 0 or 1.
+
+Formatted Text:
+|INSTRUCTOR NOTES
+|Labeled dataset -> supervised learning
+Guided activity – step 1
+1. Identify the type of ML problem.
+Predict whether an income is above a threshold.
+The CSV dataset includes a labeled column containing the values of 0 or 1.
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES
+
+  Paragraph 2:
+    Text: |Labeled dataset -> supervised learning
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Labeled dataset -> supervised learning
+
+  Paragraph 3:
+    Text: Guided activity – step 1
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: Guided activity – step 1
+
+
+SLIDE 18 ANALYSIS:
+------------------------------
+Paragraphs: 18
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~
+~ |INSTRUCTOR NOTES:
+|Explain the task of predicting income based on demographics.
+|Guide students through identifying the ML domain and problem type.
+|Demonstrate how to find and list relevant SageMaker AI built-in algorithms.
+|
+|STUDENT NOTES:
+This guided activity focuses on a common ML task: predicting whether an individual's income is below a certain threshold. You're provided with a CSV dataset...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~
+~ |INSTRUCTOR NOTES:
+• |Explain the task of predicting income based on demographics.
+• |Guide students through identifying the ML domain and problem type.
+• |Demonstrate how to find and list relevant SageMaker AI built-in algorithms.
+|
+|STUDENT NOTES:
+This guided activity focuses on a common ML task: predicting whether an individual's income is below a certain threshold. You're provided with a CSV d...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 19 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~This slide shows the solution to the guided activity, identifying the problem as supervised learning and binary classification, with sample algorithms listed, including CatBoost, Linear learner, and XGBoost.
+~
+|INSTRUCTOR NOTES:
+|Review the problem type identification: supervised learning and binary classification.
+|Discuss the sample algorithms provided: CatBoost, Linear learner, and XGBoost.
+|Expla...
+
+Formatted Text:
+~Developer Notes: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~This slide shows the solution to the guided activity, identifying the problem as supervised learning and binary classification, with sample algorithms listed, including CatBoost, Linear learner, and XGBoost.
+~
+|INSTRUCTOR NOTES:
+• |Review the problem type identification: supervised learning and binary classification.
+• |Discuss the sample algorithms provided: CatBoost, Linear learner, and XGBoost.
+• ...
+
+  Paragraph 1:
+    Text: ~Developer Notes: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 2:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+  Paragraph 3:
+    Text: ~Alt text:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Alt text:
+
+
+SLIDE 20 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A table listing SageMaker built-in algorithms for supervised learning, including AutoGluon-Tabular, CatBoost, Factorization Machines, k-NN, LightGBM, Linear learner, TabTransformer, and XGBoost.
+~
+|INSTRUCTOR NOTES:
+|Review key supervised learning algorithms offered by SageMaker AI.
+|Highlight use cases for each algorithm.
+|Discuss pros and cons of different algorithms.
+|
+|STUDENT NOTES:
+SageMaker AI...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A table listing SageMaker built-in algorithms for supervised learning, including AutoGluon-Tabular, CatBoost, Factorization Machines, k-NN, LightGBM, Linear learner, TabTransformer, and XGBoost.
+~
+|INSTRUCTOR NOTES:
+• |Review key supervised learning algorithms offered by SageMaker AI.
+• |Highlight use cases for each algorithm.
+• |Discuss pros and cons of different algorithms.
+|
+|STUDENT NOTES:
+SageMa...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 21 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A diagram showing unsupervised learning categories (Clustering, Topic Modeling, Embeddings, Anomaly Detection, Dimensionality Reduction) with corresponding SageMaker algorithms listed under each category.
+~
+|INSTRUCTOR NOTES:
+|Explain key unsupervised learning algorithms in SageMaker AI.
+|Discuss applications for each algorithm type.
+|Compare strengths and limitations of different approaches.
+|
+|STUD...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A diagram showing unsupervised learning categories (Clustering, Topic Modeling, Embeddings, Anomaly Detection, Dimensionality Reduction) with corresponding SageMaker algorithms listed under each category.
+~
+|INSTRUCTOR NOTES:
+• |Explain key unsupervised learning algorithms in SageMaker AI.
+• |Discuss applications for each algorithm type.
+• |Compare strengths and limitations of different approaches.
+|...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 22 ANALYSIS:
+------------------------------
+Paragraphs: 35
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A table showing SageMaker algorithms for text and speech data, categorized into Text (BlazingText, Sequence-to-Sequence, LDA, NTM) and Speech (Sequence-to-Sequence) with corresponding use cases listed.
+~
+|INSTRUCTOR NOTES:
+|Review SageMaker AI algorithms for text and speech processing.
+|Explain key applications for each algorithm.
+|Discuss considerations when choosing between algorithms.
+|
+|STUDENT N...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~A table showing SageMaker algorithms for text and speech data, categorized into Text (BlazingText, Sequence-to-Sequence, LDA, NTM) and Speech (Sequence-to-Sequence) with corresponding use cases listed.
+~
+|INSTRUCTOR NOTES:
+• |Review SageMaker AI algorithms for text and speech processing.
+• |Explain key applications for each algorithm.
+• |Discuss considerations when choosing between algorithms.
+|
+|STU...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 23 ANALYSIS:
+------------------------------
+Paragraphs: 2
+
+Raw Text:
+|STUDENT NOTES:
+The characteristics of the machine learning task at hand, particularly the nature of the data involved, governance and compliance requirements, and cost constraints, can significantly influence your model selection and resource requirements.
+
+Formatted Text:
+|STUDENT NOTES:
+The characteristics of the machine learning task at hand, particularly the nature of the data involved, governance and compliance requirements, and cost constraints, can significantly influence your model selection and resource requirements.
+
+  Paragraph 1:
+    Text: |STUDENT NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |STUDENT NOTES:
+
+  Paragraph 2:
+    Text: The characteristics of the machine learning task at hand, particularly the nature of the data involv
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: The characteristics of the machine learning task at hand, particularly the nature of the data involved, governance and compliance requirements, and cost constraints, can significantly influence your model selection and resource requirements.
+
+
+SLIDE 24 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~Two icons representing interpretability (a magnifying glass) and cost (a dollar sign).
+~
+|INSTRUCTOR NOTES:
+|Recap the importance of interpretability and cost considerations.
+|Highlight the need to balance these factors with performance.
+|Emphasize the role of domain knowledge and use case requirements.
+|
+|STUDENT NOTES:
+Interpretability refers to ...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~Two icons representing interpretability (a magnifying glass) and cost (a dollar sign).
+~
+|INSTRUCTOR NOTES:
+• |Recap the importance of interpretability and cost considerations.
+• |Highlight the need to balance these factors with performance.
+• |Emphasize the role of domain knowledge and use case requirements.
+|
+|STUDENT NOTES:
+Interpretability refe...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/features/interpretability/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/features/interpretability/
+
+  Paragraph 3:
+    Text: ~https://aws.amazon.com/machine-learning/pricing/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/pricing/
+
+
+SLIDE 25 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~
+~Alt text:
+~A diagram showing two scales, one for "Accuracy" and one for "Interpretability", with various ML models plotted along the scales. Linear regression is high on interpretability but low on accuracy, while neural networks are high on accuracy but low on interpretability.
+~
+|INSTRUCTOR NOTES:
+|Discuss the importance of interpretability.
+|Explain factors influencing interpretability needs.
+|Highlight t...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~
+~Alt text:
+~A diagram showing two scales, one for "Accuracy" and one for "Interpretability", with various ML models plotted along the scales. Linear regression is high on interpretability but low on accuracy, while neural networks are high on accuracy but low on interpretability.
+~
+|INSTRUCTOR NOTES:
+• |Discuss the importance of interpretability.
+• |Explain factors influencing interpretability needs.
+• |Highl...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/features/interpretability/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/features/interpretability/
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 26 ANALYSIS:
+------------------------------
+Paragraphs: 26
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~https://christophm.github.io/interpretable-ml-book/
+~
+~Alt text:
+~Four icons representing different interpretability strategies: 1) A simple model approximating a complex one, 2) A magnifying glass zooming in on part of a model, 3) Interconnected blocks representing modular components, 4) Multiple trees combined into an ensemble.
+~
+|INSTRUCTOR NOTES:
+|Explain interpretable model approximation.
+|Discuss local i...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~https://christophm.github.io/interpretable-ml-book/
+~
+~Alt text:
+~Four icons representing different interpretability strategies: 1) A simple model approximating a complex one, 2) A magnifying glass zooming in on part of a model, 3) Interconnected blocks representing modular components, 4) Multiple trees combined into an ensemble.
+~
+|INSTRUCTOR NOTES:
+• |Explain interpretable model approximation.
+• |Discuss loc...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/features/interpretability/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/features/interpretability/
+
+  Paragraph 3:
+    Text: ~https://christophm.github.io/interpretable-ml-book/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://christophm.github.io/interpretable-ml-book/
+
+
+SLIDE 27 ANALYSIS:
+------------------------------
+Paragraphs: 18
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~
+~Alt text:
+~A scatter plot with models plotted based on their accuracy (x-axis) and interpretability (y-axis). Linear regression and decision trees are high on interpretability but low on accuracy, while neural networks are high on accuracy but low on interpretability. Random forests and SVMs are in the middle.
+~
+|INSTRUCTOR NOTES:
+|Highlight the inverse relationship between interpretability and accuracy.
+|Di...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/features/interpretability/
+~
+~Alt text:
+~A scatter plot with models plotted based on their accuracy (x-axis) and interpretability (y-axis). Linear regression and decision trees are high on interpretability but low on accuracy, while neural networks are high on accuracy but low on interpretability. Random forests and SVMs are in the middle.
+~
+|INSTRUCTOR NOTES:
+• |Highlight the inverse relationship between interpretability and accuracy.
+•...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/features/interpretability/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/features/interpretability/
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 28 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~Two icons representing structured data (a table) and unstructured data (an image, audio waveform, and text). The structured data icon is connected to traditional ML models like linear models and decision trees, while the unstructured data icon is connected to complex models like neural networks.
+~
+|INSTRUCTOR NOTES:
+|Explain the difference between structured and unstructured data tasks.
+|Highlight typical...
+
+Formatted Text:
+~Developer Notes:
+~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~Two icons representing structured data (a table) and unstructured data (an image, audio waveform, and text). The structured data icon is connected to traditional ML models like linear models and decision trees, while the unstructured data icon is connected to complex models like neural networks.
+~
+|INSTRUCTOR NOTES:
+• |Explain the difference between structured and unstructured data tasks.
+• |Highlight typ...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 29 ANALYSIS:
+------------------------------
+Paragraphs: 18
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~A dollar sign icon representing cost considerations.
+~
+|INSTRUCTOR NOTES:
+|Introduce the importance of cost considerations in ML.
+|Highlight the need to balance performance and cost.
+|Discuss factors affecting ML costs.
+|
+|STUDENT NOTES:
+In addition to model performance and interpretability, cost is another important consideration when selecting machine learning models or algorithms. As the demand for efficient and...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~A dollar sign icon representing cost considerations.
+~
+|INSTRUCTOR NOTES:
+• |Introduce the importance of cost considerations in ML.
+• |Highlight the need to balance performance and cost.
+• |Discuss factors affecting ML costs.
+|
+|STUDENT NOTES:
+In addition to model performance and interpretability, cost is another important consideration when selecting machine learning models or algorithms. As the demand for efficie...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/pricing/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/pricing/
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 30 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~Three icons representing CPU and GPU requirements (a processor chip), task characteristics (a bar chart), and auto-scaling and elasticity (a server icon growing or shrinking in size).
+~
+|INSTRUCTOR NOTES:
+|Introduce the key factors affecting ML costs.
+|Explain the role of CPU compared to GPU requirements.
+|Discuss the impact of task characteristics.
+|Highlight the importance of auto scaling and elasticity.
+|
+|STUDE...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~Three icons representing CPU and GPU requirements (a processor chip), task characteristics (a bar chart), and auto-scaling and elasticity (a server icon growing or shrinking in size).
+~
+|INSTRUCTOR NOTES:
+• |Introduce the key factors affecting ML costs.
+• |Explain the role of CPU compared to GPU requirements.
+• |Discuss the impact of task characteristics.
+• |Highlight the importance of auto scaling and elasticity.
+...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/pricing/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/pricing/
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 31 ANALYSIS:
+------------------------------
+Paragraphs: 19
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~Two icons representing a CPU (a processor chip) and a GPU (a specialized graphics processor chip).
+~
+|INSTRUCTOR NOTES:
+|Explain the differences between CPUs and GPUs.
+|Discuss use cases suitable for CPUs.
+|Highlight scenarios where GPUs might be more cost-effective.
+|Emphasize the importance of evaluating project requirements.
+|
+|STUDENT NOTES:
+One important decision when deploying machine learning models or algor...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~Two icons representing a CPU (a processor chip) and a GPU (a specialized graphics processor chip).
+~
+|INSTRUCTOR NOTES:
+• |Explain the differences between CPUs and GPUs.
+• |Discuss use cases suitable for CPUs.
+• |Highlight scenarios where GPUs might be more cost-effective.
+• |Emphasize the importance of evaluating project requirements.
+|
+|STUDENT NOTES:
+One important decision when deploying machine learning models ...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/pricing/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/pricing/
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 32 ANALYSIS:
+------------------------------
+Paragraphs: 21
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel.html
+~
+~Alt text:
+~Four icons representing: 1) Evaluating the need for distributed computing, 2) Optimizing models or algorithms, 3) Model compression or quantization techniques, 4) Alternative approaches like transfer learning or federated learning.
+~
+|INSTRUCTOR NOTES:
+|Emphasize the importance of evaluating the use case.
+|Discuss optimizing models or algorithms.
+...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel.html
+~
+~Alt text:
+~Four icons representing: 1) Evaluating the need for distributed computing, 2) Optimizing models or algorithms, 3) Model compression or quantization techniques, 4) Alternative approaches like transfer learning or federated learning.
+~
+|INSTRUCTOR NOTES:
+• |Emphasize the importance of evaluating the use case.
+• |Discuss optimizing models or algorith...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/pricing/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/pricing/
+
+  Paragraph 3:
+    Text: ~https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel.html
+
+
+SLIDE 33 ANALYSIS:
+------------------------------
+Paragraphs: 17
+
+Raw Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~An icon representing auto-scaling or elasticity, with a server icon growing or shrinking in size based on demand.
+~
+|INSTRUCTOR NOTES:
+|Explain the concept of distributed computing resources.
+|Introduce auto scaling and elasticity.
+|Highlight the cost benefits of on-demand instances.
+|
+|STUDENT NOTES:
+Large-scale machine learning tasks or accelerated training and inference processes might require using distributed ...
+
+Formatted Text:
+~Developer Notes:
+~https://aws.amazon.com/machine-learning/pricing/
+~
+~Alt text:
+~An icon representing auto-scaling or elasticity, with a server icon growing or shrinking in size based on demand.
+~
+|INSTRUCTOR NOTES:
+• |Explain the concept of distributed computing resources.
+• |Introduce auto scaling and elasticity.
+• |Highlight the cost benefits of on-demand instances.
+|
+|STUDENT NOTES:
+Large-scale machine learning tasks or accelerated training and inference processes might require using distri...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~https://aws.amazon.com/machine-learning/pricing/
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~https://aws.amazon.com/machine-learning/pricing/
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 34 ANALYSIS:
+------------------------------
+Paragraphs: 13
+
+Raw Text:
+~Developer Notes:
+~N/A
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+|Introduce the knowledge check section.
+|Provide instructions for the questions.
+|
+|STUDENT NOTES:
+This section tests your understanding of the topics covered in this module through a series of knowledge check questions. Be prepared to apply the concepts you've learned and demonstrate your comprehension of the material.
+
+Formatted Text:
+~Developer Notes:
+~N/A
+~
+~Alt text:
+~No image on this slide.
+~
+|INSTRUCTOR NOTES:
+• |Introduce the knowledge check section.
+• |Provide instructions for the questions.
+|
+|STUDENT NOTES:
+This section tests your understanding of the topics covered in this module through a series of knowledge check questions. Be prepared to apply the concepts you've learned and demonstrate your comprehension of the material.
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~N/A
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~N/A
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 35 ANALYSIS:
+------------------------------
+Paragraphs: 8
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Explain the question and the options provided.
+|Highlight the key features of Amazon SageMaker Studio.
+|Briefly mention the other options and why they are incorrect.
+|
+|STUDENT NOTES:This question tests understanding of SageMaker built-in algorithms and their appropriate use cases.
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Explain the question and the options provided.
+• |Highlight the key features of Amazon SageMaker Studio.
+• |Briefly mention the other options and why they are incorrect.
+|
+|STUDENT NOTES:This question tests understanding of SageMaker built-in algorithms and their appropriate use cases.
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Explain the question and the options provided.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain the question and the options provided.
+
+  Paragraph 3:
+    Text: |Highlight the key features of Amazon SageMaker Studio.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the key features of Amazon SageMaker Studio.
+
+
+SLIDE 36 ANALYSIS:
+------------------------------
+Paragraphs: 13
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Explain the question and the options provided.
+|Highlight the key features of Amazon SageMaker Studio.
+|Briefly mention the other options and why they are incorrect.
+|
+|STUDENT NOTES:
+Correct Answer: B Random Cut Forest
+Explanation: Random Cut Forest is designed for real-time anomaly detection in streaming data. It can effectively identify unusual patterns or outliers in transaction data, making it suitable for fraud detection.
+Incorrect Answers:
+A. DeepAR is for time-series ...
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Explain the question and the options provided.
+• |Highlight the key features of Amazon SageMaker Studio.
+• |Briefly mention the other options and why they are incorrect.
+|
+|STUDENT NOTES:
+Correct Answer: B Random Cut Forest
+Explanation: Random Cut Forest is designed for real-time anomaly detection in streaming data. It can effectively identify unusual patterns or outliers in transaction data, making it suitable for fraud detection.
+Incorrect Answers:
+A. DeepAR is for time-s...
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Explain the question and the options provided.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain the question and the options provided.
+
+  Paragraph 3:
+    Text: |Highlight the key features of Amazon SageMaker Studio.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the key features of Amazon SageMaker Studio.
+
+
+SLIDE 37 ANALYSIS:
+------------------------------
+Paragraphs: 9
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Explain the scenario and the options provided.
+|Highlight the key features of the XGBoost algorithm.
+|Briefly mention the other algorithms and their limitations.
+|
+|STUDENT NOTES:
+This question examines understanding of model interpretability and its importance in certain domains.
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Explain the scenario and the options provided.
+• |Highlight the key features of the XGBoost algorithm.
+• |Briefly mention the other algorithms and their limitations.
+|
+|STUDENT NOTES:
+This question examines understanding of model interpretability and its importance in certain domains.
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Explain the scenario and the options provided.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain the scenario and the options provided.
+
+  Paragraph 3:
+    Text: |Highlight the key features of the XGBoost algorithm.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the key features of the XGBoost algorithm.
+
+
+SLIDE 38 ANALYSIS:
+------------------------------
+Paragraphs: 16
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Explain the scenario and the options provided
+|Highlight the key features of the XGBoost algorithm
+|Briefly mention the other algorithms and their limitations
+|
+|STUDENT NOTES:
+Correct answer: C. Logistic regression
+Explanation: Logistic regression is a linear model that provides good interpretability while still being effective for binary classification tasks such as predicting readmission risk. It helps you to understand feature importance and model decisions.
+Incorrect ans...
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Explain the scenario and the options provided
+• |Highlight the key features of the XGBoost algorithm
+• |Briefly mention the other algorithms and their limitations
+|
+|STUDENT NOTES:
+Correct answer: C. Logistic regression
+Explanation: Logistic regression is a linear model that provides good interpretability while still being effective for binary classification tasks such as predicting readmission risk. It helps you to understand feature importance and model decisions.
+Incorre...
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Explain the scenario and the options provided
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain the scenario and the options provided
+
+  Paragraph 3:
+    Text: |Highlight the key features of the XGBoost algorithm
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the key features of the XGBoost algorithm
+
+
+SLIDE 39 ANALYSIS:
+------------------------------
+Paragraphs: 9
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Explain the scenario and the options provided.
+|Highlight the key features of Amazon Lex V2.
+|Briefly mention the other services and why they are not suitable for this use case.
+|
+|STUDENT NOTES:
+This question assesses understanding of different machine learning paradigms and their appropriate use cases.
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Explain the scenario and the options provided.
+• |Highlight the key features of Amazon Lex V2.
+• |Briefly mention the other services and why they are not suitable for this use case.
+|
+|STUDENT NOTES:
+This question assesses understanding of different machine learning paradigms and their appropriate use cases.
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Explain the scenario and the options provided.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain the scenario and the options provided.
+
+  Paragraph 3:
+    Text: |Highlight the key features of Amazon Lex V2.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the key features of Amazon Lex V2.
+
+
+SLIDE 40 ANALYSIS:
+------------------------------
+Paragraphs: 15
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Explain the scenario and the options provided.
+|Highlight the key features of Amazon Lex V2.
+|Briefly mention the other services and why they are not suitable for this use case.
+|
+|STUDENT NOTES:
+Correct answer: B. Supervised learning (for example, random forest)
+Explanation: Supervised learning, such as using a random forest algorithm, is most appropriate for this scenario. With labeled historical data of both fraudulent and legitimate transactions, a supervised model can le...
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Explain the scenario and the options provided.
+• |Highlight the key features of Amazon Lex V2.
+• |Briefly mention the other services and why they are not suitable for this use case.
+|
+|STUDENT NOTES:
+Correct answer: B. Supervised learning (for example, random forest)
+Explanation: Supervised learning, such as using a random forest algorithm, is most appropriate for this scenario. With labeled historical data of both fraudulent and legitimate transactions, a supervised model ...
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Explain the scenario and the options provided.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Explain the scenario and the options provided.
+
+  Paragraph 3:
+    Text: |Highlight the key features of Amazon Lex V2.
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the key features of Amazon Lex V2.
+
+
+SLIDE 41 ANALYSIS:
+------------------------------
+Paragraphs: 35
+
+Raw Text:
+|INSTRUCTOR NOTES
+|Review the scenario.||STUDENT NOTES
+In this activity, you take on the role of an ML engineer at AnyCompany Consulting. The key objectives are to identify the type of ML problem for each project and select an appropriate algorithm from built-in options in Amazon SageMaker AI.
+Business problem: A retail company wants to increase sales through a targeted marketing campaign. They have historical customer data, including demographics, past purchase history, and information about wh...
+
+Formatted Text:
+|INSTRUCTOR NOTES
+|Review the scenario.||STUDENT NOTES
+In this activity, you take on the role of an ML engineer at AnyCompany Consulting. The key objectives are to identify the type of ML problem for each project and select an appropriate algorithm from built-in options in Amazon SageMaker AI.
+Business problem: A retail company wants to increase sales through a targeted marketing campaign. They have historical customer data, including demographics, past purchase history, and information about wh...
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES
+
+  Paragraph 2:
+    Text: |Review the scenario.||STUDENT NOTES
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Review the scenario.||STUDENT NOTES
+
+  Paragraph 3:
+    Text: In this activity, you take on the role of an ML engineer at AnyCompany Consulting. The key objective
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: In this activity, you take on the role of an ML engineer at AnyCompany Consulting. The key objectives are to identify the type of ML problem for each project and select an appropriate algorithm from built-in options in Amazon SageMaker AI.
+
+
+SLIDE 42 ANALYSIS:
+------------------------------
+Paragraphs: 18
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Slide Description:
+~This slide presents three tasks related to customer behavior prediction and asks students to identify the type of supervised learning problem for each task from a list of options.
+~
+|INSTRUCTOR NOTES:
+|Explain each of the three tasks and their context.
+|Guide students through the process of identifying problem types.
+|Discuss the differences between binary classification, multi-class classif...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Slide Description:
+~This slide presents three tasks related to customer behavior prediction and asks students to identify the type of supervised learning problem for each task from a list of options.
+~
+|INSTRUCTOR NOTES:
+• |Explain each of the three tasks and their context.
+• |Guide students through the process of identifying problem types.
+• |Discuss the differences between binary classification, multi-class c...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 43 ANALYSIS:
+------------------------------
+Paragraphs: 27
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~This slide shows the same three tasks from the previous slide but now with their identified problem types. It includes a QR code linking to SageMaker AI built-in algorithms documentation.
+~
+|INSTRUCTOR NOTES:
+|Review the identified problem types for each task.
+|Guide students on using the SageMaker AI documentation to find relevant algorithms.
+|Discuss the importance of algorithm selection in the ML ...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~This slide shows the same three tasks from the previous slide but now with their identified problem types. It includes a QR code linking to SageMaker AI built-in algorithms documentation.
+~
+|INSTRUCTOR NOTES:
+• |Review the identified problem types for each task.
+• |Guide students on using the SageMaker AI documentation to find relevant algorithms.
+• |Discuss the importance of algorithm selection in t...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 44 ANALYSIS:
+------------------------------
+Paragraphs: 16
+
+Raw Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~This slide shows a completed table with three tasks, their problem types, and corresponding SageMaker AI built-in algorithms for each task.
+~
+|INSTRUCTOR NOTES:
+|Review the sample solution for activity 3.
+|Discuss the selected algorithms for each problem type.
+|Highlight the versatility of some algorithms across problem types.
+|
+|STUDENT NOTES:
+This slide presents a sample solution for activity 3, sh...
+
+Formatted Text:
+~Developer Notes:
+~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+~
+~Alt text:
+~This slide shows a completed table with three tasks, their problem types, and corresponding SageMaker AI built-in algorithms for each task.
+~
+|INSTRUCTOR NOTES:
+• |Review the sample solution for activity 3.
+• |Discuss the selected algorithms for each problem type.
+• |Highlight the versatility of some algorithms across problem types.
+|
+|STUDENT NOTES:
+This slide presents a sample solution for activity...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Ref: https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 45 ANALYSIS:
+------------------------------
+Paragraphs: 20
+
+Raw Text:
+~Developer Notes:
+~N/A
+~
+~Alt text:
+~A slide with a list of learning objectives covered in the module
+~
+|INSTRUCTOR NOTES:
+|Recap the key learning objectives.
+|Highlight the importance of the topics covered.
+|Encourage students to apply the knowledge gained.
+|
+|STUDENT NOTES:
+By completing this module, you should now be able to do the following:
+Select AWS AI services to solve common business needs. You can identify and choose the appropriate AWS AI services tailored to specific business require...
+
+Formatted Text:
+~Developer Notes:
+~N/A
+~
+~Alt text:
+~A slide with a list of learning objectives covered in the module
+~
+|INSTRUCTOR NOTES:
+• |Recap the key learning objectives.
+• |Highlight the importance of the topics covered.
+• |Encourage students to apply the knowledge gained.
+|
+|STUDENT NOTES:
+By completing this module, you should now be able to do the following:
+• Select AWS AI services to solve common business needs. You can identify and choose the appropriate AWS AI services tailored to specific business...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~N/A
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~N/A
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+
+
+SLIDE 46 ANALYSIS:
+------------------------------
+Paragraphs: 17
+
+Raw Text:
+~Developer Notes:
+~N/A
+~
+~Alt text:
+~A slide with contact information for AWS training support and a thank you message
+~
+|INSTRUCTOR NOTES:
+|Open the floor for any remaining questions.
+|Provide the contact information for AWS training support.
+|Thank the students for their participation.
+|Encourage further exploration and learning.
+|
+|STUDENT NOTES:
+This concludes the module on choosing a modeling approach for machine learning on AWS. If you have any remaining questions, feedback, or need furthe...
+
+Formatted Text:
+~Developer Notes:
+~N/A
+~
+~Alt text:
+~A slide with contact information for AWS training support and a thank you message
+~
+|INSTRUCTOR NOTES:
+• |Open the floor for any remaining questions.
+• |Provide the contact information for AWS training support.
+• |Thank the students for their participation.
+• |Encourage further exploration and learning.
+|
+|STUDENT NOTES:
+This concludes the module on choosing a modeling approach for machine learning on AWS. If you have any remaining questions, feedback, or nee...
+
+  Paragraph 1:
+    Text: ~Developer Notes:
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Developer Notes:
+
+  Paragraph 2:
+    Text: ~N/A
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~N/A
+
+  Paragraph 3:
+    Text: ~
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~
+

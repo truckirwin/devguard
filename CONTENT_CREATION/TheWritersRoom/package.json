@@ -1,0 +1,809 @@
+{
+  "name": "the-writers-room",
+  "displayName": "The Writers Room",
+  "description": "AI-Powered Creative Writing IDE with Multiple AI Agents",
+  "version": "1.0.0",
+  "publisher": "thewritersroom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thewritersroom/the-writers-room.git"
+  },
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other",
+    "Extension Packs"
+  ],
+  "keywords": [
+    "writing",
+    "screenplay",
+    "novel",
+    "ai",
+    "creative",
+    "agents",
+    "chat"
+  ],
+  "activationEvents": [
+    "onCommand:theWritersRoom.createProject",
+    "onCommand:theWritersRoom.openAIChat",
+    "onCommand:theWritersRoom.openSettings",
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "theWritersRoom.createProject",
+        "title": "Create New Writing Project",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.openAIChat",
+        "title": "Open AI Chat",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.selectAgent",
+        "title": "Select AI Agent",
+        "category": "Writers Room"
+      },
+
+      {
+        "command": "theWritersRoom.showAgentPanel",
+        "title": "Show AI Agents Panel",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.testAIConnection",
+        "title": "Test AI Connection",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.clearConversation",
+        "title": "Clear AI Conversation",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.configureAPI",
+        "title": "Configure AI API Keys",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.switchAIProvider",
+        "title": "Switch AI Provider",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.openSettings",
+        "title": "Settings",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.resetTreeViews",
+        "title": "Reset AI Agents Tree",
+        "category": "Writers Room",
+        "icon": "$(debug-restart)"
+      },
+      {
+        "command": "theWritersRoom.refreshTreeViews",
+        "title": "Refresh AI Agents Tree", 
+        "category": "Writers Room",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "theWritersRoom.configureAgentModels",
+        "title": "Configure Agent Models",
+        "category": "Writers Room"
+      },
+      {
+        "command": "theWritersRoom.openSettingsWebview",
+        "title": "Open Settings Panel",
+        "category": "Writers Room",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "theWritersRoom.testDocumentContext",
+        "title": "Test Document Context Service",
+        "category": "Writers Room Debug",
+        "icon": "$(search)"
+      },
+      {
+        "command": "theWritersRoom.testAgentContext",
+        "title": "Test Agent Context Building",
+        "category": "Writers Room Debug",
+        "icon": "$(debug)"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "theWritersRoom.agentExplorer",
+          "name": "AI Writing Agents"
+        }
+      ],
+      "theWritersRoom": [
+        {
+          "type": "webview",
+          "id": "theWritersRoom.chatView",
+          "name": "THE WRITERS ROOM"
+        },
+        {
+          "type": "webview",
+          "id": "theWritersRoom.settingsView",
+          "name": "Settings"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "theWritersRoom",
+          "title": "The Writers Room",
+          "icon": "$(edit)"
+        }
+      ]
+    },
+    "configuration": [
+      {
+        "title": "The Writers Room",
+        "properties": {
+          "theWritersRoom.aiProvider": {
+            "type": "string",
+            "default": "openai",
+            "enum": [
+              "openai",
+              "anthropic",
+              "aws-bedrock"
+            ],
+            "description": "Primary AI provider for writing assistance"
+          },
+          "theWritersRoom.defaultAgent": {
+            "type": "string",
+            "default": "script-doctor",
+            "enum": [
+              "aaron-sorkin",
+              "script-doctor",
+              "character-specialist",
+              "creative-visionary",
+              "coen-brothers",
+              "quentin-tarantino",
+              "taylor-sheridan",
+              "jack-carr"
+            ],
+            "description": "Default AI agent to use"
+          },
+          "theWritersRoom.autoSave": {
+            "type": "boolean",
+            "default": true,
+            "description": "Automatically save work in progress"
+          },
+          "theWritersRoom.enableTelemetry": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable anonymous usage telemetry"
+          },
+          "theWritersRoom.theme": {
+            "type": "string",
+            "default": "auto",
+            "enum": [
+              "light",
+              "dark",
+              "auto"
+            ],
+            "description": "Theme preference for The Writers Room"
+          }
+        }
+      },
+             {
+         "title": "OpenAI Settings",
+         "properties": {
+           "theWritersRoom.ai.openai.apiKey": {
+             "type": "string",
+             "default": "",
+             "description": "API Key",
+             "markdownDescription": "Your OpenAI API key. Get one at [OpenAI Platform](https://platform.openai.com/api-keys)",
+             "order": 1
+           },
+           "theWritersRoom.ai.openai.model": {
+             "type": "string",
+             "default": "gpt-4o",
+             "enum": [
+               "gpt-4o",
+               "gpt-4o-mini",
+               "gpt-4-turbo",
+               "gpt-4",
+               "gpt-3.5-turbo"
+             ],
+             "description": "Model Selection",
+             "markdownDescription": "Choose the OpenAI model to use for AI responses",
+             "order": 2
+           },
+           "theWritersRoom.ai.openai.maxTokens": {
+             "type": "number",
+             "default": 4000,
+             "minimum": 1,
+             "maximum": 128000,
+             "description": "Max Tokens",
+             "markdownDescription": "Maximum number of tokens in responses (higher = longer responses)",
+             "order": 3
+           },
+           "theWritersRoom.ai.openai.temperature": {
+             "type": "number",
+             "default": 0.7,
+             "minimum": 0,
+             "maximum": 2,
+             "description": "Temperature",
+             "markdownDescription": "Controls creativity (0 = focused, 2 = very creative)",
+             "order": 4
+           },
+           "theWritersRoom.ai.openai.topP": {
+             "type": "number",
+             "default": 1,
+             "minimum": 0,
+             "maximum": 1,
+             "description": "Top P (Nucleus Sampling)",
+             "markdownDescription": "Controls response diversity (0.1 = focused, 1 = diverse)",
+             "order": 5
+           },
+           "theWritersRoom.ai.openai.frequencyPenalty": {
+             "type": "number",
+             "default": 0,
+             "minimum": -2,
+             "maximum": 2,
+             "description": "Frequency Penalty",
+             "markdownDescription": "Reduces repetition of frequent words (-2 to 2)",
+             "order": 6
+           },
+           "theWritersRoom.ai.openai.presencePenalty": {
+             "type": "number",
+             "default": 0,
+             "minimum": -2,
+             "maximum": 2,
+             "description": "Presence Penalty", 
+             "markdownDescription": "Encourages new topics (-2 to 2)",
+             "order": 7
+           }
+         }
+       },
+       {
+         "title": "Anthropic (Claude) Settings",
+         "properties": {
+           "theWritersRoom.ai.anthropic.apiKey": {
+             "type": "string",
+             "default": "",
+             "description": "API Key",
+             "markdownDescription": "Your Anthropic API key. Get one at [Anthropic Console](https://console.anthropic.com/)",
+             "order": 1
+           },
+           "theWritersRoom.ai.anthropic.model": {
+             "type": "string",
+             "default": "claude-3-5-sonnet-20241022",
+             "enum": [
+               "claude-3-5-sonnet-20241022",
+               "claude-3-5-haiku-20241022",
+               "claude-3-opus-20240229",
+               "claude-3-sonnet-20240229",
+               "claude-3-haiku-20240307"
+             ],
+             "description": "Claude Model",
+             "markdownDescription": "Choose the Claude model (Sonnet = balanced, Opus = most capable, Haiku = fastest)",
+             "order": 2
+           },
+           "theWritersRoom.ai.anthropic.maxTokens": {
+             "type": "number",
+             "default": 4000,
+             "minimum": 1,
+             "maximum": 200000,
+             "description": "Max Tokens",
+             "markdownDescription": "Maximum number of tokens in responses (Claude supports up to 200k)",
+             "order": 3
+           },
+           "theWritersRoom.ai.anthropic.temperature": {
+             "type": "number",
+             "default": 0.7,
+             "minimum": 0,
+             "maximum": 1,
+             "description": "Temperature",
+             "markdownDescription": "Controls creativity (0 = focused, 1 = very creative)",
+             "order": 4
+           },
+           "theWritersRoom.ai.anthropic.topP": {
+             "type": "number",
+             "default": 1,
+             "minimum": 0,
+             "maximum": 1,
+             "description": "Top P (Nucleus Sampling)",
+             "markdownDescription": "Controls response diversity (0.1 = focused, 1 = diverse)",
+             "order": 5
+           },
+           "theWritersRoom.ai.anthropic.topK": {
+             "type": "number",
+             "default": 40,
+             "minimum": 1,
+             "maximum": 200,
+             "description": "Top K",
+             "markdownDescription": "Limits vocabulary choices (lower = more focused, higher = more diverse)",
+             "order": 6
+           }
+         }
+       },
+       {
+         "title": "AWS Bedrock Settings",
+         "properties": {
+           "theWritersRoom.ai.bedrock.accessKeyId": {
+             "type": "string",
+             "default": "",
+             "description": "Access Key ID",
+             "markdownDescription": "Your AWS Access Key ID. Get credentials at [AWS Console](https://console.aws.amazon.com/iam/)",
+             "order": 1
+           },
+           "theWritersRoom.ai.bedrock.secretAccessKey": {
+             "type": "string",
+             "default": "",
+             "description": "Secret Access Key",
+             "markdownDescription": "Your AWS Secret Access Key (keep this secure)",
+             "order": 2
+           },
+           "theWritersRoom.ai.bedrock.region": {
+             "type": "string",
+             "default": "us-east-1",
+             "enum": [
+               "us-east-1",
+               "us-west-2",
+               "eu-west-1",
+               "eu-central-1",
+               "ap-northeast-1",
+               "ap-southeast-1"
+             ],
+             "description": "AWS Region",
+             "markdownDescription": "Choose the AWS region for Bedrock service",
+             "order": 3
+           },
+           "theWritersRoom.ai.bedrock.model": {
+             "type": "string",
+             "default": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+             "enum": [
+               "anthropic.claude-3-5-sonnet-20241022-v2:0",
+               "anthropic.claude-3-5-haiku-20241022-v1:0",
+               "anthropic.claude-3-opus-20240229-v1:0",
+               "anthropic.claude-3-sonnet-20240229-v1:0",
+               "anthropic.claude-3-haiku-20240307-v1:0",
+               "amazon.titan-text-express-v1",
+               "amazon.titan-text-lite-v1",
+               "ai21.j2-ultra-v1",
+               "ai21.j2-mid-v1",
+               "cohere.command-text-v14",
+               "meta.llama2-70b-chat-v1"
+             ],
+             "description": "Bedrock Model",
+             "markdownDescription": "Choose from Claude, Titan, Jurassic, Command, or Llama models",
+             "order": 4
+           },
+           "theWritersRoom.ai.bedrock.maxTokens": {
+             "type": "number",
+             "default": 4000,
+             "minimum": 1,
+             "maximum": 200000,
+             "description": "Max Tokens",
+             "markdownDescription": "Maximum number of tokens in responses (varies by model)",
+             "order": 5
+           },
+           "theWritersRoom.ai.bedrock.temperature": {
+             "type": "number",
+             "default": 0.7,
+             "minimum": 0,
+             "maximum": 1,
+             "description": "Temperature",
+             "markdownDescription": "Controls creativity (0 = focused, 1 = very creative)",
+             "order": 6
+           },
+           "theWritersRoom.ai.bedrock.topP": {
+             "type": "number",
+             "default": 1,
+             "minimum": 0,
+             "maximum": 1,
+             "description": "Top P (Nucleus Sampling)",
+             "markdownDescription": "Controls response diversity (0.1 = focused, 1 = diverse)",
+             "order": 7
+           },
+           "theWritersRoom.ai.bedrock.topK": {
+             "type": "number",
+             "default": 250,
+             "minimum": 0,
+             "maximum": 500,
+             "description": "Top K",
+             "markdownDescription": "Limits vocabulary choices (varies by model)",
+             "order": 8
+           }
+         }
+       },
+       {
+         "title": "Agent Model Assignments",
+         "properties": {
+           "theWritersRoom.agents.scriptDoctor.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Script Doctor agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.scriptDoctor.provider": {
+             "type": "string",
+             "default": "openai",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Script Doctor agent"
+           },
+           "theWritersRoom.agents.scriptDoctor.model": {
+             "type": "string",
+             "default": "gpt-4o",
+             "description": "Specific model for Script Doctor agent"
+           },
+           "theWritersRoom.agents.aaronSorkin.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Aaron Sorkin agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.aaronSorkin.provider": {
+             "type": "string",
+             "default": "anthropic",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Aaron Sorkin agent"
+           },
+           "theWritersRoom.agents.aaronSorkin.model": {
+             "type": "string",
+             "default": "claude-3-5-sonnet-20241022",
+             "description": "Specific model for Aaron Sorkin agent"
+           },
+           "theWritersRoom.agents.characterSpecialist.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Character Specialist agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.characterSpecialist.provider": {
+             "type": "string",
+             "default": "anthropic",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Character Specialist agent"
+           },
+           "theWritersRoom.agents.characterSpecialist.model": {
+             "type": "string",
+             "default": "claude-3-5-sonnet-20241022",
+             "description": "Specific model for Character Specialist agent"
+           },
+           "theWritersRoom.agents.creativeVisionary.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Creative Visionary agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.creativeVisionary.provider": {
+             "type": "string",
+             "default": "openai",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Creative Visionary agent"
+           },
+           "theWritersRoom.agents.creativeVisionary.model": {
+             "type": "string",
+             "default": "gpt-4o",
+             "description": "Specific model for Creative Visionary agent"
+           },
+           "theWritersRoom.agents.coenBrothers.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Coen Brothers agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.coenBrothers.provider": {
+             "type": "string",
+             "default": "anthropic",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Coen Brothers agent"
+           },
+           "theWritersRoom.agents.coenBrothers.model": {
+             "type": "string",
+             "default": "claude-3-opus-20240229",
+             "description": "Specific model for Coen Brothers agent"
+           },
+           "theWritersRoom.agents.quentinTarantino.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Quentin Tarantino agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.quentinTarantino.provider": {
+             "type": "string",
+             "default": "anthropic",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Quentin Tarantino agent"
+           },
+           "theWritersRoom.agents.quentinTarantino.model": {
+             "type": "string",
+             "default": "claude-3-5-sonnet-20241022",
+             "description": "Specific model for Quentin Tarantino agent"
+           },
+           "theWritersRoom.agents.taylorSheridan.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Taylor Sheridan agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.taylorSheridan.provider": {
+             "type": "string",
+             "default": "openai",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Taylor Sheridan agent"
+           },
+           "theWritersRoom.agents.taylorSheridan.model": {
+             "type": "string",
+             "default": "gpt-4o",
+             "description": "Specific model for Taylor Sheridan agent"
+           },
+           "theWritersRoom.agents.jackCarr.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Jack Carr agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.jackCarr.provider": {
+             "type": "string",
+             "default": "bedrock",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Jack Carr agent"
+           },
+           "theWritersRoom.agents.jackCarr.model": {
+             "type": "string",
+             "default": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+             "description": "Specific model for Jack Carr agent"
+           },
+           "theWritersRoom.agents.locationScout.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Location Scout agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.locationScout.provider": {
+             "type": "string",
+             "default": "bedrock",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Location Scout agent"
+           },
+           "theWritersRoom.agents.locationScout.model": {
+             "type": "string",
+             "default": "amazon.titan-text-express-v1",
+             "description": "Specific model for Location Scout agent"
+           },
+           "theWritersRoom.agents.producer.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Producer agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.producer.provider": {
+             "type": "string",
+             "default": "openai",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Producer agent"
+           },
+           "theWritersRoom.agents.producer.model": {
+             "type": "string",
+             "default": "gpt-4o",
+             "description": "Specific model for Producer agent"
+           },
+           "theWritersRoom.agents.director.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Director agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.director.provider": {
+             "type": "string",
+             "default": "anthropic",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Director agent"
+           },
+           "theWritersRoom.agents.director.model": {
+             "type": "string",
+             "default": "claude-3-5-sonnet-20241022",
+             "description": "Specific model for Director agent"
+           },
+           "theWritersRoom.agents.continuityExpert.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Continuity Expert agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.continuityExpert.provider": {
+             "type": "string",
+             "default": "openai",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Continuity Expert agent"
+           },
+           "theWritersRoom.agents.continuityExpert.model": {
+             "type": "string",
+             "default": "gpt-4o",
+             "description": "Specific model for Continuity Expert agent"
+           },
+           "theWritersRoom.agents.showrunner.active": {
+             "type": "boolean",
+             "default": true,
+             "description": "Enable Showrunner agent in multi-agent discussions"
+           },
+           "theWritersRoom.agents.showrunner.provider": {
+             "type": "string",
+             "default": "anthropic",
+             "enum": ["openai", "anthropic", "bedrock"],
+             "description": "AI provider for Showrunner agent"
+           },
+           "theWritersRoom.agents.showrunner.model": {
+             "type": "string",
+             "default": "claude-3-5-sonnet-20241022",
+             "description": "Specific model for Showrunner agent"
+           }
+         }
+       }
+     ],
+    "keybindings": [
+      {
+        "command": "theWritersRoom.openAIChat",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a"
+      },
+      {
+        "command": "theWritersRoom.createProject",
+        "key": "ctrl+shift+n",
+        "mac": "cmd+shift+n"
+      },
+
+      {
+        "command": "theWritersRoom.resetTreeViews",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "theWritersRoom.createProject",
+          "when": "true"
+        },
+        {
+          "command": "theWritersRoom.openAIChat",
+          "when": "true"
+        },
+
+        {
+          "command": "theWritersRoom.openSettings",
+          "when": "true"
+        },
+        {
+          "command": "theWritersRoom.resetTreeViews",
+          "when": "true"
+        },
+        {
+          "command": "theWritersRoom.refreshTreeViews",
+          "when": "true"
+        },
+        {
+          "command": "theWritersRoom.configureAgentModels",
+          "when": "true"
+        },
+        {
+          "command": "theWritersRoom.openSettingsWebview",
+          "when": "true"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "theWritersRoom.selectAgent",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "navigation"
+        },
+        {
+          "command": "theWritersRoom.refreshTreeViews",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "navigation",
+          "title": "Refresh"
+        },
+        {
+          "command": "theWritersRoom.resetTreeViews",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "navigation",
+          "title": "Reset"
+        },
+        {
+          "command": "theWritersRoom.configureAgentModels",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "navigation",
+          "title": "Configure Models"
+        },
+        {
+          "command": "theWritersRoom.openSettings",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "navigation",
+          "title": "Settings"
+        },
+        {
+          "command": "theWritersRoom.openSettingsWebview",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "navigation",
+          "title": "Settings Panel"
+        },
+        {
+          "command": "theWritersRoom.refreshTreeViews",
+          "when": "view == theWritersRoom.projectExplorer",
+          "group": "navigation",
+          "title": "Refresh"
+        },
+        {
+          "command": "theWritersRoom.resetTreeViews",
+          "when": "view == theWritersRoom.projectExplorer",
+          "group": "navigation",
+          "title": "Reset"
+        },
+        {
+          "command": "theWritersRoom.createProject",
+          "when": "view == theWritersRoom.projectExplorer",
+          "group": "navigation",
+          "title": "New Project"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "theWritersRoom.refreshTreeViews",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "inline"
+        },
+        {
+          "command": "theWritersRoom.resetTreeViews",
+          "when": "view == theWritersRoom.agentExplorer",
+          "group": "inline"
+        },
+        {
+          "command": "theWritersRoom.refreshTreeViews",
+          "when": "view == theWritersRoom.projectExplorer",
+          "group": "inline"
+        },
+        {
+          "command": "theWritersRoom.resetTreeViews",
+          "when": "view == theWritersRoom.projectExplorer",
+          "group": "inline"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package-extension",
+    "compile": "NODE_OPTIONS='--no-warnings' tsc -p ./",
+    "compile-tests": "NODE_OPTIONS='--no-warnings' tsc -p ./ --outDir out",
+    "watch": "NODE_OPTIONS='--no-warnings' tsc -watch -p ./",
+    "package-extension": "webpack --mode production --devtool hidden-source-map",
+    "compile-web": "webpack",
+    "watch-web": "webpack --watch",
+    "pretest": "npm run compile-tests && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "NODE_OPTIONS='--no-warnings' node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "build:dist": "node scripts/create-distribution.js",
+    "build:mac": "node scripts/create-distribution.js darwin",
+    "build:windows": "node scripts/create-distribution.js win32",
+    "build:linux": "node scripts/create-distribution.js linux",
+    "build:all": "npm run build:mac && npm run build:windows && npm run build:linux",
+    "build:clean": "node scripts/create-clean-distribution.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^16.18.126",
+    "@types/sinon": "^17.0.4",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^8.57.1",
+    "fs-extra": "^11.3.0",
+    "mocha": "^11.7.1",
+    "sinon": "^21.0.0",
+    "ts-loader": "^9.5.2",
+    "ts-mocha": "^11.1.0",
+    "typescript": "^4.9.5",
+    "vsce": "^2.15.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.0.0",
+    "axios": "^1.4.0",
+    "openai": "^4.0.0"
+  }
+}

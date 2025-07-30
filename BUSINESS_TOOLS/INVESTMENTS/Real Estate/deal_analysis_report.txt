@@ -1,0 +1,68 @@
+================================================================================
+GRANT CARDONE REAL ESTATE DEAL ANALYSIS
+================================================================================
+Date: 2025-07-16 11:45:27
+Total Qualifying Properties: 3
+
+DEAL #1: 1234 N Main St, Meridian, ID
+------------------------------------------------------------
+Source: Sample Data
+Price: $720,000
+Units: 12
+Year Built: 1985
+Price per Unit: $60,000
+
+FINANCIAL METRICS:
+  Down Payment (25%): $180,000
+  Monthly Cash Flow: $4,754
+  Annual Cash Flow: $57,047
+  Cap Rate: 14.00%
+  Cash-on-Cash Return: 31.69%
+
+CARDONE ANALYSIS:
+  Cardone Score: 95/100
+  Recommendation: STRONG BUY
+
+================================================================================
+
+DEAL #2: 5678 E Franklin Rd, Nampa, ID
+------------------------------------------------------------
+Source: Sample Data
+Price: $520,000
+Units: 8
+Year Built: 1990
+Price per Unit: $65,000
+
+FINANCIAL METRICS:
+  Down Payment (25%): $130,000
+  Monthly Cash Flow: $4,087
+  Annual Cash Flow: $49,040
+  Cap Rate: 15.51%
+  Cash-on-Cash Return: 37.72%
+
+CARDONE ANALYSIS:
+  Cardone Score: 95/100
+  Recommendation: STRONG BUY
+
+================================================================================
+
+DEAL #3: 9012 S 10th Ave, Caldwell, ID
+------------------------------------------------------------
+Source: Sample Data
+Price: $360,000
+Units: 6
+Year Built: 1988
+Price per Unit: $60,000
+
+FINANCIAL METRICS:
+  Down Payment (25%): $90,000
+  Monthly Cash Flow: $3,217
+  Annual Cash Flow: $38,603
+  Cap Rate: 16.80%
+  Cash-on-Cash Return: 42.89%
+
+CARDONE ANALYSIS:
+  Cardone Score: 95/100
+  Recommendation: STRONG BUY
+
+================================================================================

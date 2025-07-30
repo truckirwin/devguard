@@ -1,0 +1,146 @@
+<variables>
+LESSONNUM = 1
+NUMSLIDES = Derive according to content
+DOCSURL = https://docs.aws.amazon.com/amazonq/
+TARGETAUDIENCE = Cloud practitioners who are knowledgeable in AWS.
+</variables>
+
+Following the course outline below, extract the slide content for Lesson LESSONNUM from the INPUT.
+
+Remember to use the outline below as context for which topics should be covered in this lesson and which topics are covered before and after this lesson.
+
+Reply with the entire lesson according to the total number of slides requested as NUMSLIDES.
+Verify all statements against the current AWS Documentation at DOCSURL.
+Write in the style of AWS documentation.
+Act as an experienced AWS Technical Curriculum Developer.
+Your job is to create a PowerPoint slide deck based on content from the INPUT.
+The class will be for TARGETAUDIENCE.
+
+Use the following information to provide a customized response using all the information to create the slides.
+
+Formatting Instructions:
+1. All slides should follow this structure:
+   Slide nn: [SECTION: (only for the first slide)] slide_title
+   - Bullet point 1 (3-5 bullet points, under 8 words each)
+   - Bullet point 2
+   - Bullet point 3
+   SPEAKERNOTES:
+   ~DEVELOPER NOTES:
+   [Content source information and relevant URLs]
+   ~IMAGE DESCRIPTION:
+   [A detailed prompt to generate an image using Amazon Titan G2]
+   |INSTRUCTOR NOTES:
+   - [Bulleted list of topics to cover]
+   |STUDENT NOTES:
+   [2-3 short, concise paragraphs describing the slide's content]
+
+2. Slide numbering:
+   - Start with "Slide 1:" and continue sequentially.
+   - The first slide should include "SECTION:" before the slide title.
+
+3. Bullet points:
+   - Use a single leading dash for each bullet point.
+   - Limit each bullet to under 8 words.
+   - Provide 3-5 bullet points per slide.
+
+4. Speaker notes, developer notes, image descriptions, instructor notes, and student notes:
+   - Include these sections for each slide in the order specified above.
+   - Use the exact formatting and labels as shown in the structure.
+
+5. Interactive slide:
+   -Add one slide midway through the lesson with an interactive idea. Review question, word association, etc.
+
+5. Demo slide:
+   - Add one last slide with the title Slide nn: "Demo nn: [Title of the corresponding Demo from the outline]"
+   - Follow the same structure as other slides for the demo slide.
+
+6. Spacing:
+   - Do not introduce blank lines between sections.
+   - Each section should start on a new line immediately following the previous section.
+
+<example>
+Slide 1: SECTION: Getting Started with Amazon Q Developer
+- Introduction to Amazon Q Developer
+- Key features and capabilities
+- User authentication and access
+- Interaction methods
+
+SPEAKERNOTES:
+~DEVELOPER NOTES:
+Content based on the provided course outline and AWS documentation at https://docs.aws.amazon.com/amazonq/
+
+~IMAGE DESCRIPTION:
+A visual representation of Amazon Q Developer interface, showing its integration with popular IDEs and highlighting key features like chat, code analysis, and AWS resource optimization.
+
+|INSTRUCTOR NOTES:
+- Introduce Amazon Q Developer as part of the Amazon Q suite
+- Highlight its role in assisting developers and IT professionals
+- Discuss authentication and access methods
+- Overview of interaction capabilities
+
+|STUDENT NOTES:
+Amazon Q Developer is a powerful AI-assisted tool designed to help developers and IT professionals with various tasks throughout the software development lifecycle. It offers advanced capabilities for coding, testing, upgrading applications, and optimizing AWS resources. This section will cover the basics of getting started with Amazon Q Developer, including user authentication, key features, and how to interact with the system.
+
+
+Slide 2: Users and Authentication
+- AWS IAM Identity Center integration
+- Single Sign-On (SSO) support
+- Secure access to Amazon Q Developer
+
+SPEAKERNOTES:
+~DEVELOPER NOTES:
+Information sourced from AWS IAM Identity Center documentation and Amazon Q Developer setup guide.
+
+~IMAGE DESCRIPTION:
+A diagram showing the authentication flow from user log
+
+|INSTRUCTOR NOTES:
+- Explain the authentication process using AWS IAM Identity Center
+- Highlight the benefits of Single Sign-On (SSO)
+- Emphasize the security aspects of accessing Amazon Q Developer
+
+|STUDENT NOTES:
+Amazon Q Developer leverages AWS IAM Identity Center for user authentication, providing a secure and streamlined access method. This integration supports Single Sign-On (SSO), allowing users to access Amazon Q Developer and other AWS services with a single set of credentials. The authentication process ensures that only authorized users can interact with the AI assistant and access sensitive development resources.
+
+
+
+Slide 7: Customization
+- Adaptation to internal libraries and APIs
+- Alignment with organizational best practices
+- Architectural pattern recommendations
+
+SPEAKERNOTES:
+~DEVELOPER NOTES:
+Customization features described based on Amazon Q Developer enterprise setup guide and best practices documentation.
+
+~IMAGE DESCRIPTION:
+A visual representation of Amazon Q Developer interfacing with various internal systems (libraries, APIs, documentation) to provide customized recommendations.
+
+|INSTRUCTOR NOTES:
+- Explain how Amazon Q Developer adapts to internal libraries and APIs
+- Discuss alignment with organizational best practices
+- Highlight architectural pattern recommendations
+
+|STUDENT NOTES:
+Amazon Q Developer can be customized to provide relevant code recommendations based on an organization's internal libraries, APIs, and best practices. This customization ensures that the AI assistant's suggestions align with the company's specific development standards and architectural patterns. By learning from the organization's codebase and documentation, Amazon Q Developer becomes an increasingly valuable tool that helps maintain consistency and quality across development projects.
+
+
+Slide 8: Code Transform
+- Language version upgrades
+- Automated code modernization
+- Compatibility analysis
+
+SPEAKERNOTES:
+~DEVELOPER NOTES:
+Code Transform feature details sourced from Amazon Q Developer technical documentation and upgrade guides.
+
+~IMAGE DESCRIPTION:
+A before-and-after comparison of code snippets, showing the transformation from an older language version to a newer one, with callouts highlighting key changes and improvements.
+
+|INSTRUCTOR NOTES:
+- Explain the code transform feature for language version upgrades
+- Discuss automated code modernization capabilities
+- Highlight compatibility analysis during transformations
+
+|STUDENT NOTES:
+The Code Transform feature of Amazon Q Developer enables developers to upgrade their codebase to newer versions of programming languages efficiently. This au

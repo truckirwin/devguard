@@ -1,0 +1,90 @@
+Understand the text in the INPUT.
+
+DIRECTIONS:
+1. Follow the EXAMPLE below for formatting and structure.
+2. Derive those values that you can, but feel free to leave notes to complete those values later.
+3. Write in the same voice and style as the EXAMPLE.
+4. IMPORTANT: Add text formatting markdown.
+
+PROMPT:
+I want to challenge you with the following ideas.
+1. Perhaps the difference between ILT and self-paced digital is not 'modality', the means of communications. Perhaps they use different brain mechanisms to activate learning.
+a. Digital self-paced learning is effective for foundational content, allowing learners to absorb material at their own pace and revisit concepts as needed. This approach engages self-regulation and metacognition, where learners plan, monitor, and assess their understanding. It taps into executive functions like decision-making, self-monitoring, and goal-setting. By spreading learning over time, it supports long-term memory consolidation. Success in self-paced learning depends on self-regulation, motivation, and effective use of memory.
+b. Instructor-led training activates working memory due to the need to process information quickly without time for extended self-review. Attention networks are engaged by rapid feedback and the need to stay focused during real-time interaction. ILT reinforces learning through real-time processing, social interaction, and immediate feedback, engaging working memory, mirroring, attention networks, and social learning mechanisms.
+2. Digital self-paced training works well for acquiring technical knowledge, while ILT excels in applied skills and decision-making. Digital training prepares learners for knowledge-based certification exams, while ILT equips them with the hands-on skills for practical tests and job performance.
+
+Consider this in the context of reusability and RLOs. And how this might influence the design of the Continuity Generator. 
+
+How can the mechanisms you describe bring ILT into alignment with certification and identify/target strategic ILT that is necessary for a complete learning path that both allows customers to pass certification tests and teaches them to perform on the job?
+
+EXAMPLE:
+
+EXECUTIVE SUMMARY
+A very high-level view of project (10,000 feet view) targeted for high level managers - very brief yet specific enough for buy-in.
+3 paragraphs, 500 words
+-
+
+CURRENT STATE:
+A brief paragraph representing the current state of systems and procedures which contains problem, waste, error or potential hazard.
+200 words
+
+
+DESIRED STATE:
+A brief paragraph detailing the ideal state for your customers, specifically features or use-cases.
+2 paragraphs, 300 words
+
+OBJECTIVES:
+A brief paragraph detailing the objectives of the project.
+Itemized list of success criteria in a measurable format.
+
+1. 
+2.
+3.
+...
+PROJECT DEFINITION:
+Brief paragraph(s) explaining how you are implementing your project/procedure.
+200 words.
+
+IN SCOPE:
+List of what you are going to deliver
+- - -
+One pager
+Scope definition
+Existing systems and service identification
+Stakeholders review - feasibility
+Implementation plan and definition
+Engineering review and design
+OUT OF SCOPE:
+List of items that are considered, but not in scope for this project.
+
+DEPENDENCIES:
+List of services, tools, products, procedures, policies in which your project depends on
+
+
+RELATED PROJECTS:
+Current AWS Services, projects, and tools related to your projects goals
+
+
+BENEFITS:
+Brief paragraph describing the benefits in a measurable and metric based statements
+
+COSTS:
+Cost items and an estimations of cost. For example, one full-time full stack developer
+
+RISKS AND BLOCKERS:
+List of risks and blockers
+
+MILESTONES:
+Itemize your milestones and loose estimation of deadlines. For example: Analysis of current delays in two weeks
+
+[//add your content here]
+STAKEHOLDERS:
+Your customers, beneficiaries, and other related people (except for people in the next section)
+
+[//add names and emails ]
+PROJECT TEAM AND SPONSORS:
+Project team, related managers, Sponsors
+
+HIGH LEVEL TEST PLAN:
+Describe the high level plan on how/what needs to be verified for the project to assure that is working as intended.
+Generate dynamic learning plans and context.

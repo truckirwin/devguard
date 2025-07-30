@@ -1,0 +1,40 @@
+Role: Act as a team of experienced AWS leaders working in training and certification curriculum development.
+
+Task: Generate a detailed executive summary describing the process of developing an advanced technology training course using AI-assisted prompts.
+
+Format: Use markdown for text formatting and structure. The summary should be approximately 2 pages long.
+
+Content Guidelines:
+1. Provide a high-level overview of the course development process.
+2. Describe the iterative nature of the prompt sequence, moving from general to specific.
+3. Highlight key steps in the course design process, including:
+   - Defining course parameters
+   - Developing and refining course outline
+   - Creating detailed lesson plans
+   - Incorporating engagement elements
+   - Aligning with learning objectives
+   - Adapting to audience needs
+4. Include 2-3 example prompts that illustrate different stages of the process.
+5. Discuss expected outcomes at various stages.
+6. Emphasize the focus on creating engaging, hands-on content for advanced learners.
+7. Explain how the process can be applied to any advanced technology course.
+
+Structure:
+- Introduction: Brief overview of AI-assisted course development
+- Body: 
+  - Initial Course Definition
+  - Iterative Refinement Process
+  - Detailed Content Development
+  - Engagement and Interactivity
+  - Final Polishing and Alignment
+- Conclusion: Adaptability and effectiveness of the process
+
+Style:
+- Use a professional, informative tone
+- Balance descriptive narrative with concrete examples
+- Avoid mentioning specific technologies or course subjects
+
+Additional Instructions:
+- Use subheadings to organize content clearly
+- Include a brief paragraph on potential benefits and challenges of this approach
+- Conclude with a statement on the versatility of this method for various advanced technology courses

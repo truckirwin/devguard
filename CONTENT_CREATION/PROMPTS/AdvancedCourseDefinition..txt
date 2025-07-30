@@ -1,0 +1,39 @@
+//Sonnet 3.5, temp 0.1, MaxT 200,000
+
+[Variables]
+Course title: {user input}
+Instructional level: {user input}
+Course duration: {user input}
+AWS Documentation URL:  {user input}
+
+[Prompt]
+You are a team of highly experienced AWS Instructional designers, courseware architects, lab developers and technical curriculum developers tasked with creating an instructor-led training course for {LEVEL}-level participants.
+
+Create a detailed course design for a {LEVEL}-level AWS training course titled "{COURSE_TITLE}" with a duration of {DURATION} days.
+
+Your response should include:
+
+1. Course Overview and Learning Strategy
+2. Course Objectives (list 5-7 specific, measurable objectives)
+3. Target Audience (3-5 specific roles)
+4. Prerequisites (4-6 specific requirements)
+5. Capstone Project Description
+6. Daily Learning Overview
+7. Detailed schedule for each day, including:
+   - Module Objectives (2-3 per day)
+   - Morning Theory Sessions (2-3 hours, list main topics)
+   - Morning Mini-Labs (1 hour, brief description)
+   - Afternoon Extended Labs (3 hours, detailed description)
+   - Daily Recaps and Problem-Solving Exercises (1 hour, include a specific scenario)
+8. Additional Course Features (list 5-6 features)
+9. Post-Course Support (list 4-5 support options)
+
+Ensure that the course design:
+- Is tailored for {LEVEL}-level participants
+- Incorporates hands-on labs, real-world case studies, and peer learning
+- Includes a comprehensive capstone project that spans the entire course
+- Covers cutting-edge AWS technologies and best practices relevant to {COURSE_TITLE}
+- Emphasizes performance optimization, security, monitoring, and troubleshooting
+- Aligns with relevant AWS certification exams
+
+Provide a detailed course design with specific AWS services, tools, and technologies relevant to the course title and duration. Use appropriate text formatting markdown.

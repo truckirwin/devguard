@@ -1,0 +1,34 @@
+Forge Ascend 4.1 Release Notes
+
+
+[1] Amazon Nova models (Text-to-text)
+    - Amazon Nova Pro
+    - Amazon Nova Lite
+    - Anazon Nove Micro
+
+All three models are supported in standard and batch mode.
+
+[2] Amazon Nova models Multimodal
+    - Amazon Nova Pro
+    - Amazon Nova Lite
+
+Accepts image files (jpeg, png, bmp, webp) with the text prompt.
+Note: Does not accept video files at this time.
+Note: Does not support batch mode. (If you need multimodal batch, use MM Sonnet)
+
+[3] Amazon Nova Canvas
+Removed the older version of Titan Image 
+    - Amazon Nova Canvas
+
+[4] IMAGEN
+    - Amazon Nova Canvas
+    You can now choose Titan Image, Nova Canvas, or Stability XL to generate images.
+
+[5] Global Audio support
+    - Language Translation
+        The new [Language] button allows you to select the input language (INPUT editor) and the output language (RESPONSE editor).
+        When you click on [Translate >] The contents of INPUT will be translated and displayed in the RESPONSE editor. 
+    - Spoken Language
+        The new [Language] button allows you to select the spoken language and one of the available voices for that language.
+        When you click on [READ] the contents of the RESPONSE editor will be read out loud to you in the chosen language and voice.
+        When you click [Save Speech] you will be prompted to choose a destination and file name to save the audio in MP3 format.

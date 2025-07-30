@@ -1,0 +1,2450 @@
+{
+  "file_path": "./uploads/ILT-TF-200-DEA-10-EN_M01.pptx",
+  "total_slides": 13,
+  "slides_with_notes": 13,
+  "slide_analyses": [
+    {
+      "slide_number": 1,
+      "notes_file": "ppt/notesSlides/notesSlide1.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr/><p:txBody><a:bodyPr/><a:lstStyle/><a:...",
+      "total_paragraphs": 1,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:endParaRPr lang=\"en-US\" dirty=\"0\" /></a:p>...",
+          "text_content": "",
+          "formatting_properties": {},
+          "bullet_info": {},
+          "indentation_info": {},
+          "run_properties": [],
+          "formatted_output": "",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "",
+      "formatted_text_extraction": "",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 1,
+        "run_count": 0
+      }
+    },
+    {
+      "slide_number": 2,
+      "notes_file": "ppt/notesSlides/notesSlide2.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 3,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|INSTRUCTOR NOTES:</a:t></a:r></a:p>...",
+          "text_content": "|INSTRUCTOR NOTES:",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|INSTRUCTOR NOTES:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "|INSTRUCTOR NOTES:",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Introduce the course and its purpose</a:t></a:r><a:br><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" ...",
+          "text_content": "|Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Introduce the course and its purpose",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "|",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "|STUDENT NOTES:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "Welcome to the Data Engineering on AWS course",
+              "formatting": {
+                "bold": true,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": ". This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "• |Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using A...",
+          "text_content": "and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course equips data professionals with the skills needed to architect and manage modern data solutions at scale",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course equips data professionals with the skills needed to architect and manage modern data solutions at scale",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course equips data professionals with the skills needed to architect and manage modern data solutions at scale",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "|INSTRUCTOR NOTES:\n|Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices\nand solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course equips data professionals with the skills needed to architect and manage modern data solutions at scale",
+      "formatted_text_extraction": "|INSTRUCTOR NOTES:\n• |Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices\nand solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course equips data professionals with the skills needed to architect and manage modern data solutions at scale",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 3,
+        "run_count": 7
+      }
+    },
+    {
+      "slide_number": 3,
+      "notes_file": "ppt/notesSlides/notesSlide3.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"><a:extLst><a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{35D7D120-B13E-6B11-6C97-9B1C44F8C885}\"/></a:ext></a:extLst></p:cNvPr><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"><a:extLst><a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{2C433316-7A1F-E140-8A9D-51BE4B1A0BD0}\"/></a:ext></a:extLst></p:cNvPr><...",
+      "total_paragraphs": 3,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|INSTRUCTOR NOTES:</a:t></a:r></a:p>...",
+          "text_content": "|INSTRUCTOR NOTES:",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|INSTRUCTOR NOTES:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "|INSTRUCTOR NOTES:",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Highlight the target audience and prerequisites</a:t></a:r><a:br><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=...",
+          "text_content": "|Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Highlight the target audience and prerequisites",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "|",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "|STUDENT NOTES:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language. ",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "• |Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:endParaRPr lang=\"en-US\" dirty=\"0\" /></a:p>...",
+          "text_content": "",
+          "formatting_properties": {},
+          "bullet_info": {},
+          "indentation_info": {},
+          "run_properties": [],
+          "formatted_output": "",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "|INSTRUCTOR NOTES:\n|Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.",
+      "formatted_text_extraction": "|INSTRUCTOR NOTES:\n• |Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/drawing/2014/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 3,
+        "run_count": 5
+      }
+    },
+    {
+      "slide_number": 4,
+      "notes_file": "ppt/notesSlides/notesSlide4.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 2,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|INSTRUCTOR NOTES:</a:t></a:r></a:p>...",
+          "text_content": "|INSTRUCTOR NOTES:",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|INSTRUCTOR NOTES:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "|INSTRUCTOR NOTES:",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr algn=\"l\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStrike\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"333333\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>Describe the high-level course objectives.</a:t></a:r><a:br><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" u=\"none\" strike=\"noStr...",
+          "text_content": "Describe the high-level course objectives.|",
+          "formatting_properties": {
+            "alignment": "l",
+            "algn": "l"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "Describe the high-level course objectives.",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "|",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "• Describe the high-level course objectives.|",
+          "special_characters_found": [
+            "|"
+          ]
+        }
+      ],
+      "raw_text_extraction": "|INSTRUCTOR NOTES:\nDescribe the high-level course objectives.|",
+      "formatted_text_extraction": "|INSTRUCTOR NOTES:\n• Describe the high-level course objectives.|",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 2,
+        "run_count": 3
+      }
+    },
+    {
+      "slide_number": 5,
+      "notes_file": "ppt/notesSlides/notesSlide5.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 2,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Instructor notes</a:t></a:r></a:p>...",
+          "text_content": "|Instructor notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Instructor notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Instructor notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|There will be a morning break, lunch about mid day and another break in the afternoon.</a:t></a:r></a:p>...",
+          "text_content": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+          "special_characters_found": [
+            "|"
+          ]
+        }
+      ],
+      "raw_text_extraction": "|Instructor notes\n|There will be a morning break, lunch about mid day and another break in the afternoon.",
+      "formatted_text_extraction": "|Instructor notes\n|There will be a morning break, lunch about mid day and another break in the afternoon.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 2,
+        "run_count": 2
+      }
+    },
+    {
+      "slide_number": 6,
+      "notes_file": "ppt/notesSlides/notesSlide6.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"><a:extLst><a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{AFA04B4E-28B3-D2D1-5DC0-FB1057C83089}\"/></a:ext></a:extLst></p:cNvPr><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"><a:extLst><a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{F582F01F-DCE3-3573-FD7E-0F619CD120A0}\"/></a:ext></a:extLst></p:cNvPr><...",
+      "total_paragraphs": 2,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Instructor notes</a:t></a:r></a:p>...",
+          "text_content": "|Instructor notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Instructor notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Instructor notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|There will be a morning break, lunch about mid day and another break in the afternoon.</a:t></a:r></a:p>...",
+          "text_content": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+          "special_characters_found": [
+            "|"
+          ]
+        }
+      ],
+      "raw_text_extraction": "|Instructor notes\n|There will be a morning break, lunch about mid day and another break in the afternoon.",
+      "formatted_text_extraction": "|Instructor notes\n|There will be a morning break, lunch about mid day and another break in the afternoon.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/drawing/2014/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 2,
+        "run_count": 2
+      }
+    },
+    {
+      "slide_number": 7,
+      "notes_file": "ppt/notesSlides/notesSlide7.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"><a:extLst><a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{02419B55-6B68-83F6-14AB-187AE4337823}\"/></a:ext></a:extLst></p:cNvPr><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"><a:extLst><a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{D383D674-7C98-4BAF-E461-71ADD8AA6D40}\"/></a:ext></a:extLst></p:cNvPr><...",
+      "total_paragraphs": 2,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Instructor notes</a:t></a:r></a:p>...",
+          "text_content": "|Instructor notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Instructor notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Instructor notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|There will be a morning break, lunch about mid day and another break in the afternoon.</a:t></a:r></a:p>...",
+          "text_content": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|There will be a morning break, lunch about mid day and another break in the afternoon.",
+          "special_characters_found": [
+            "|"
+          ]
+        }
+      ],
+      "raw_text_extraction": "|Instructor notes\n|There will be a morning break, lunch about mid day and another break in the afternoon.",
+      "formatted_text_extraction": "|Instructor notes\n|There will be a morning break, lunch about mid day and another break in the afternoon.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/drawing/2014/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 2,
+        "run_count": 2
+      }
+    },
+    {
+      "slide_number": 8,
+      "notes_file": "ppt/notesSlides/notesSlide8.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 5,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr lvl=\"0\"><a:defRPr /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>~Dev notes</a:t></a:r></a:p>...",
+          "text_content": "~Dev notes",
+          "formatting_properties": {
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "~Dev notes",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "~Dev notes",
+          "special_characters_found": [
+            "~"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr lvl=\"0\"><a:defRPr /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>~Information slide for instructor-led training (ILT) and virtual ILT</a:t></a:r></a:p>...",
+          "text_content": "~Information slide for instructor-led training (ILT) and virtual ILT",
+          "formatting_properties": {
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "~Information slide for instructor-led training (ILT) and virtual ILT",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "~Information slide for instructor-led training (ILT) and virtual ILT",
+          "special_characters_found": [
+            "~"
+          ]
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr lvl=\"0\"><a:defRPr /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Student notes</a:t></a:r></a:p>...",
+          "text_content": "|Student notes",
+          "formatting_properties": {
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Student notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Student notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 3,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr lvl=\"0\"><a:defRPr /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>Your instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to y...",
+          "text_content": "Your instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.",
+          "formatting_properties": {
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "Your instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.",
+              "formatting": {
+                "bold": false
+              }
+            }
+          ],
+          "formatted_output": "Your instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 4,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" marR=\"0\" lvl=\"0\" indent=\"0\" defTabSz=\"914400\" rtl=\"0\" eaLnBrk=\"1\" fontAlgn=\"auto\" latinLnBrk=\"0\" hangingPunct=\"1\"><a:buClrTx /><a:buSzTx /><a:buFontTx /><a:buNone /><a:tabLst /><a:defRPr /></a:pPr><a:endParaRPr lang=\"en-US\" b=\"0\" i=\"0\" kern=\"1200\" baseline=\"0\" dirty=\"0\"><a:effectLst /><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /><a:ea typeface=\"+mn-ea\" /><a:cs typeface...",
+          "text_content": "",
+          "formatting_properties": {},
+          "bullet_info": {},
+          "indentation_info": {},
+          "run_properties": [],
+          "formatted_output": "",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "~Dev notes\n~Information slide for instructor-led training (ILT) and virtual ILT\n|Student notes\nYour instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.",
+      "formatted_text_extraction": "~Dev notes\n~Information slide for instructor-led training (ILT) and virtual ILT\n|Student notes\nYour instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 5,
+        "run_count": 4
+      }
+    },
+    {
+      "slide_number": 9,
+      "notes_file": "ppt/notesSlides/notesSlide9.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 3,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Instructor notes</a:t></a:r><a:br><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr></a:br><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"...",
+          "text_content": "|Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Instructor notes",
+              "formatting": {
+                "bold": true
+              }
+            },
+            {
+              "text": "|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.",
+              "formatting": {}
+            },
+            {
+              "text": "|",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Student notes</a:t></a:r></a:p>...",
+          "text_content": "|Student notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Student notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Student notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>Your introduction helps me understand the experience</a:t></a:r><a:r><a:rPr lang=\"en-US\" baseline=\"0\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t> </a:t></a:r><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"Calibri\" pano...",
+          "text_content": "Your introduction helps me understand the experience level of the class and what you want to get out of your time here.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "Your introduction helps me understand the experience",
+              "formatting": {}
+            },
+            {
+              "text": " ",
+              "formatting": {}
+            },
+            {
+              "text": "level of the class and what you want to get out of your",
+              "formatting": {}
+            },
+            {
+              "text": " time here",
+              "formatting": {}
+            },
+            {
+              "text": ".",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "Your introduction helps me understand the experience level of the class and what you want to get out of your time here.",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "|Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|\n|Student notes\nYour introduction helps me understand the experience level of the class and what you want to get out of your time here.",
+      "formatted_text_extraction": "|Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|\n|Student notes\nYour introduction helps me understand the experience level of the class and what you want to get out of your time here.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 3,
+        "run_count": 9
+      }
+    },
+    {
+      "slide_number": 10,
+      "notes_file": "ppt/notesSlides/notesSlide10.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr/><p:txBody><a:bodyPr/><a:lstStyle/><a:...",
+      "total_paragraphs": 4,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\" /></a:rPr><a:t>|Student notes</a:t></a:r></a:p>...",
+          "text_content": "|Student notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Student notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Student notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" sz=\"1200\" kern=\"1200\" baseline=\"0\" dirty=\"0\"><a:solidFill><a:schemeClr val=\"tx1\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /><a:ea typeface=\"+mn-ea\" /><a:cs typeface=\"+mn-cs\" /></a:rPr><a:t>Be an active participant in this course to gain </a:t></a:r><a:r><a:rPr lang=\"en-US\" sz=\"1200\" kern=\"1200\" dirty=\"0\"><a:solidFill><a:schemeClr val=\"tx1\" /></a:solidFill><a:effectLst /><a:latin typefac...",
+          "text_content": "Be an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "Be an active participant in this course to gain ",
+              "formatting": {
+                "font_size": "1200"
+              }
+            },
+            {
+              "text": "practical experience with MLOps.",
+              "formatting": {
+                "font_size": "1200"
+              }
+            },
+            {
+              "text": " Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.",
+              "formatting": {
+                "font_size": "1200"
+              }
+            }
+          ],
+          "formatted_output": "Be an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:endParaRPr lang=\"en-US\" sz=\"1200\" kern=\"1200\" baseline=\"0\" dirty=\"0\"><a:solidFill><a:schemeClr val=\"tx1\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /><a:ea typeface=\"+mn-ea\" /><a:cs typeface=\"+mn-cs\" /></a:endParaRPr></a:p>...",
+          "text_content": "",
+          "formatting_properties": {},
+          "bullet_info": {},
+          "indentation_info": {},
+          "run_properties": [],
+          "formatted_output": "",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 3,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" sz=\"1200\" kern=\"1200\" baseline=\"0\" dirty=\"0\"><a:solidFill><a:schemeClr val=\"tx1\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /><a:ea typeface=\"+mn-ea\" /><a:cs typeface=\"+mn-cs\" /></a:rPr><a:t>You are also welcome to ask questions.</a:t></a:r><a:endParaRPr lang=\"en-US\" dirty=\"0\" /></a:p>...",
+          "text_content": "You are also welcome to ask questions.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "You are also welcome to ask questions.",
+              "formatting": {
+                "font_size": "1200"
+              }
+            }
+          ],
+          "formatted_output": "You are also welcome to ask questions.",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "|Student notes\nBe an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.\nYou are also welcome to ask questions.",
+      "formatted_text_extraction": "|Student notes\nBe an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.\nYou are also welcome to ask questions.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 4,
+        "run_count": 5
+      }
+    },
+    {
+      "slide_number": 11,
+      "notes_file": "ppt/notesSlides/notesSlide11.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 12,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Instructor notes </a:t></a:r></a:p>...",
+          "text_content": "|Instructor notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Instructor notes ",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Instructor notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"171450\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"1\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Student access to labs</a:t></a:r></a:p>...",
+          "text_content": "|Student access to labs",
+          "formatting_properties": {
+            "margin_left": "171450",
+            "indent": "-171450",
+            "marL": "171450"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 171450,
+            "left_margin_inches": 0.188,
+            "indent_level": 0,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|Student access to labs",
+              "formatting": {
+                "bold": true,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "• |Student access to labs",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"628650\" lvl=\"1\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged fo...",
+          "text_content": "|It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using the unique student registration link provided at the beginning of class.",
+          "formatting_properties": {
+            "margin_left": "628650",
+            "indent": "-171450",
+            "marL": "628650",
+            "lvl": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 628650,
+            "left_margin_inches": 0.688,
+            "indent_level": 1,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using the unique student registration link provided at the beginning of class. ",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "  • |It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using the unique student registration link provided at the beginning of class.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 3,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"628650\" lvl=\"1\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|After students are logged in, they will be able to view their AWS Builder Labs dashboard with lab titles. They will also be able to access their student and lab guides through...",
+          "text_content": "|After students are logged in, they will be able to view their AWS Builder Labs dashboard with lab titles. They will also be able to access their student and lab guides through a link on the dashboard.",
+          "formatting_properties": {
+            "margin_left": "628650",
+            "indent": "-171450",
+            "marL": "628650",
+            "lvl": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 628650,
+            "left_margin_inches": 0.688,
+            "indent_level": 1,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|After students are logged in, they will be able to view their AWS Builder Labs dashboard with lab titles. They will also be able to access their student and lab guides through a link on the dashboard. ",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "  • |After students are logged in, they will be able to view their AWS Builder Labs dashboard with lab titles. They will also be able to access their student and lab guides through a link on the dashboard.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 4,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"628650\" lvl=\"1\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Refer to the next slide for a student view of the dashboard.</a:t></a:r></a:p>...",
+          "text_content": "|Refer to the next slide for a student view of the dashboard.",
+          "formatting_properties": {
+            "margin_left": "628650",
+            "indent": "-171450",
+            "marL": "628650",
+            "lvl": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 628650,
+            "left_margin_inches": 0.688,
+            "indent_level": 1,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|Refer to the next slide for a student view of the dashboard.",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "  • |Refer to the next slide for a student view of the dashboard.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 5,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"171450\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|</a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"1\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>Questions?</a:t></a:r></a:p>...",
+          "text_content": "|Questions?",
+          "formatting_properties": {
+            "margin_left": "171450",
+            "indent": "-171450",
+            "marL": "171450"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 171450,
+            "left_margin_inches": 0.188,
+            "indent_level": 0,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "Questions?",
+              "formatting": {
+                "bold": true,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "• |Questions?",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 6,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><a:pPr marL=\"628650\" lvl=\"1\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"0\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|For more information about commonly asked student questions, issues, and simultaneous lab limits,...",
+          "text_content": "|For more information about commonly asked student questions, issues, and simultaneous lab limits, see the FAQ and Resources section in the Instructor Enablement: AWS Builder Labs guide on AWS Skill Builder at https://explore.skillbuilder.aws/learn/course/internal/view/elearning/12814/instructor-enablement-aws-builder-labs.",
+          "formatting_properties": {
+            "margin_left": "628650",
+            "indent": "-171450",
+            "marL": "628650",
+            "lvl": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 628650,
+            "left_margin_inches": 0.688,
+            "indent_level": 1,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|For more information about commonly asked student questions, issues, and simultaneous lab limits, see the FAQ and Resources section in the Instructor Enablement: AWS Builder Labs guide on AWS Skill Builder at ",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "https://explore.skillbuilder.aws/learn/course/internal/view/elearning/12814/instructor-enablement-aws-builder-labs",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": ".",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "  • |For more information about commonly asked student questions, issues, and simultaneous lab limits, see the FAQ and Resources section in the Instructor Enablement: AWS Builder Labs guide on AWS Skill Builder at https://explore.skillbuilder.aws/learn/course/internal/view/elearning/12814/instructor-enablement-aws-builder-labs.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 7,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" lvl=\"0\" indent=\"0\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"1\" i=\"0\" u=\"none\" strike=\"noStrike\" kern=\"1200\" dirty=\"0\"><a:solidFill><a:schemeClr val=\"tx1\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /><a:ea typeface=\"+mn-ea\" /><a:cs typeface=\"+mn-cs\" /></a:rPr><a:t>|Student notes</a:t></a:r></a:p>...",
+          "text_content": "|Student notes",
+          "formatting_properties": {
+            "margin_left": "0",
+            "indent": "0",
+            "marL": "0",
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Student notes",
+              "formatting": {
+                "bold": true,
+                "italic": false,
+                "underline": "none"
+              }
+            }
+          ],
+          "formatted_output": "|Student notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 8,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" marR=\"0\" lvl=\"0\" indent=\"0\" algn=\"l\" defTabSz=\"342900\" rtl=\"0\" eaLnBrk=\"1\" fontAlgn=\"auto\" latinLnBrk=\"0\" hangingPunct=\"1\"><a:lnSpc><a:spcPct val=\"100000\" /></a:lnSpc><a:spcBef><a:spcPts val=\"500\" /></a:spcBef><a:spcAft><a:spcPts val=\"600\" /></a:spcAft><a:buClr><a:srgbClr val=\"232F3E\" /></a:buClr><a:buSzTx /><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /><a:ta...",
+          "text_content": "If you have a SkillBuilder account:",
+          "formatting_properties": {
+            "margin_left": "0",
+            "margin_right": "0",
+            "indent": "0",
+            "alignment": "l",
+            "marL": "0",
+            "marR": "0",
+            "lvl": "0",
+            "algn": "l",
+            "defTabSz": "342900",
+            "rtl": "0",
+            "eaLnBrk": "1",
+            "fontAlgn": "auto",
+            "latinLnBrk": "0",
+            "hangingPunct": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "If you have a ",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            },
+            {
+              "text": "SkillBuilder",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            },
+            {
+              "text": " account:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            }
+          ],
+          "formatted_output": "If you have a SkillBuilder account:",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 9,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"682625\" marR=\"0\" lvl=\"2\" indent=\"-228600\" algn=\"l\" defTabSz=\"342900\" rtl=\"0\" eaLnBrk=\"1\" fontAlgn=\"auto\" latinLnBrk=\"0\" hangingPunct=\"1\"><a:lnSpc><a:spcPct val=\"100000\" /></a:lnSpc><a:spcBef><a:spcPts val=\"500\" /></a:spcBef><a:spcAft><a:spcPts val=\"600\" /></a:spcAft><a:buClr><a:srgbClr val=\"232F3E\" /></a:buClr><a:buSzTx /><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buC...",
+          "text_content": "Verify access to lab guides and lab environments.",
+          "formatting_properties": {
+            "margin_left": "682625",
+            "margin_right": "0",
+            "indent": "-228600",
+            "alignment": "l",
+            "marL": "682625",
+            "marR": "0",
+            "lvl": "2",
+            "algn": "l",
+            "defTabSz": "342900",
+            "rtl": "0",
+            "eaLnBrk": "1",
+            "fontAlgn": "auto",
+            "latinLnBrk": "0",
+            "hangingPunct": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 682625,
+            "left_margin_inches": 0.747,
+            "indent_level": 1,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "Verify access to lab guides and lab environments.",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            }
+          ],
+          "formatted_output": "  • Verify access to lab guides and lab environments.",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 10,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" marR=\"0\" lvl=\"0\" indent=\"0\" algn=\"l\" defTabSz=\"342900\" rtl=\"0\" eaLnBrk=\"1\" fontAlgn=\"auto\" latinLnBrk=\"0\" hangingPunct=\"1\"><a:lnSpc><a:spcPct val=\"100000\" /></a:lnSpc><a:spcBef><a:spcPts val=\"500\" /></a:spcBef><a:spcAft><a:spcPts val=\"600\" /></a:spcAft><a:buClr><a:srgbClr val=\"232F3E\" /></a:buClr><a:buSzTx /><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /><a:ta...",
+          "text_content": "If you do not have a SkillBuilder account:",
+          "formatting_properties": {
+            "margin_left": "0",
+            "margin_right": "0",
+            "indent": "0",
+            "alignment": "l",
+            "marL": "0",
+            "marR": "0",
+            "lvl": "0",
+            "algn": "l",
+            "defTabSz": "342900",
+            "rtl": "0",
+            "eaLnBrk": "1",
+            "fontAlgn": "auto",
+            "latinLnBrk": "0",
+            "hangingPunct": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "If you do not have a ",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            },
+            {
+              "text": "SkillBuilder",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            },
+            {
+              "text": " account:",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            }
+          ],
+          "formatted_output": "If you do not have a SkillBuilder account:",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 11,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"682625\" marR=\"0\" lvl=\"2\" indent=\"-228600\" algn=\"l\" defTabSz=\"342900\" rtl=\"0\" eaLnBrk=\"1\" fontAlgn=\"auto\" latinLnBrk=\"0\" hangingPunct=\"1\"><a:lnSpc><a:spcPct val=\"100000\" /></a:lnSpc><a:spcBef><a:spcPts val=\"500\" /></a:spcBef><a:spcAft><a:spcPts val=\"600\" /></a:spcAft><a:buClr><a:srgbClr val=\"232F3E\" /></a:buClr><a:buSzTx /><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buC...",
+          "text_content": "Create an AWS Builder Labs account by using your Amazon Retail or Partner Central login",
+          "formatting_properties": {
+            "margin_left": "682625",
+            "margin_right": "0",
+            "indent": "-228600",
+            "alignment": "l",
+            "marL": "682625",
+            "marR": "0",
+            "lvl": "2",
+            "algn": "l",
+            "defTabSz": "342900",
+            "rtl": "0",
+            "eaLnBrk": "1",
+            "fontAlgn": "auto",
+            "latinLnBrk": "0",
+            "hangingPunct": "1"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 682625,
+            "left_margin_inches": 0.747,
+            "indent_level": 1,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "Create an AWS Builder Labs account by using your Amazon Retail or Partner Central login",
+              "formatting": {
+                "bold": false,
+                "italic": false,
+                "underline": "none",
+                "font_size": "2400"
+              }
+            }
+          ],
+          "formatted_output": "  • Create an AWS Builder Labs account by using your Amazon Retail or Partner Central login",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "|Instructor notes\n|Student access to labs\n|It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using the unique student registration link provided at the beginning of class.\n|After students are logged in, they will be able to view their AWS Builder Labs dashboard with lab titles. They will also be able to access their student and lab guides through a link on the dashboard.\n|Refer to the next slide for a student view of the dashboard.\n|Questions?\n|For more information about commonly asked student questions, issues, and simultaneous lab limits, see the FAQ and Resources section in the Instructor Enablement: AWS Builder Labs guide on AWS Skill Builder at https://explore.skillbuilder.aws/learn/course/internal/view/elearning/12814/instructor-enablement-aws-builder-labs.\n|Student notes\nIf you have a SkillBuilder account:\nVerify access to lab guides and lab environments.\nIf you do not have a SkillBuilder account:\nCreate an AWS Builder Labs account by using your Amazon Retail or Partner Central login",
+      "formatted_text_extraction": "|Instructor notes\n• |Student access to labs\n  • |It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using the unique student registration link provided at the beginning of class.\n  • |After students are logged in, they will be able to view their AWS Builder Labs dashboard with lab titles. They will also be able to access their student and lab guides through a link on the dashboard.\n  • |Refer to the next slide for a student view of the dashboard.\n• |Questions?\n  • |For more information about commonly asked student questions, issues, and simultaneous lab limits, see the FAQ and Resources section in the Instructor Enablement: AWS Builder Labs guide on AWS Skill Builder at https://explore.skillbuilder.aws/learn/course/internal/view/elearning/12814/instructor-enablement-aws-builder-labs.\n|Student notes\nIf you have a SkillBuilder account:\n  • Verify access to lab guides and lab environments.\nIf you do not have a SkillBuilder account:\n  • Create an AWS Builder Labs account by using your Amazon Retail or Partner Central login",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 27,
+        "text_body_count": 1,
+        "paragraph_count": 12,
+        "run_count": 19
+      }
+    },
+    {
+      "slide_number": 12,
+      "notes_file": "ppt/notesSlides/notesSlide12.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 10,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Instructor notes </a:t></a:r></a:p>...",
+          "text_content": "|Instructor notes",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Instructor notes ",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Instructor notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 1,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|</a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"0\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>You can</a:t></a:r><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t> log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo ...",
+          "text_content": "|You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|",
+              "formatting": {
+                "bold": true
+              }
+            },
+            {
+              "text": "You can",
+              "formatting": {
+                "bold": false
+              }
+            },
+            {
+              "text": " log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the",
+              "formatting": {}
+            },
+            {
+              "text": " ",
+              "formatting": {
+                "italic": false
+              }
+            },
+            {
+              "text": "eVantage Bookshelf (VitalSource). Use th",
+              "formatting": {
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "text": "e links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 2,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|</a:t></a:r></a:p>...",
+          "text_content": "|",
+          "formatting_properties": {},
+          "bullet_info": {
+            "has_bullet": false,
+            "bullet_type": null,
+            "bullet_character": null,
+            "bullet_font": null,
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 3,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" indent=\"0\"><a:buFont typeface=\"Amazon Ember\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|After the students choose the link to access their lab and student guides, they will be prompted to do one of the following:</a:t></a:r></a:p>...",
+          "text_content": "|After the students choose the link to access their lab and student guides, they will be prompted to do one of the following:",
+          "formatting_properties": {
+            "margin_left": "0",
+            "indent": "0",
+            "marL": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Amazon Ember",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|After the students choose the link to access their lab and student guides, they will be prompted to do one of the following:",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "|After the students choose the link to access their lab and student guides, they will be prompted to do one of the following:",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 4,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"171450\" lvl=\"0\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Log in to your existing </a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" kern=\"1200\" dirty=\"0\"><a:solidFill><a:schemeClr val=\"tx1\" /></a:solidFill><a:effectLst /><a:latin typeface=\"+mn-lt\" /...",
+          "text_content": "|Log in to your existing eVantage Bookshelf (VitalSource) account.",
+          "formatting_properties": {
+            "margin_left": "171450",
+            "indent": "-171450",
+            "marL": "171450",
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 171450,
+            "left_margin_inches": 0.188,
+            "indent_level": 0,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|Log in to your existing ",
+              "formatting": {}
+            },
+            {
+              "text": "eVantage Bookshelf (VitalSource)",
+              "formatting": {
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "text": " account.",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "• |Log in to your existing eVantage Bookshelf (VitalSource) account.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 5,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"171450\" lvl=\"0\" indent=\"-171450\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buChar char=\"•\" /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Choose </a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>Create an account.</a:t></a:r></a:p>...",
+          "text_content": "|Choose Create an account.",
+          "formatting_properties": {
+            "margin_left": "171450",
+            "indent": "-171450",
+            "marL": "171450",
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "custom_character",
+            "bullet_character": "•",
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 171450,
+            "left_margin_inches": 0.188,
+            "indent_level": 0,
+            "hanging_indent": true
+          },
+          "run_properties": [
+            {
+              "text": "|Choose ",
+              "formatting": {}
+            },
+            {
+              "text": "Create an account.",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "• |Choose Create an account.",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 6,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" lvl=\"0\" indent=\"0\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>|Student notes</a:t></a:r></a:p>...",
+          "text_content": "|Student notes",
+          "formatting_properties": {
+            "margin_left": "0",
+            "indent": "0",
+            "marL": "0",
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "|Student notes",
+              "formatting": {
+                "bold": true
+              }
+            }
+          ],
+          "formatted_output": "|Student notes",
+          "special_characters_found": [
+            "|"
+          ]
+        },
+        {
+          "paragraph_index": 7,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" lvl=\"0\" indent=\"0\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>At this time, you should be logged in to </a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"0\" u=\"none\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>AWS Builder Labs. From here, you can access </a:t></a:r><a:r><a:rP...",
+          "text_content": "At this time, you should be logged in to AWS Builder Labs. From here, you can access your Lab Guide and Student Guide, which are located in eVantage Bookshelf (VitalSource). Buttons to the Lab Guide and Student Guide are located at the upper-right corner of your AWS Builder Labs dashboard. The labs and buttons will be grayed out until the start of the class.",
+          "formatting_properties": {
+            "margin_left": "0",
+            "indent": "0",
+            "marL": "0",
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "At this time, you should be logged in to ",
+              "formatting": {}
+            },
+            {
+              "text": "AWS Builder Labs. From here, you can access ",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": "your Lab Guide and Student Guide, which are located i",
+              "formatting": {}
+            },
+            {
+              "text": "n ",
+              "formatting": {
+                "italic": false
+              }
+            },
+            {
+              "text": "eVantage Bookshelf (VitalSource). ",
+              "formatting": {
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "text": "Buttons to the Lab Guide and Student Guide are located at the upper-right corner of your ",
+              "formatting": {}
+            },
+            {
+              "text": "AWS Builder Labs dashboard",
+              "formatting": {
+                "bold": false,
+                "underline": "none"
+              }
+            },
+            {
+              "text": ". The labs and buttons will be grayed out until the start of the class.",
+              "formatting": {}
+            }
+          ],
+          "formatted_output": "At this time, you should be logged in to AWS Builder Labs. From here, you can access your Lab Guide and Student Guide, which are located in eVantage Bookshelf (VitalSource). Buttons to the Lab Guide and Student Guide are located at the upper-right corner of your AWS Builder Labs dashboard. The labs and buttons will be grayed out until the start of the class.",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 8,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" lvl=\"0\" indent=\"0\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:endParaRPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:endParaRPr></a:p>...",
+          "text_content": "",
+          "formatting_properties": {},
+          "bullet_info": {},
+          "indentation_info": {},
+          "run_properties": [],
+          "formatted_output": "",
+          "special_characters_found": []
+        },
+        {
+          "paragraph_index": 9,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:pPr marL=\"0\" lvl=\"0\" indent=\"0\"><a:buFont typeface=\"Arial\" panose=\"020B0604020202020204\" pitchFamily=\"34\" charset=\"0\" /><a:buNone /></a:pPr><a:r><a:rPr lang=\"en-US\" dirty=\"0\"><a:latin typeface=\"+mn-lt\" /></a:rPr><a:t>After the class starts, choose either button to access your guides. You will be prompted to log in with your existing </a:t></a:r><a:r><a:rPr lang=\"en-US\" b=\"0\" i=\"0\" kern=\"1200\" dirty=\"0\"><a:solidFill><a:scheme...",
+          "text_content": "After the class starts, choose either button to access your guides. You will be prompted to log in with your existing eVantage Bookshelf (VitalSource) account or to create a new account. After you are logged in to eVantage Bookshelf (VitalSource), you will have access to the student and lab guides for the class. You can access your guides online or download them. Use these guides to follow along with the course and as a reference after the training.",
+          "formatting_properties": {
+            "margin_left": "0",
+            "indent": "0",
+            "marL": "0",
+            "lvl": "0"
+          },
+          "bullet_info": {
+            "has_bullet": true,
+            "bullet_type": "none",
+            "bullet_character": null,
+            "bullet_font": "Arial",
+            "auto_numbering": false
+          },
+          "indentation_info": {
+            "left_margin_emu": 0,
+            "left_margin_inches": 0.0,
+            "indent_level": 0,
+            "hanging_indent": false
+          },
+          "run_properties": [
+            {
+              "text": "After the class starts, choose either button to access your guides. You will be prompted to log in with your existing ",
+              "formatting": {}
+            },
+            {
+              "text": "eVantage Bookshelf (VitalSource)",
+              "formatting": {
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "text": " account or to create a new account. After you are logged in to ",
+              "formatting": {}
+            },
+            {
+              "text": "eVantage Bookshelf (VitalSource)",
+              "formatting": {
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "text": ", you will have access to the student and lab guides for the class. ",
+              "formatting": {}
+            },
+            {
+              "text": "You can access your guides online or download them. Use these guides to follow along with the course and as a reference after the training.",
+              "formatting": {
+                "bold": false
+              }
+            }
+          ],
+          "formatted_output": "After the class starts, choose either button to access your guides. You will be prompted to log in with your existing eVantage Bookshelf (VitalSource) account or to create a new account. After you are logged in to eVantage Bookshelf (VitalSource), you will have access to the student and lab guides for the class. You can access your guides online or download them. Use these guides to follow along with the course and as a reference after the training.",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "|Instructor notes\n|You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.\n|\n|After the students choose the link to access their lab and student guides, they will be prompted to do one of the following:\n|Log in to your existing eVantage Bookshelf (VitalSource) account.\n|Choose Create an account.\n|Student notes\nAt this time, you should be logged in to AWS Builder Labs. From here, you can access your Lab Guide and Student Guide, which are located in eVantage Bookshelf (VitalSource). Buttons to the Lab Guide and Student Guide are located at the upper-right corner of your AWS Builder Labs dashboard. The labs and buttons will be grayed out until the start of the class.\nAfter the class starts, choose either button to access your guides. You will be prompted to log in with your existing eVantage Bookshelf (VitalSource) account or to create a new account. After you are logged in to eVantage Bookshelf (VitalSource), you will have access to the student and lab guides for the class. You can access your guides online or download them. Use these guides to follow along with the course and as a reference after the training.",
+      "formatted_text_extraction": "|Instructor notes\n|You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.\n|\n|After the students choose the link to access their lab and student guides, they will be prompted to do one of the following:\n• |Log in to your existing eVantage Bookshelf (VitalSource) account.\n• |Choose Create an account.\n|Student notes\nAt this time, you should be logged in to AWS Builder Labs. From here, you can access your Lab Guide and Student Guide, which are located in eVantage Bookshelf (VitalSource). Buttons to the Lab Guide and Student Guide are located at the upper-right corner of your AWS Builder Labs dashboard. The labs and buttons will be grayed out until the start of the class.\nAfter the class starts, choose either button to access your guides. You will be prompted to log in with your existing eVantage Bookshelf (VitalSource) account or to create a new account. After you are logged in to eVantage Bookshelf (VitalSource), you will have access to the student and lab guides for the class. You can access your guides online or download them. Use these guides to follow along with the course and as a reference after the training.",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 10,
+        "run_count": 29
+      }
+    },
+    {
+      "slide_number": 13,
+      "notes_file": "ppt/notesSlides/notesSlide13.xml",
+      "raw_xml_sample": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<p:notes xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><p:cSld><p:spTree><p:nvGrpSpPr><p:cNvPr id=\"1\" name=\"\"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"0\" cy=\"0\"/><a:chOff x=\"0\" y=\"0\"/><a:chExt cx=\"0\" cy=\"0\"/></a:xfrm></p:grpSpPr><p:sp><p:nvSpPr><p:cNvPr id=\"2\" name=\"Slide Image Placeholder 1\"/><p:cNvSpPr><a:spLocks noGrp=\"1\" noRot=\"1\" noChangeAspect=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"sldImg\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"1143000\" y=\"635000\"/><a:ext cx=\"5486400\" cy=\"3086100\"/></a:xfrm></p:spPr></p:sp><p:sp><p:nvSpPr><p:cNvPr id=\"3\" name=\"Notes Placeholder 2\"/><p:cNvSpPr><a:spLocks noGrp=\"1\"/></p:cNvSpPr><p:nvPr><p:ph type=\"body\" idx=\"1\"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x=\"317500\" y=\"3810000\"/...",
+      "total_paragraphs": 1,
+      "paragraphs": [
+        {
+          "paragraph_index": 0,
+          "raw_xml": "<a:p xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:endParaRPr lang=\"en-US\" b=\"1\" dirty=\"0\"><a:solidFill><a:srgbClr val=\"000000\" /></a:solidFill><a:latin typeface=\"+mn-lt\" /></a:endParaRPr></a:p>...",
+          "text_content": "",
+          "formatting_properties": {},
+          "bullet_info": {},
+          "indentation_info": {},
+          "run_properties": [],
+          "formatted_output": "",
+          "special_characters_found": []
+        }
+      ],
+      "raw_text_extraction": "",
+      "formatted_text_extraction": "",
+      "xml_structure_analysis": {
+        "root_tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}notes",
+        "namespaces_used": [
+          "{http://schemas.openxmlformats.org/presentationml/2006/main}",
+          "{http://schemas.openxmlformats.org/drawingml/2006/main}",
+          "{http://schemas.microsoft.com/office/powerpoint/2010/main}"
+        ],
+        "shape_count": 7,
+        "text_body_count": 1,
+        "paragraph_count": 1,
+        "run_count": 0
+      }
+    }
+  ],
+  "formatting_patterns": {
+    "bullet_types": [
+      "none",
+      "custom_character"
+    ],
+    "special_characters": [
+      "~",
+      "|"
+    ],
+    "indentation_patterns": [
+      1
+    ],
+    "paragraph_structures": [
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 1,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 1,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 1,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 1,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 1,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 1,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "custom_character",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": true
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": true,
+        "bullet_type": "none",
+        "indent_level": 0,
+        "has_special_chars": false
+      },
+      {
+        "has_bullet": false,
+        "bullet_type": null,
+        "indent_level": 0,
+        "has_special_chars": false
+      }
+    ]
+  }
+}

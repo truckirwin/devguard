@@ -1,0 +1,161 @@
+INSTALLATION
+
+# ascendAWSClientManager.py
+# Ascend v4.1
+#   Updated by Tom Stern, 16 DEC 2024
+
+1. Create a directory on your desktop called ASCEND
+
+2. Copy these files into the directory:
+   ascend.py
+   ascend_ai.py
+   ascend_ed.py
+   ascend_template.pptx
+   ascendAWSClientManager.py
+   ascend_img.py             
+
+3. Open a terminal window (Mac) or command window (Windows)
+
+4. Navigate to the ASCEND directory.
+   cd Desktop/ASCEND
+
+5. Make sure you have python installed. It should be > version 3.11
+
+Windows:
+   python -V
+Mac:
+   python3 -V
+
+6. Install required libraries
+
+Windows:
+   pip install pyqt5
+   pip install boto3
+   pip install markdown
+   pip install python-pptx
+   pip install Pillow
+   pip install python-docx
+   pip install PyMuPDF
+   pip install openpyxl
+   pip install beautifulsoup4
+   pip install numpy
+   pip install scikit-image
+   pip install pygame   <-- New in 4.1
+
+Mac: (see Conda notes below before installing) 
+   pip3 install pyqt5
+   pip3 install boto3
+   pip3 install markdown
+   pip3 install python-pptx
+   pip3 install Pillow
+   pip3 install python-docx
+   pip3 install PyMuPDF
+   pip3 install openpyxl
+   pip3 install beautifulsoup4
+   pip3 install numpy
+   pip3 install scikit-image
+   pip3 install pygame    <-- New in 4.1
+
+
+*** START of Conda notes for Mac OSX
+
+During the installation of required libs 
+Some folks may be using a Conda environment for python. (verify by running "type -a python3" from Mac Terminal). 
+For example, many folks who work with ipython or jupyter notebooks on their laptops on a regular basis, choose to have Conda manage their environment. 
+(BTW many SageMaker labs also use Conda to provision SM environments and libraries)
+
+If this is the case, using pip/pip3/brew will screw up existing Conda installation directories and libraries and the python script wont run with pyqt5. 
+So instead of 
+pip3 install pyqt5
+try installing pyqt (and related libs) via conda: 
+conda install --force-reinstall pyqt qt qtpy PyQtWebEngine PyQt5-sip 
+
+after that, install all other required libs (boto3, markdown, etc) via pip3 as per instructions
+
+finally, after restarting the terminal, make the *.py files executable 
+chmod 755 ./*.py
+
+*** END of Conda notes for Mac OSX
+
+
+8. Close the command or terminal window and open a new one.
+   This is necessary so the program can find pyqt5 and boto3.
+
+9. Navigate to the ASCEND directory.
+   cd Desktop/ASCEND
+
+
+RUNNING THE PROGRAM
+
+1. Open a command or terminal window.
+2. Navigate to the ASCEND folder.
+   cd /Desktop/ASCEND
+
+3. Run the program:
+
+Windows:
+
+   python ascend.py
+
+Mac:
+
+   python3 ascend.py
+
+The document Ascend_Introduction.doc introduces the program features.
+
+
+MANAGE MODEL ACCESS
+
+1. Go to the console for your Isengard account.
+2. Verify in the upper right corner of the AWS console. Make sure that you are connected to the "US East (N. Virginia.) us-east-1"  Region.
+   The application is currently locked to the us-east-1 Region.
+3. Click on Bedrock 
+4. Click on Get Started
+5. On the left side, scroll to the bottom and click on Model Access
+6. On the upper right corner, click on Manage model access
+7. Request access to models by clicking in the boxes and then scrolling to the bottom and clicking on the lower right corner Save changes
+
+Models currently supported:
+
+Jurassic-2 Ultra
+Jurassic-2 Mid
+
+Titan Text G1 - Premier
+Titan Text G1 - Lite
+Titan Text G1 - Express
+Titan Embeddings G1 - Text
+Titan Multimodal Embeddings G1
+Titan Image Generator G1
+Titan Image Generator G1 v2
+
+Claude 3.5 Sonnet
+Claude 3 Sonnet
+Claude 3 Haiku
+Claude
+
+Command
+Command R
+Command R+
+
+Llama 2 Chat 13B
+Llama 2 Chat 70B
+
+Mistral 7B Instruct
+Mixtral 8X7B Instruct  << Not an spelling error "x" Mix-tral of eXperts
+Mistral Large
+
+SDXL 1.0
+
+
+
+AUTHENTICATION
+1. From Isengard, for your account with model access, you DO NOT need to open console.
+2. Find the two overlapping rectangles on the right next to your account.
+3. Click on it to open the credentials panel.
+4. Select JSON
+5. Click to copy the credentials.
+6. In the ascend application, click Credentials button.
+7. Paste the credentials into the window and click Accept Credentials.
+
+Ascend should be running now with model access.
+

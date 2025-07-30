@@ -1,0 +1,37 @@
+Update the format of the content in the INPUT.  Do this work for slides 20-29.
+
+Add "~" on every line of the URL or notes in ~Developer Notes.
+Add "~" on every line under ~Image Description:
+Add "|" on every line under |INSTRUCTOR NOTES:
+
+Keep the Student notes verbatim.  
+Do not convert "**" to "~". 
+Do not convert "__" to "~".
+
+FORMAT:
+Slide [number]: Slide Title
+SPEAKERNOTES:
+~Developer Notes: 
+~[Reference materials and URLs]
+
+~Image Description:
+~[Brief visual description]
+
+|INSTRUCTOR NOTES:
+-| [Key topics to cover]
+-| [[Key topics to cover]
+
+
+
+EXAMPLE:
+Slide 1:
+~Developer Notes:
+- Ref: https://docs.aws.amazon.com/prompt-engineering.html#best-practices
+
+~Image Description:
+~A diagram showing the key components of effective prompt engineering
+
+|INSTRUCTOR NOTES:
+-| [Emphasize the importance of clear communication
+-| [Share real-world examples of good vs bad prompts
+-| [Discuss how these principles apply across different AI models

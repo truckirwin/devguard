@@ -1,0 +1,395 @@
+{
+    "success": true,
+    "report": {
+        "report_metadata": {
+            "generated_at": "2025-06-25T17:38:21.016103",
+            "analysis_period_days": 7,
+            "report_type": "comprehensive_ai_performance_analysis",
+            "version": "2.0"
+        },
+        "executive_summary": {
+            "key_metrics": {
+                "total_ai_calls_7_days": 127,
+                "overall_success_rate": 93.3,
+                "avg_response_time_ms": 5397.0,
+                "slides_processed_per_minute": 4.8,
+                "total_throttling_events": 34
+            },
+            "performance_status": "needs_attention",
+            "primary_bottleneck": "Nova Pro throttling",
+            "optimization_priority": "low"
+        },
+        "ai_model_performance": {
+            "micro": {
+                "performance_grade": "A",
+                "efficiency_score": 2.9,
+                "throttling_ratio": 8.9,
+                "reliability_status": "good",
+                "speed_category": "moderate",
+                "optimization_needed": false,
+                "primary_issues": [
+                    "No major issues identified"
+                ],
+                "usage_recommendation": "Good performance - continue current usage patterns for micro"
+            },
+            "lite": {
+                "performance_grade": "A",
+                "efficiency_score": 2.34,
+                "throttling_ratio": 3.3,
+                "reliability_status": "excellent",
+                "speed_category": "moderate",
+                "optimization_needed": false,
+                "primary_issues": [
+                    "No major issues identified"
+                ],
+                "usage_recommendation": "Good performance - continue current usage patterns for lite"
+            },
+            "pro": {
+                "performance_grade": "B",
+                "efficiency_score": 1.0,
+                "throttling_ratio": 25.6,
+                "reliability_status": "poor",
+                "speed_category": "slow",
+                "optimization_needed": true,
+                "primary_issues": [
+                    "Low success rate",
+                    "Slow response times",
+                    "High throttling frequency"
+                ],
+                "usage_recommendation": "Reduce pro usage or implement better throttling mitigation"
+            }
+        },
+        "prompt_engineering_insights": {
+            "field_analysis": {
+                "references": {
+                    "performance_rating": "good",
+                    "content_efficiency_chars_per_sec": 261.54,
+                    "time_category": "fast",
+                    "reliability_category": "medium",
+                    "optimization_suggestions": [
+                        "Use more specific AWS documentation patterns",
+                        "Implement URL validation"
+                    ]
+                },
+                "developerNotes": {
+                    "performance_rating": "good",
+                    "content_efficiency_chars_per_sec": 369.23,
+                    "time_category": "fast",
+                    "reliability_category": "medium",
+                    "optimization_suggestions": [
+                        "Review prompt templates for this field"
+                    ]
+                },
+                "script": {
+                    "performance_rating": "good",
+                    "content_efficiency_chars_per_sec": 669.86,
+                    "time_category": "moderate",
+                    "reliability_category": "high",
+                    "optimization_suggestions": [
+                        "Review prompt templates for this field"
+                    ]
+                },
+                "instructorNotes": {
+                    "performance_rating": "good",
+                    "content_efficiency_chars_per_sec": 430.62,
+                    "time_category": "moderate",
+                    "reliability_category": "high",
+                    "optimization_suggestions": [
+                        "Review prompt templates for this field"
+                    ]
+                },
+                "studentNotes": {
+                    "performance_rating": "good",
+                    "content_efficiency_chars_per_sec": 227.27,
+                    "time_category": "moderate",
+                    "reliability_category": "high",
+                    "optimization_suggestions": [
+                        "Review prompt templates for this field"
+                    ]
+                },
+                "altText": {
+                    "performance_rating": "fair",
+                    "content_efficiency_chars_per_sec": 20.55,
+                    "time_category": "slow",
+                    "reliability_category": "medium",
+                    "optimization_suggestions": [
+                        "Simplify prompt complexity and reduce context length",
+                        "Improve prompt clarity and add more specific examples",
+                        "Focus on visual elements only"
+                    ]
+                },
+                "slideDescription": {
+                    "performance_rating": "fair",
+                    "content_efficiency_chars_per_sec": 47.95,
+                    "time_category": "slow",
+                    "reliability_category": "medium",
+                    "optimization_suggestions": [
+                        "Simplify prompt complexity and reduce context length",
+                        "Improve prompt clarity and add more specific examples",
+                        "Balance detail with conciseness"
+                    ]
+                }
+            },
+            "best_performing_prompts": [
+                "script",
+                "instructorNotes",
+                "studentNotes"
+            ],
+            "slowest_prompts": [
+                "altText",
+                "slideDescription",
+                "script"
+            ],
+            "overall_prompt_efficiency": 289.57
+        },
+        "throttling_and_retry_analysis": {
+            "overall_statistics": {
+                "total_throttling_events": 34,
+                "total_retry_attempts": 48,
+                "throttling_rate_percent": 12.59,
+                "retry_success_rate": 58.8
+            },
+            "model_specific_throttling": {
+                "micro": {
+                    "throttling_events": 8,
+                    "throttling_rate": 8.9,
+                    "severity": "medium"
+                },
+                "lite": {
+                    "throttling_events": 3,
+                    "throttling_rate": 3.3,
+                    "severity": "low"
+                },
+                "pro": {
+                    "throttling_events": 23,
+                    "throttling_rate": 25.6,
+                    "severity": "high"
+                }
+            },
+            "throttling_impact": {
+                "processing_delay_estimate_minutes": 17.0,
+                "success_rate_impact_percent": 29.2,
+                "cost_impact": "minimal",
+                "user_experience_impact": "medium"
+            },
+            "mitigation_effectiveness": "poor",
+            "recommendations": [
+                "Implement exponential backoff with jitter",
+                "Add intelligent request spacing",
+                "Monitor and adjust batch sizes dynamically"
+            ]
+        },
+        "timing_analysis": {
+            "response_time_statistics": {
+                "fastest_model_ms": 3250,
+                "slowest_model_ms": 8760,
+                "average_response_time_ms": 5397.0,
+                "response_time_variance": 2950.0
+            },
+            "processing_efficiency": {
+                "slides_per_minute": 4.8,
+                "parallel_processing_enabled": true,
+                "worker_utilization": "6 workers",
+                "batch_optimization": "optimized"
+            },
+            "timing_insights": {
+                "bottleneck_model": "pro",
+                "optimization_potential": "high",
+                "pipeline_efficiency": 1.42
+            }
+        },
+        "reliability_metrics": {
+            "overall_reliability": {
+                "system_uptime_percent": 99.2,
+                "average_success_rate": 93.3,
+                "reliability_grade": "B+",
+                "failure_recovery_rate": 95.5
+            },
+            "component_reliability": {
+                "most_reliable_model": "lite",
+                "least_reliable_model": "pro",
+                "most_reliable_field": "script",
+                "least_reliable_field": "altText"
+            },
+            "risk_assessment": {
+                "high_risk_components": [
+                    "pro"
+                ],
+                "critical_failure_points": [
+                    "Nova Pro throttling",
+                    "Image processing pipeline"
+                ],
+                "mitigation_status": "implemented"
+            }
+        },
+        "cost_optimization_insights": {
+            "cost_breakdown": {
+                "micro": {
+                    "estimated_cost_usd": 0.063,
+                    "cost_per_successful_call": 0.000742,
+                    "efficiency_rating": "high"
+                },
+                "lite": {
+                    "estimated_cost_usd": 0.108,
+                    "cost_per_successful_call": 0.001227,
+                    "efficiency_rating": "medium"
+                },
+                "pro": {
+                    "estimated_cost_usd": 1.44,
+                    "cost_per_successful_call": 0.018223,
+                    "efficiency_rating": "low"
+                }
+            },
+            "total_estimated_weekly_cost_usd": 1.611,
+            "cost_optimization_opportunities": [
+                "Switch simple prompts from Pro to Lite model",
+                "Implement intelligent prompt routing",
+                "Reduce retry attempts through better error handling"
+            ],
+            "roi_analysis": {
+                "cost_per_slide": 0.001998,
+                "value_proposition": "excellent"
+            }
+        },
+        "performance_bottlenecks": {
+            "identified_bottlenecks": [
+                {
+                    "type": "model_performance",
+                    "component": "pro",
+                    "severity": "high",
+                    "impact": "Slow response time: 8760ms",
+                    "recommendation": "Optimize pro prompts or consider model switching"
+                },
+                {
+                    "type": "throttling",
+                    "component": "pro",
+                    "severity": "high",
+                    "impact": "High throttling: 23 events",
+                    "recommendation": "Implement exponential backoff and request queuing"
+                }
+            ],
+            "bottleneck_count": 2,
+            "priority_order": [
+                {
+                    "type": "model_performance",
+                    "component": "pro",
+                    "severity": "high",
+                    "impact": "Slow response time: 8760ms",
+                    "recommendation": "Optimize pro prompts or consider model switching"
+                },
+                {
+                    "type": "throttling",
+                    "component": "pro",
+                    "severity": "high",
+                    "impact": "High throttling: 23 events",
+                    "recommendation": "Implement exponential backoff and request queuing"
+                }
+            ],
+            "mitigation_status": "urgent"
+        },
+        "optimization_recommendations": [
+            {
+                "category": "throttling_mitigation",
+                "priority": "high",
+                "title": "Reduce pro throttling events",
+                "description": "Implement intelligent request spacing and circuit breakers for pro model",
+                "implementation": [
+                    "Add exponential backoff with jitter",
+                    "Implement request queuing with rate limiting",
+                    "Add circuit breaker pattern for sustained throttling"
+                ],
+                "expected_impact": "60-80% reduction in throttling events",
+                "effort_level": "medium",
+                "timeline": "1-2 weeks"
+            },
+            {
+                "category": "performance_optimization",
+                "priority": "high",
+                "title": "Optimize pro response times",
+                "description": "Reduce average response time from 8760ms",
+                "implementation": [
+                    "Simplify prompts and reduce complexity",
+                    "Implement prompt caching where possible",
+                    "Consider model switching for simple tasks"
+                ],
+                "expected_impact": "30-50% reduction in response time",
+                "effort_level": "medium",
+                "timeline": "2-3 weeks"
+            },
+            {
+                "category": "prompt_engineering",
+                "priority": "medium",
+                "title": "Optimize slow field generation",
+                "description": "Improve performance for: altText, slideDescription",
+                "implementation": [
+                    "Analyze and simplify complex prompts",
+                    "Implement field-specific prompt templates",
+                    "Add parallel processing for independent fields"
+                ],
+                "expected_impact": "25-40% improvement in field generation speed",
+                "effort_level": "low",
+                "timeline": "1 week"
+            },
+            {
+                "category": "architecture",
+                "priority": "medium",
+                "title": "Implement advanced caching strategy",
+                "description": "Cache frequent prompt patterns and responses",
+                "implementation": [
+                    "Add Redis-based response caching",
+                    "Implement semantic similarity matching",
+                    "Cache slide analysis results"
+                ],
+                "expected_impact": "40-60% reduction in redundant AI calls",
+                "effort_level": "high",
+                "timeline": "3-4 weeks"
+            },
+            {
+                "category": "monitoring",
+                "priority": "low",
+                "title": "Enhanced real-time monitoring",
+                "description": "Implement comprehensive performance dashboards",
+                "implementation": [
+                    "Add real-time performance metrics",
+                    "Implement alerting for performance degradation",
+                    "Create automated performance reports"
+                ],
+                "expected_impact": "Improved visibility and faster issue resolution",
+                "effort_level": "medium",
+                "timeline": "2-3 weeks"
+            }
+        ],
+        "system_resource_analysis": {
+            "system": {
+                "cpu_usage_percent": 23.6,
+                "memory_usage_percent": 76.4,
+                "available_memory_gb": 3.8,
+                "disk_usage_percent": 3.3
+            },
+            "process": {
+                "memory_usage_mb": 101.9,
+                "cpu_percent": 0.0,
+                "open_files": 1,
+                "connections": 4
+            },
+            "active_tracking": {
+                "active_jobs": 0,
+                "active_ai_calls": 0
+            }
+        },
+        "historical_trends": {
+            "period_days": 7,
+            "total_jobs": 20,
+            "completed_jobs": 11,
+            "job_completion_rate": 55.0,
+            "total_slides_processed": 442,
+            "total_slides_failed": 0,
+            "overall_success_rate": 100.0,
+            "avg_processing_time_seconds": 0,
+            "median_processing_time_seconds": 0,
+            "total_processing_time_hours": 0,
+            "avg_slides_per_job": 40.2
+        }
+    },
+    "timestamp": "2025-06-25T17:38:21.016997"
+}

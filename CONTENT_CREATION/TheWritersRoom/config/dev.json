@@ -1,0 +1,10 @@
+{
+  "development": true,
+  "debug": true,
+  "logLevel": "debug",
+  "features": {
+    "aiAgents": true,
+    "fileExplorer": true,
+    "projectCreation": true
+  }
+}

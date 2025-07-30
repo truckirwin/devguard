@@ -1,0 +1,39 @@
+# PostgreSQL Database Configuration
+# CRITICAL: This application now requires PostgreSQL exclusively
+# SQLite has been removed due to concurrency and performance issues
+
+# Option 1: Complete Database URL (recommended)
+DATABASE_URL=postgresql://notesgen:notesgen_password@localhost:5432/notesgen_db
+
+# Option 2: Individual PostgreSQL settings (alternative)
+# POSTGRES_USER=notesgen
+# POSTGRES_PASSWORD=notesgen_password
+# POSTGRES_SERVER=localhost
+# POSTGRES_PORT=5432
+# POSTGRES_DB=notesgen_db
+
+# Application Settings
+SECRET_KEY=your-secret-key-here-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# File Upload Configuration
+UPLOAD_DIR=uploads
+MAX_FILE_SIZE=50000000
+
+# AWS Configuration (for future S3 integration)
+AWS_ACCESS_KEY_ID=dummy
+AWS_SECRET_ACCESS_KEY=dummy
+AWS_DEFAULT_REGION=us-west-2
+AWS_BUCKET_NAME=notesgen-files
+
+# IMPORTANT MIGRATION NOTES:
+# =========================
+# 1. This application has been migrated from SQLite to PostgreSQL
+# 2. SQLite is NO LONGER SUPPORTED and will cause errors
+# 3. PostgreSQL is required for:
+#    - Handling concurrent PPT uploads
+#    - Processing large files (40+ slides)
+#    - Proper column mapping (image_format vs format)
+#    - Production-grade performance
+# 4. DO NOT add sqlite:// URLs to DATABASE_URL - they will be rejected 

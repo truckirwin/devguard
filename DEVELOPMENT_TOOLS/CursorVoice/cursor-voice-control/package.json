@@ -1,0 +1,284 @@
+{
+  "name": "cursor-voice-control",
+  "displayName": "Cursor Voice Control",
+  "description": "Native voice control extension for Cursor IDE with AI-powered speech recognition and code assistance",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.90.0",
+    "cursor": "^0.39.0"
+  },
+  "type": "commonjs",
+  "publisher": "cursor-voice-team",
+  "categories": [
+    "Other",
+    "Machine Learning"
+  ],
+  "keywords": [
+    "voice",
+    "speech",
+    "ai",
+    "cursor",
+    "dictation",
+    "accessibility"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorVoice.startVoiceAgent",
+        "title": "Start Voice Agent",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.toggleDictation",
+        "title": "Toggle Voice Dictation",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.openControlPanel",
+        "title": "Open Voice Control Panel",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.configureAPI",
+        "title": "Configure API Keys",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.executeVoiceCommand",
+        "title": "Execute Voice Command",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.startContinuousListening",
+        "title": "Start Continuous Listening",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.stopListening",
+        "title": "Stop Voice Listening",
+        "category": "Cursor Voice"
+      },
+      {
+        "command": "cursorVoice.testMicrophone",
+        "title": "Test Microphone",
+        "category": "Cursor Voice"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "cursorVoice.startVoiceAgent",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "!terminalFocus"
+      },
+      {
+        "command": "cursorVoice.toggleDictation",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursorVoice.executeVoiceCommand",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v"
+      },
+      {
+        "command": "cursorVoice.startContinuousListening",
+        "key": "alt+space",
+        "mac": "alt+space"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor Voice Control",
+      "properties": {
+        "cursorVoice.deepgramApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Deepgram API key for speech recognition",
+          "scope": "application"
+        },
+        "cursorVoice.openaiApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenAI API key for AI assistance",
+          "scope": "application"
+        },
+        "cursorVoice.voiceCommands": {
+          "type": "object",
+          "default": {
+            "openFile": [
+              "open file",
+              "open document"
+            ],
+            "saveFile": [
+              "save",
+              "save file"
+            ],
+            "newFile": [
+              "new file",
+              "create file"
+            ],
+            "closeFile": [
+              "close",
+              "close file"
+            ],
+            "goToLine": [
+              "go to line",
+              "goto line"
+            ],
+            "findInFile": [
+              "find",
+              "search"
+            ],
+            "replaceInFile": [
+              "replace",
+              "find and replace"
+            ],
+            "toggleSidebar": [
+              "toggle sidebar",
+              "hide sidebar",
+              "show sidebar"
+            ],
+            "openTerminal": [
+              "open terminal",
+              "show terminal"
+            ],
+            "runCode": [
+              "run",
+              "execute",
+              "run code"
+            ],
+            "formatCode": [
+              "format",
+              "format code"
+            ],
+            "commentCode": [
+              "comment",
+              "comment out"
+            ],
+            "copyLine": [
+              "copy line"
+            ],
+            "deleteLine": [
+              "delete line"
+            ],
+            "duplicateLine": [
+              "duplicate line"
+            ],
+            "selectAll": [
+              "select all"
+            ]
+          },
+          "description": "Voice command mappings to editor actions"
+        },
+        "cursorVoice.language": {
+          "type": "string",
+          "enum": [
+            "en-US",
+            "en-GB",
+            "es-ES",
+            "fr-FR",
+            "de-DE",
+            "it-IT",
+            "pt-BR",
+            "zh-CN",
+            "ja-JP"
+          ],
+          "default": "en-US",
+          "description": "Speech recognition language"
+        },
+        "cursorVoice.sensitivity": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 1,
+          "default": 0.7,
+          "description": "Voice activation sensitivity (0.1 - 1.0)"
+        },
+        "cursorVoice.continuousListening": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable continuous voice listening mode"
+        },
+        "cursorVoice.enableCodeContext": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use current code context for better voice recognition"
+        },
+        "cursorVoice.enableAIAssistance": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable AI-powered voice command interpretation"
+        },
+        "cursorVoice.microphoneDevice": {
+          "type": "string",
+          "default": "default",
+          "description": "Microphone device to use (leave empty for default)"
+        }
+      }
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "cursorVoiceControl",
+          "name": "Voice Control",
+          "when": "cursorVoice.active"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "cursorVoicePanel",
+          "title": "Voice Control",
+          "icon": "$(mic)"
+        }
+      ]
+    },
+    "webviews": [
+      {
+        "viewType": "cursorVoice.controlPanel",
+        "title": "Voice Control Panel"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "20.x",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-electron": "^2.4.0",
+    "vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3.0.0",
+    "openai": "^4.0.0",
+    "ws": "^8.16.0",
+    "node-fetch": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cursor/cursor-voice-control.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/cursor/cursor-voice-control/issues"
+  },
+  "homepage": "https://github.com/cursor/cursor-voice-control#readme"
+}

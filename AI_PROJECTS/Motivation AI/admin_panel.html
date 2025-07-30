@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation AI - Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #7c3aed, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-online { background-color: #4CAF50; }
+        .status-offline { background-color: #F44336; }
+        .status-warning { background-color: #FFC107; }
+
+        .admin-tabs {
+            display: flex;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 15px 20px;
+            background: transparent;
+            border: none;
+            color: #cccccc;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .tab-button.active {
+            background: linear-gradient(45deg, #7c3aed, #a855f7);
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .settings-section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        .section-title {
+            color: #7c3aed;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .form-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 8px;
+            padding: 12px;
+            color: #ffffff;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #7c3aed;
+            box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+        }
+
+        .form-input.masked {
+            font-family: monospace;
+        }
+
+        .form-help {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .toggle-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #7c3aed;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #7c3aed, #a855f7);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 2px solid rgba(124, 58, 237, 0.3);
+        }
+
+        .btn-success {
+            background: linear-gradient(45deg, #059669, #10b981);
+            color: white;
+        }
+
+        .btn-danger {
+            background: linear-gradient(45deg, #dc2626, #ef4444);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+        }
+
+        .status-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid;
+        }
+
+        .status-card.success { border-left-color: #4CAF50; }
+        .status-card.error { border-left-color: #F44336; }
+        .status-card.warning { border-left-color: #FFC107; }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.success { background: #4CAF50; }
+        .notification.error { background: #F44336; }
+        .notification.warning { background: #FFC107; color: black; }
+
+        .config-preview {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            font-family: monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-tabs {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 Admin Panel</h1>
+            <p>Configure your Motivation AI system settings and API integrations</p>
+            <div style="margin-top: 15px;">
+                <span id="serverStatus" class="status-indicator status-offline"></span>
+                <span>Server Status</span>
+                <span style="margin-left: 20px;">
+                    <span id="apiStatus" class="status-indicator status-offline"></span>
+                    <span>AI Services</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="admin-tabs">
+            <button class="tab-button active" onclick="showTab('api-config')">🔑 API Configuration</button>
+            <button class="tab-button" onclick="showTab('app-settings')">⚙️ App Settings</button>
+            <button class="tab-button" onclick="showTab('system-status')">📊 System Status</button>
+            <button class="tab-button" onclick="showTab('user-management')">👥 Users</button>
+        </div>
+
+        <!-- API Configuration Tab -->
+        <div id="api-config" class="tab-content active">
+            <div class="settings-section">
+                <h3 class="section-title">
+                    🧠 Claude Sonnet (Anthropic) Configuration
+                </h3>
+                <div class="form-group">
+                    <label class="form-label">API Key</label>
+                    <div class="input-group">
+                        <input type="password" id="anthropicKey" class="form-input masked" 
+                               placeholder="sk-ant-api03-...">
+                        <button class="toggle-button" onclick="togglePassword('anthropicKey')">Show</button>
+                    </div>
+                    <div class="form-help">Get your API key from <a href="https://console.anthropic.com/" target="_blank" style="color: #7c3aed;">console.anthropic.com</a></div>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn btn-secondary" onclick="testAnthropicAPI()">Test Connection</button>
+                    <button class="btn btn-primary" onclick="saveAnthropicConfig()">Save Configuration</button>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">
+                    🎵 ElevenLabs Configuration
+                </h3>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label class="form-label">API Key</label>
+                        <div class="input-group">
+                            <input type="password" id="elevenlabsKey" class="form-input masked" 
+                                   placeholder="sk_...">
+                            <button class="toggle-button" onclick="togglePassword('elevenlabsKey')">Show</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Default Voice Model</label>
+                        <select id="elevenlabsModel" class="form-input">
+                            <option value="eleven_monolingual_v1">Eleven Monolingual v1</option>
+                            <option value="eleven_multilingual_v1">Eleven Multilingual v1</option>
+                            <option value="eleven_multilingual_v2">Eleven Multilingual v2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-help">Get your API key from <a href="https://elevenlabs.io/" target="_blank" style="color: #7c3aed;">elevenlabs.io</a></div>
+                <div class="quick-actions">
+                    <button class="btn btn-secondary" onclick="testElevenlabsAPI()">Test Connection</button>
+                    <button class="btn btn-secondary" onclick="loadVoices()">Load Voices</button>
+                    <button class="btn btn-primary" onclick="saveElevenlabsConfig()">Save Configuration</button>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">
+                    🎨 Leonardo AI Configuration
+                </h3>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label class="form-label">API Key</label>
+                        <div class="input-group">
+                            <input type="password" id="leonardoKey" class="form-input masked" 
+                                   placeholder="Bearer token...">
+                            <button class="toggle-button" onclick="togglePassword('leonardoKey')">Show</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Default Model</label>
+                        <select id="leonardoModel" class="form-input">
+                            <option value="6bef9f1b-29cb-40c7-b9df-32b51c1f67d3">Leonardo Creative</option>
+                            <option value="d69c8273-6b17-4a30-a13e-d6637ae1c644">Leonardo Select</option>
+                            <option value="ac614f96-1082-45bf-be9d-757f2d31c174">SDXL 0.9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-help">Get your API key from <a href="https://leonardo.ai/" target="_blank" style="color: #7c3aed;">leonardo.ai</a></div>
+                <div class="quick-actions">
+                    <button class="btn btn-secondary" onclick="testLeonardoAPI()">Test Connection</button>
+                    <button class="btn btn-primary" onclick="saveLeonardoConfig()">Save Configuration</button>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">
+                    💳 Payment & Business Configuration
+                </h3>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label class="form-label">Stripe Secret Key</label>
+                        <div class="input-group">
+                            <input type="password" id="stripeKey" class="form-input masked" 
+                                   placeholder="sk_test_... or sk_live_...">
+                            <button class="toggle-button" onclick="togglePassword('stripeKey')">Show</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Environment</label>
+                        <select id="stripeEnv" class="form-input">
+                            <option value="test">Test Mode</option>
+                            <option value="live">Live Mode</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn btn-secondary" onclick="testStripeAPI()">Test Connection</button>
+                    <button class="btn btn-primary" onclick="saveStripeConfig()">Save Configuration</button>
+                </div>
+            </div>
+
+            <div class="quick-actions" style="margin-top: 30px;">
+                <button class="btn btn-success" onclick="saveAllAPIConfigs()">💾 Save All API Configurations</button>
+                <button class="btn btn-secondary" onclick="testAllAPIs()">🧪 Test All Connections</button>
+                <button class="btn btn-danger" onclick="resetAllConfigs()">🔄 Reset to Defaults</button>
+            </div>
+        </div>
+
+        <!-- App Settings Tab -->
+        <div id="app-settings" class="tab-content">
+            <div class="settings-section">
+                <h3 class="section-title">
+                    📱 Application Settings
+                </h3>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label class="form-label">App Name</label>
+                        <input type="text" id="appName" class="form-input" value="Motivation AI">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Server Port</label>
+                        <input type="number" id="serverPort" class="form-input" value="8080">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Debug Mode</label>
+                        <select id="debugMode" class="form-input">
+                            <option value="false">Disabled</option>
+                            <option value="true">Enabled</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Rate Limiting</label>
+                        <select id="rateLimiting" class="form-input">
+                            <option value="true">Enabled</option>
+                            <option value="false">Disabled</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">
+                    🎯 Content Generation Settings
+                </h3>
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label class="form-label">Max Message Length (seconds)</label>
+                        <input type="number" id="maxLength" class="form-input" value="120" min="10" max="300">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Default Video Quality</label>
+                        <select id="videoQuality" class="form-input">
+                            <option value="720p">HD (720p)</option>
+                            <option value="1080p">Full HD (1080p)</option>
+                            <option value="4k">4K Ultra HD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Content Moderation</label>
+                        <select id="contentModeration" class="form-input">
+                            <option value="strict">Strict</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="relaxed">Relaxed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">
+                    ☁️ Storage & CDN Settings
+                </h3>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label class="form-label">AWS Access Key ID</label>
+                        <div class="input-group">
+                            <input type="password" id="awsAccessKey" class="form-input masked" 
+                                   placeholder="AKIA...">
+                            <button class="toggle-button" onclick="togglePassword('awsAccessKey')">Show</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">AWS Secret Access Key</label>
+                        <div class="input-group">
+                            <input type="password" id="awsSecretKey" class="form-input masked" 
+                                   placeholder="Secret key...">
+                            <button class="toggle-button" onclick="togglePassword('awsSecretKey')">Show</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">S3 Bucket Name</label>
+                        <input type="text" id="s3Bucket" class="form-input" placeholder="motivation-ai-content">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">AWS Region</label>
+                        <select id="awsRegion" class="form-input">
+                            <option value="us-east-1">US East (N. Virginia)</option>
+                            <option value="us-west-2">US West (Oregon)</option>
+                            <option value="eu-west-1">Europe (Ireland)</option>
+                            <option value="ap-southeast-1">Asia Pacific (Singapore)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn btn-secondary" onclick="testAWSConnection()">Test AWS Connection</button>
+                    <button class="btn btn-primary" onclick="saveAWSConfig()">Save Configuration</button>
+                </div>
+            </div>
+
+            <div class="quick-actions" style="margin-top: 30px;">
+                <button class="btn btn-success" onclick="saveAllAppSettings()">💾 Save All Settings</button>
+                <button class="btn btn-secondary" onclick="restartServer()">🔄 Restart Server</button>
+            </div>
+        </div>
+
+        <!-- System Status Tab -->
+        <div id="system-status" class="tab-content">
+            <div class="grid-2">
+                <div class="status-card success">
+                    <h4>🖥️ Server Status</h4>
+                    <p>Running on port <span id="currentPort">8080</span></p>
+                    <p>Uptime: <span id="uptime">Loading...</span></p>
+                    <p>Memory Usage: <span id="memoryUsage">Loading...</span></p>
+                </div>
+                <div class="status-card" id="apiStatusCard">
+                    <h4>🤖 AI Services Status</h4>
+                    <p>Claude Sonnet: <span id="claudeStatus">Checking...</span></p>
+                    <p>ElevenLabs: <span id="elevenlabsStatus">Checking...</span></p>
+                    <p>Leonardo AI: <span id="leonardoStatus">Checking...</span></p>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">📊 Usage Statistics</h3>
+                <div class="grid-3">
+                    <div class="status-card">
+                        <h4>📈 Today</h4>
+                        <p>Generations: <span id="todayGenerations">0</span></p>
+                        <p>Users: <span id="todayUsers">0</span></p>
+                    </div>
+                    <div class="status-card">
+                        <h4>📅 This Month</h4>
+                        <p>Generations: <span id="monthGenerations">0</span></p>
+                        <p>New Users: <span id="monthUsers">0</span></p>
+                    </div>
+                    <div class="status-card">
+                        <h4>💰 Revenue</h4>
+                        <p>Monthly: <span id="monthlyRevenue">$0</span></p>
+                        <p>Total: <span id="totalRevenue">$0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3 class="section-title">🔧 System Actions</h3>
+                <div class="quick-actions">
+                    <button class="btn btn-secondary" onclick="refreshStatus()">🔄 Refresh Status</button>
+                    <button class="btn btn-secondary" onclick="clearCache()">🗑️ Clear Cache</button>
+                    <button class="btn btn-secondary" onclick="downloadLogs()">📄 Download Logs</button>
+                    <button class="btn btn-danger" onclick="restartSystem()">⚠️ Restart System</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Management Tab -->
+        <div id="user-management" class="tab-content">
+            <div class="settings-section">
+                <h3 class="section-title">👥 User Management</h3>
+                <div class="quick-actions" style="margin-bottom: 20px;">
+                    <button class="btn btn-primary" onclick="loadUsers()">🔄 Refresh Users</button>
+                    <button class="btn btn-secondary" onclick="exportUsers()">📊 Export Data</button>
+                </div>
+                <div id="usersList">
+                    <div class="status-card">
+                        <p>Click "Refresh Users" to load user data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab Management
+        function showTab(tabId) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Password Toggle
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const button = input.nextElementSibling;
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                button.textContent = 'Hide';
+            } else {
+                input.type = 'password';
+                button.textContent = 'Show';
+            }
+        }
+
+        // Notification System
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => notification.classList.add('show'), 100);
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => document.body.removeChild(notification), 300);
+            }, 3000);
+        }
+
+        // API Testing Functions
+        async function testAnthropicAPI() {
+            const apiKey = document.getElementById('anthropicKey').value;
+            if (!apiKey) {
+                showNotification('Please enter an Anthropic API key', 'error');
+                return;
+            }
+
+            try {
+                // Test with a simple request
+                const response = await fetch('/admin/test-anthropic', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ api_key: apiKey })
+                });
+                
+                if (response.ok) {
+                    showNotification('Anthropic API connection successful!', 'success');
+                } else {
+                    showNotification('Anthropic API connection failed', 'error');
+                }
+            } catch (error) {
+                showNotification('Error testing Anthropic API: ' + error.message, 'error');
+            }
+        }
+
+        async function testElevenlabsAPI() {
+            const apiKey = document.getElementById('elevenlabsKey').value;
+            if (!apiKey) {
+                showNotification('Please enter an ElevenLabs API key', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch('/admin/test-elevenlabs', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ api_key: apiKey })
+                });
+                
+                if (response.ok) {
+                    showNotification('ElevenLabs API connection successful!', 'success');
+                } else {
+                    showNotification('ElevenLabs API connection failed', 'error');
+                }
+            } catch (error) {
+                showNotification('Error testing ElevenLabs API: ' + error.message, 'error');
+            }
+        }
+
+        async function testLeonardoAPI() {
+            const apiKey = document.getElementById('leonardoKey').value;
+            if (!apiKey) {
+                showNotification('Please enter a Leonardo AI API key', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch('/admin/test-leonardo', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ api_key: apiKey })
+                });
+                
+                if (response.ok) {
+                    showNotification('Leonardo AI API connection successful!', 'success');
+                } else {
+                    showNotification('Leonardo AI API connection failed', 'error');
+                }
+            } catch (error) {
+                showNotification('Error testing Leonardo AI API: ' + error.message, 'error');
+            }
+        }
+
+        // Configuration Save Functions
+        async function saveAnthropicConfig() {
+            const config = {
+                api_key: document.getElementById('anthropicKey').value
+            };
+
+            try {
+                const response = await fetch('/admin/save-anthropic', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(config)
+                });
+
+                if (response.ok) {
+                    showNotification('Anthropic configuration saved successfully!', 'success');
+                } else {
+                    showNotification('Failed to save Anthropic configuration', 'error');
+                }
+            } catch (error) {
+                showNotification('Error saving configuration: ' + error.message, 'error');
+            }
+        }
+
+        async function saveElevenlabsConfig() {
+            const config = {
+                api_key: document.getElementById('elevenlabsKey').value,
+                model: document.getElementById('elevenlabsModel').value
+            };
+
+            try {
+                const response = await fetch('/admin/save-elevenlabs', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(config)
+                });
+
+                if (response.ok) {
+                    showNotification('ElevenLabs configuration saved successfully!', 'success');
+                } else {
+                    showNotification('Failed to save ElevenLabs configuration', 'error');
+                }
+            } catch (error) {
+                showNotification('Error saving configuration: ' + error.message, 'error');
+            }
+        }
+
+        async function saveLeonardoConfig() {
+            const config = {
+                api_key: document.getElementById('leonardoKey').value,
+                model: document.getElementById('leonardoModel').value
+            };
+
+            try {
+                const response = await fetch('/admin/save-leonardo', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(config)
+                });
+
+                if (response.ok) {
+                    showNotification('Leonardo AI configuration saved successfully!', 'success');
+                } else {
+                    showNotification('Failed to save Leonardo AI configuration', 'error');
+                }
+            } catch (error) {
+                showNotification('Error saving configuration: ' + error.message, 'error');
+            }
+        }
+
+        async function saveAllAPIConfigs() {
+            await saveAnthropicConfig();
+            await saveElevenlabsConfig();
+            await saveLeonardoConfig();
+            showNotification('All API configurations saved!', 'success');
+        }
+
+        // Load current configurations
+        async function loadConfigurations() {
+            try {
+                const response = await fetch('/admin/get-config');
+                if (response.ok) {
+                    const config = await response.json();
+                    
+                    // Populate form fields
+                    if (config.anthropic_api_key) {
+                        document.getElementById('anthropicKey').value = config.anthropic_api_key;
+                    }
+                    if (config.elevenlabs_api_key) {
+                        document.getElementById('elevenlabsKey').value = config.elevenlabs_api_key;
+                    }
+                    if (config.leonardo_api_key) {
+                        document.getElementById('leonardoKey').value = config.leonardo_api_key;
+                    }
+                    
+                    updateServerStatus();
+                }
+            } catch (error) {
+                console.error('Error loading configurations:', error);
+            }
+        }
+
+        // Status Updates
+        async function updateServerStatus() {
+            try {
+                const response = await fetch('/api/test');
+                if (response.ok) {
+                    document.getElementById('serverStatus').className = 'status-indicator status-online';
+                    const data = await response.json();
+                    document.getElementById('currentPort').textContent = window.location.port || '8080';
+                } else {
+                    document.getElementById('serverStatus').className = 'status-indicator status-offline';
+                }
+            } catch (error) {
+                document.getElementById('serverStatus').className = 'status-indicator status-offline';
+            }
+        }
+
+        // Initialize admin panel
+        document.addEventListener('DOMContentLoaded', function() {
+            loadConfigurations();
+            updateServerStatus();
+            
+            // Update status every 30 seconds
+            setInterval(updateServerStatus, 30000);
+        });
+
+        // Placeholder functions for other features
+        function testAllAPIs() { showNotification('Testing all APIs...', 'warning'); }
+        function resetAllConfigs() { showNotification('Configurations reset to defaults', 'warning'); }
+        function saveAllAppSettings() { showNotification('App settings saved!', 'success'); }
+        function restartServer() { showNotification('Server restart initiated...', 'warning'); }
+        function refreshStatus() { updateServerStatus(); showNotification('Status refreshed', 'success'); }
+        function clearCache() { showNotification('Cache cleared', 'success'); }
+        function downloadLogs() { showNotification('Downloading logs...', 'warning'); }
+        function restartSystem() { showNotification('System restart initiated...', 'warning'); }
+        function loadUsers() { showNotification('Loading users...', 'warning'); }
+        function exportUsers() { showNotification('Exporting user data...', 'warning'); }
+        function loadVoices() { showNotification('Loading ElevenLabs voices...', 'warning'); }
+        function testStripeAPI() { showNotification('Testing Stripe connection...', 'warning'); }
+        function saveStripeConfig() { showNotification('Stripe configuration saved!', 'success'); }
+        function testAWSConnection() { showNotification('Testing AWS connection...', 'warning'); }
+        function saveAWSConfig() { showNotification('AWS configuration saved!', 'success'); }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,43 @@
+﻿
+Error message:
+Error invoking <name> model: 'AIModelInteraction' object has no attribute 'bedrock'
+Reason:
+Credentials are bad. Possible copy-paste error.
+Fix 1: Re-enter credentials. 
+Fix 2: Refresh Isengard web page in browser and copy fresh JSON credentials.
+
+Error message:
+Ascend crashes.
+Look in the terminal or command window for any messages
+Reason:
+Installation issue, missing or corrupted library, conflict with package manager being used for development, including Python or Jupyter notebook development.
+This is the most common reason. However, sometimes I have written code with system dependencies and not realized it. In several instances I have written expedient code knowing that sometimes there were conditions that could cause issues. My apologies. Specifically, this was in areas requiring multi-threaded programming to avoid timing issues and race conditions. In these cases I sometimes employed delay tricks to cover most cases. I had a choice to make the code simple and easy to maintain and expand or to code for real-time; and I chose simple.
+Fix 1: Clear the application and reinstall following the latest installation notes.
+Make sure you have installed and updated all libraries.
+Make sure you have installed and updated boto3 to the latest version.
+Fix 2: After reinstall remember to open a new command or terminal window to ensure that CLI has picked up the current OS path or it might not find the libraries.
+Fix 3: In rare cases, there could be memory corruption requiring a reboot. That is, the crash corrupted critical interfaces in the OS that are refreshed by rebooting.
+Fix 4: Send me the messages from the terminal or command window and any error message or context information about what you were trying to do and which button you pressed.
+
+Error message:
+You don't have permission to use the model.
+Reason:
+Most common is you authorized permission in a different region. Ascend is currently hard coded to us-east-1, and AI models are a regional resource.
+Second most common is you missed one of the check boxes when you went through model access in the AWS console. Or you were looking at a different region when you requested access.
+Fix : change region in AWS console and request model access in us-east-1..
+
+
+Error message:
+Error invoking model: An error occurred (AccessDeniedException) when calling the InvokeModelResponseStream operation: You don’t have access to the model with the specified model ID.
+Notes:
+You are using your Isengard account, with full admin access. You have access to all the necessary models and completed the installation as suggested. You are working within us-east-1. But still, you are getting this error. Adding AmazonBedrockFullAccess to your role did not solve the issue. 
+Workaround 1:
+- login to Isengard as normal with your default admin account
+- from Isengard, open the json and copy the Access key ID, secret key, and Session token and paste them in the appropriate Ascend Credentials fields. 
+- Change the region to us-east-1.
+- Accept credentials. 
+
+Workaround 2: (causes a security issue so only use as a test)
+Got Ascend working by creating a user and attaching the AmazonBedrockFullAccess and AmazonSageMakerCanvasBedrockAccess policies to it. Then launched ascend from the command line. For credentials, I provided the Access key and Secret access key for the user. I was able to connect through ascend. I did not even need to request model access, and all models seem to be working for me.
+
+

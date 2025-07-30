@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational AI - Custom Message Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .controls-panel {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+        }
+
+        .controls-title {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            color: #333;
+            text-align: center;
+        }
+
+        .slider-group {
+            margin-bottom: 25px;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .slider-extremes {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+            -webkit-appearance: none;
+            margin-bottom: 10px;
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .text-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            resize: vertical;
+            min-height: 80px;
+            font-family: inherit;
+        }
+
+        .text-input:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
+        }
+
+        .generate-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .generate-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .output-panel {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .output-title {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            color: #333;
+            text-align: center;
+        }
+
+        .message-display {
+            flex-grow: 1;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            font-size: 1.1em;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            margin-bottom: 20px;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .message-content {
+            width: 100%;
+        }
+
+        .message-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .meta-item {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+
+        .meta-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .meta-value {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .loading {
+            text-align: center;
+            color: #667eea;
+            font-style: italic;
+        }
+
+        .error {
+            color: #dc3545;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Motivational AI Generator</h1>
+            <p>Customize your perfect motivational message with AI-powered personalization</p>
+        </div>
+
+        <div class="main-content">
+            <div class="controls-panel">
+                <h2 class="controls-title">Customize Your Message</h2>
+                
+                <div class="input-group">
+                    <label class="input-label" for="userInput">What do you need motivation for?</label>
+                    <textarea id="userInput" class="text-input" placeholder="e.g., waking up early, starting a workout routine, studying for exams, starting a business..."></textarea>
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Intensity</span>
+                        <span id="intensityValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>😌 Chill</span>
+                        <span>💪 Drill Sergeant</span>
+                    </div>
+                    <input type="range" id="intensity" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Language Style</span>
+                        <span id="languageValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>🤬 Raw</span>
+                        <span>😇 Clean</span>
+                    </div>
+                    <input type="range" id="language" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Humor Level</span>
+                        <span id="humorValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>😐 Serious</span>
+                        <span>😂 Funny</span>
+                    </div>
+                    <input type="range" id="humor" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Approach</span>
+                        <span id="actionValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>🧘 Mindful</span>
+                        <span>⚡ Action</span>
+                    </div>
+                    <input type="range" id="action" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Message Length</span>
+                        <span id="lengthValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>💬 Quote</span>
+                        <span>📜 Speech</span>
+                    </div>
+                    <input type="range" id="length" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Music Style</span>
+                        <span id="musicValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>🎵 Chill</span>
+                        <span>🎸 Rock</span>
+                    </div>
+                    <input type="range" id="music" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Visual Style</span>
+                        <span id="visualValue">50</span>
+                    </div>
+                    <div class="slider-extremes">
+                        <span>🖼️ Still</span>
+                        <span>🎬 Video</span>
+                    </div>
+                    <input type="range" id="visual" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <button id="generateBtn" class="generate-btn">🚀 Generate My Message</button>
+                
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="/admin" style="color: #6366f1; text-decoration: none; font-size: 0.9em; opacity: 0.8;">
+                        🔧 Admin Panel
+                    </a>
+                </div>
+            </div>
+
+            <div class="output-panel">
+                <h2 class="output-title">Your Personalized Message</h2>
+                <div id="messageDisplay" class="message-display">
+                    <div class="loading">Set your preferences and click "Generate" to create your custom motivational message!</div>
+                </div>
+                
+                <div id="messageMeta" class="message-meta" style="display: none;">
+                    <div class="meta-item">
+                        <div class="meta-label">Style</div>
+                        <div class="meta-value" id="metaStyle">-</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Music</div>
+                        <div class="meta-value" id="metaMusic">-</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Visual</div>
+                        <div class="meta-value" id="metaVisual">-</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Background</div>
+                        <div class="meta-value" id="metaBackground">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Update slider values in real-time
+        const sliders = ['intensity', 'language', 'humor', 'action', 'length', 'music', 'visual'];
+        
+        sliders.forEach(sliderId => {
+            const slider = document.getElementById(sliderId);
+            const valueDisplay = document.getElementById(sliderId + 'Value');
+            
+            slider.addEventListener('input', function() {
+                valueDisplay.textContent = this.value;
+            });
+        });
+
+        // Generate message functionality
+        document.getElementById('generateBtn').addEventListener('click', async function() {
+            const userInput = document.getElementById('userInput').value.trim();
+            
+            if (!userInput) {
+                alert('Please enter what you need motivation for!');
+                return;
+            }
+
+            // Collect preferences
+            const preferences = {
+                intensity: parseInt(document.getElementById('intensity').value),
+                language_clean: parseInt(document.getElementById('language').value),
+                humor_style: parseInt(document.getElementById('humor').value),
+                action_orientation: parseInt(document.getElementById('action').value),
+                message_length: parseInt(document.getElementById('length').value),
+                music_style: parseInt(document.getElementById('music').value),
+                visual_style: parseInt(document.getElementById('visual').value),
+                user_input: userInput
+            };
+
+            // Show loading state
+            const messageDisplay = document.getElementById('messageDisplay');
+            const generateBtn = document.getElementById('generateBtn');
+            const messageMeta = document.getElementById('messageMeta');
+            
+            generateBtn.disabled = true;
+            generateBtn.textContent = '🤖 Generating...';
+            messageDisplay.innerHTML = '<div class="loading">AI is crafting your perfect motivational message...</div>';
+            messageMeta.style.display = 'none';
+
+            try {
+                // Call the demo endpoint (doesn't require OpenAI API key)
+                const response = await fetch('/demo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(preferences)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to generate message');
+                }
+
+                const result = await response.json();
+                
+                // Display the generated message
+                messageDisplay.innerHTML = `<div class="message-content">${result.message_text}</div>`;
+                
+                // Update metadata
+                document.getElementById('metaStyle').textContent = result.style.replace('_', ' ').toUpperCase();
+                document.getElementById('metaMusic').textContent = result.music_style.replace('_', ' ').toUpperCase();
+                document.getElementById('metaVisual').textContent = result.visual_style.replace('_', ' ').toUpperCase();
+                document.getElementById('metaBackground').textContent = result.background_image.split('/').pop().split('.')[0].replace('_', ' ').toUpperCase();
+                
+                messageMeta.style.display = 'grid';
+
+            } catch (error) {
+                console.error('Error:', error);
+                messageDisplay.innerHTML = `<div class="error">Sorry, there was an error generating your message. Please try again!</div>`;
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.textContent = '🚀 Generate My Message';
+            }
+        });
+
+        // Demo functionality (when backend is not available)
+        function generateDemoMessage(preferences) {
+            const styles = {
+                high_intensity: "🔥 WAKE UP, WARRIOR! Today isn't just another day - it's YOUR day to dominate! Stop making excuses and START MAKING MOVES! Your future self is watching - make them proud!",
+                yoga_mindful: "🧘‍♀️ Take a deep breath, beautiful soul. This moment is your sacred beginning. Trust the process, honor your journey, and remember - every step forward is a victory worth celebrating.",
+                comedy: "😂 So you want to {topic}? That's like trying to fold a fitted sheet while riding a unicycle - seems impossible, but hey, at least you'll have some interesting stories to tell!",
+                action: "⚡ TIME FOR ACTION! Here's your battle plan: 1) Stop overthinking 2) Start moving 3) Crush your goals 4) Repeat until legendary! No more 'tomorrow' - today is THE day!"
+            };
+
+            let selectedStyle = "action";
+            
+            if (preferences.intensity < 30) {
+                selectedStyle = "yoga_mindful";
+            } else if (preferences.intensity > 80) {
+                selectedStyle = "high_intensity";
+            } else if (preferences.humor_style > 60) {
+                selectedStyle = "comedy";
+            }
+
+            let message = styles[selectedStyle];
+            message = message.replace('{topic}', preferences.user_input);
+
+            return {
+                message_text: message,
+                style: selectedStyle,
+                music_style: preferences.music_style > 50 ? "energetic_rock" : "calm_ambient",
+                visual_style: preferences.visual_style > 50 ? "dynamic_video" : "static_image",
+                background_image: "motivational_landscape.jpg"
+            };
+        }
+
+        // Fallback demo button (remove when backend is ready)
+        document.getElementById('generateBtn').addEventListener('click', function() {
+            // If fetch fails, use demo
+            if (this.textContent.includes('Generate')) {
+                setTimeout(() => {
+                    const userInput = document.getElementById('userInput').value.trim();
+                    if (!userInput) return;
+
+                    const preferences = {
+                        intensity: parseInt(document.getElementById('intensity').value),
+                        language_clean: parseInt(document.getElementById('language').value),
+                        humor_style: parseInt(document.getElementById('humor').value),
+                        action_orientation: parseInt(document.getElementById('action').value),
+                        message_length: parseInt(document.getElementById('length').value),
+                        music_style: parseInt(document.getElementById('music').value),
+                        visual_style: parseInt(document.getElementById('visual').value),
+                        user_input: userInput
+                    };
+
+                    const demoResult = generateDemoMessage(preferences);
+                    
+                    document.getElementById('messageDisplay').innerHTML = `<div class="message-content">${demoResult.message_text}</div>`;
+                    document.getElementById('metaStyle').textContent = demoResult.style.replace('_', ' ').toUpperCase();
+                    document.getElementById('metaMusic').textContent = demoResult.music_style.replace('_', ' ').toUpperCase();
+                    document.getElementById('metaVisual').textContent = demoResult.visual_style.replace('_', ' ').toUpperCase();
+                    document.getElementById('metaBackground').textContent = demoResult.background_image.split('.')[0].replace('_', ' ').toUpperCase();
+                    document.getElementById('messageMeta').style.display = 'grid';
+                }, 1500);
+            }
+        });
+    </script>
+</body>
+</html> 

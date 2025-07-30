@@ -1,0 +1,39 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+*.tmp
+*.bak
+
+# Media files
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+# Backup files
+*.backup
+*.old

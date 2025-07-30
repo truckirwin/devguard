@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Motivation AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 165, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #cccccc;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-online { background-color: #4CAF50; }
+        .status-demo { background-color: #FFC107; }
+        .status-offline { background-color: #F44336; }
+
+        .input-section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+        }
+
+        .input-section h3 {
+            color: #ff6b35;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .user-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 165, 0, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 1.1em;
+            resize: vertical;
+            min-height: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .user-input:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .sliders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .slider-container {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255, 165, 0, 0.1);
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .slider-title {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .slider-value {
+            background: #ff6b35;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            min-width: 35px;
+            text-align: center;
+        }
+
+        .slider-range {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.85em;
+            color: #cccccc;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            outline: none;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 2px solid rgba(255, 165, 0, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #ff6b35;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .result-container {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            display: none;
+        }
+
+        .result-container.success {
+            border-color: rgba(76, 175, 80, 0.5);
+        }
+
+        .result-container.error {
+            border-color: rgba(244, 67, 54, 0.5);
+        }
+
+        .result-title {
+            color: #ff6b35;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .message-content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .download-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .download-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .download-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+        }
+
+        .download-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .download-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .api-status {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 165, 0, 0.1);
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Agentic Motivation AI</h1>
+            <p>Powered by Claude Sonnet • ElevenLabs • Leonardo AI</p>
+            <div id="connectionStatus" class="api-status">
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span id="claudeStatus" class="status-indicator status-offline"></span>
+                        <span>Claude Sonnet</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="elevenlabsStatus" class="status-indicator status-offline"></span>
+                        <span>ElevenLabs</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="leonardoStatus" class="status-indicator status-offline"></span>
+                        <span>Leonardo AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <h3>💭 What do you need motivation for?</h3>
+            <textarea 
+                id="userInput" 
+                class="user-input" 
+                placeholder="e.g., 'starting a morning workout routine', 'building confidence for job interviews', 'staying consistent with healthy eating'..."
+                rows="3"
+            ></textarea>
+        </div>
+
+        <div class="sliders-grid">
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">💪 Intensity</span>
+                    <span id="intensityValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>😌 Chill</span>
+                    <span>💪 Drill Sergeant</span>
+                </div>
+                <input type="range" id="intensity" class="slider" min="0" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">🗣️ Language</span>
+                    <span id="languageValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>🤬 Raw</span>
+                    <span>😇 Clean</span>
+                </div>
+                <input type="range" id="language" class="slider" min="0" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">😂 Humor</span>
+                    <span id="humorValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>😐 Serious</span>
+                    <span>😂 Funny</span>
+                </div>
+                <input type="range" id="humor" class="slider" min="0" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">⚡ Approach</span>
+                    <span id="approachValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>🧘 Mindful</span>
+                    <span>⚡ Action</span>
+                </div>
+                <input type="range" id="approach" class="slider" min="0" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">📏 Length</span>
+                    <span id="lengthValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>💬 Quote</span>
+                    <span>📜 Speech</span>
+                </div>
+                <input type="range" id="length" class="slider" min="0" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">🎵 Music</span>
+                    <span id="musicValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>🎵 Chill</span>
+                    <span>🎸 Rock</span>
+                </div>
+                <input type="range" id="music" class="slider" min="0" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span class="slider-title">🎨 Visual</span>
+                    <span id="visualValue" class="slider-value">50</span>
+                </div>
+                <div class="slider-range">
+                    <span>🖼️ Still</span>
+                    <span>🎬 Dynamic</span>
+                </div>
+                <input type="range" id="visual" class="slider" min="0" max="100" value="50">
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="generateAgentic" class="btn btn-primary">
+                🚀 Generate Complete Package
+            </button>
+            <button id="generateDemo" class="btn btn-secondary">
+                🎭 Try Demo Mode
+            </button>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <div id="loadingText">🧠 Claude is crafting your message...</div>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div id="result" class="result-container">
+            <div id="resultTitle" class="result-title"></div>
+            <div id="messageContent" class="message-content"></div>
+            <div id="downloadSection" class="download-section"></div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize slider value displays
+        function initializeSliders() {
+            const sliders = ['intensity', 'language', 'humor', 'approach', 'length', 'music', 'visual'];
+            
+            sliders.forEach(sliderId => {
+                const slider = document.getElementById(sliderId);
+                const valueDisplay = document.getElementById(sliderId + 'Value');
+                
+                slider.addEventListener('input', (e) => {
+                    valueDisplay.textContent = e.target.value;
+                });
+            });
+        }
+
+        // Check API status
+        async function checkApiStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const status = await response.json();
+                
+                document.getElementById('claudeStatus').className = 
+                    `status-indicator ${status.anthropic_configured ? 'status-online' : 'status-offline'}`;
+                document.getElementById('elevenlabsStatus').className = 
+                    `status-indicator ${status.elevenlabs_configured ? 'status-online' : 'status-offline'}`;
+                document.getElementById('leonardoStatus').className = 
+                    `status-indicator ${status.leonardo_configured ? 'status-online' : 'status-offline'}`;
+                
+                return status.fully_configured;
+            } catch (error) {
+                console.error('Error checking API status:', error);
+                return false;
+            }
+        }
+
+        // Show loading with progress simulation
+        function showLoading(mode = 'agentic') {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('result').style.display = 'none';
+            
+            const loadingTexts = mode === 'agentic' ? [
+                '🧠 Claude Sonnet is crafting your message...',
+                '🎵 ElevenLabs is generating audio...',
+                '🎨 Leonardo AI is creating your image...',
+                '📦 Packaging your motivation...'
+            ] : [
+                '💭 Generating demo message...'
+            ];
+            
+            let step = 0;
+            const progressFill = document.getElementById('progressFill');
+            const loadingText = document.getElementById('loadingText');
+            
+            const updateProgress = () => {
+                if (step < loadingTexts.length) {
+                    loadingText.textContent = loadingTexts[step];
+                    progressFill.style.width = `${((step + 1) / loadingTexts.length) * 100}%`;
+                    step++;
+                    setTimeout(updateProgress, mode === 'agentic' ? 3000 : 1000);
+                }
+            };
+            
+            updateProgress();
+        }
+
+        // Hide loading
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        // Show result
+        function showResult(data, isError = false) {
+            hideLoading();
+            
+            const resultContainer = document.getElementById('result');
+            const resultTitle = document.getElementById('resultTitle');
+            const messageContent = document.getElementById('messageContent');
+            const downloadSection = document.getElementById('downloadSection');
+            
+            resultContainer.style.display = 'block';
+            resultContainer.className = `result-container ${isError ? 'error' : 'success'}`;
+            
+            if (isError) {
+                resultTitle.innerHTML = '❌ Generation Failed';
+                messageContent.textContent = data.error || 'An error occurred';
+                downloadSection.innerHTML = '';
+                return;
+            }
+            
+            // Success case
+            const modeIcon = data.agentic_mode ? '🤖' : '🎭';
+            const modeText = data.agentic_mode ? 'Agentic AI Package' : 'Demo Message';
+            resultTitle.innerHTML = `${modeIcon} ${modeText} Generated!`;
+            
+            messageContent.textContent = data.message_text;
+            
+            // Create download links
+            let downloadHTML = '';
+            
+            if (data.agentic_mode) {
+                downloadHTML = `
+                    <div class="download-item">
+                        <div class="download-icon">🎵</div>
+                        <a href="${data.audio_url}" class="download-link" download>Audio MP3</a>
+                    </div>
+                    <div class="download-item">
+                        <div class="download-icon">🎨</div>
+                        <a href="${data.image_url}" class="download-link" download>Motivation Image</a>
+                    </div>
+                    <div class="download-item">
+                        <div class="download-icon">📝</div>
+                        <a href="data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data.captions_json))}" 
+                           class="download-link" download="captions.json">Captions JSON</a>
+                    </div>
+                    <div class="download-item">
+                        <div class="download-icon">📦</div>
+                        <a href="${data.package_url}" class="download-link" download>Complete Package</a>
+                    </div>
+                `;
+            } else {
+                downloadHTML = `
+                    <div class="download-item">
+                        <div class="download-icon">💡</div>
+                        <div>Configure API keys for full generation</div>
+                    </div>
+                `;
+            }
+            
+            downloadSection.innerHTML = downloadHTML;
+        }
+
+        // Generate agentic package
+        async function generateAgenticPackage() {
+            const userInput = document.getElementById('userInput').value.trim();
+            
+            if (!userInput) {
+                alert('Please enter what you need motivation for.');
+                return;
+            }
+            
+            const preferences = {
+                user_input: userInput,
+                intensity: parseInt(document.getElementById('intensity').value),
+                language_clean: parseInt(document.getElementById('language').value),
+                humor_style: parseInt(document.getElementById('humor').value),
+                action_orientation: parseInt(document.getElementById('approach').value),
+                message_length: parseInt(document.getElementById('length').value),
+                music_style: parseInt(document.getElementById('music').value),
+                visual_style: parseInt(document.getElementById('visual').value)
+            };
+            
+            showLoading('agentic');
+            
+            try {
+                const response = await fetch('/generate_agentic_package', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(preferences)
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showResult(data);
+                } else {
+                    showResult(data, true);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showResult({ error: 'Network error occurred' }, true);
+            }
+        }
+
+        // Generate demo
+        async function generateDemo() {
+            const userInput = document.getElementById('userInput').value.trim();
+            
+            if (!userInput) {
+                alert('Please enter what you need motivation for.');
+                return;
+            }
+            
+            const preferences = {
+                user_input: userInput,
+                intensity: parseInt(document.getElementById('intensity').value),
+                language_clean: parseInt(document.getElementById('language').value),
+                humor_style: parseInt(document.getElementById('humor').value),
+                action_orientation: parseInt(document.getElementById('approach').value),
+                message_length: parseInt(document.getElementById('length').value),
+                music_style: parseInt(document.getElementById('music').value),
+                visual_style: parseInt(document.getElementById('visual').value)
+            };
+            
+            showLoading('demo');
+            
+            try {
+                const response = await fetch('/generate_demo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(preferences)
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showResult(data);
+                } else {
+                    showResult(data, true);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showResult({ error: 'Network error occurred' }, true);
+            }
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeSliders();
+            checkApiStatus();
+            
+            document.getElementById('generateAgentic').addEventListener('click', generateAgenticPackage);
+            document.getElementById('generateDemo').addEventListener('click', generateDemo);
+        });
+    </script>
+</body>
+</html> 

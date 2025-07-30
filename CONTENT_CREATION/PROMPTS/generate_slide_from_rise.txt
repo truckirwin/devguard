@@ -1,0 +1,72 @@
+
+
+Analyze the document in the
+Ribbon
+Outline
+Document
+Analyze the document in the INPUT. This is the text representation of an eLearning lesson in Articulate Rise.
+Look for patterns that resemble Powerpoint slides as described below. These will correspond to the slide content to be developed.
+
+<variables>
+LESSONTITLE = Introducing Amazon Q Developer
+LESSONNUM = 2
+SUBJECT = Amazon Q Q Developer overview
+NUMSLIDES = 8
+DOCSURL = ﻿https://docs.aws.amazon.com/amazonq/﻿
+TARGETAUDIENCE = Cloud practitioners who are knowledgeable in AWS.
+</variables>
+
+Following the course outline below, extract the slide content for Lesson LESSONNUM from the INPUT.
+
+Remember to use the outline below as context for which topics should be covered in this lesson and which topics are covered before and after this lesson.
+
+Reply with the entire lesson according to the total number of slides requested as NUMSLIDES.
+
+Verify all statements against the current AWS Documentation at DOCSURL.
+Write in the style of AWS documentation.
+
+Act as an experienced AWS Technical Curriculum Developer.
+Your job is to create a PowerPoint slide deck for a new technology class about SUBJECT.
+The class will be for TARGET AUDIENCE.
+
+Use the following information to provide a customized response using all the information to create the sides.
+
+All slides should start with Slide nn: slide_title, where nn is the enumerated slide number starting with 1 and slide_title is a meaningful title for the slide.
+//The first slide should include the word Walk-in: following the Slide nn: and before the slide_title. (No bullets or notes)
+//The second slide should include the word TITLE: following the Slide nn: and before the slide_title. (No bullets or notes)
+The first slide is a section slide and should inlude the word SECTION: before slide_title.
+Each slide thereafter must also contain the following:
+Include the slide number and title as Slide nn: and before slide_title
+3-5 bullet notes should appear with a single leading dash on the line. (under 8 words for each bullet)
+Include speaker notes following the bullets with the word SPEAKERNOTES: (DO NOT ADD ANY OTHER TEXT)
+Write |IMAGE DESCRIPTION:
+On the next line, write a detailed image suggestion to convey the subject of the slide.
+On the next line write the word |INSTRUCTOR NOTES: on its own line.
+On the next line, Write this in the form of a short bulleted list covering the topics on this slide.
+On the next line, write the word |STUDENT NOTES:
+Write the notes on the next line in the form of 2-3 short, concise paragraphs that describe the subject(s) covered on the slide.
+
+Add one last slide, with the title Demo nn: And the title of the corresponding Demo from the outline.
+
+<example>
+Slide 1: SECTION: Amazon Q Overview
+- Generative AI assistant
+- Accelerates software development
+- Leverages internal data
+- Integrates with IDEs
+
+SPEAKERNOTES:
+|IMAGE DESCRIPTION:
+A slide with the Amazon Q Developer logo and an illustration showing a developer working on code with the assistance of an AI assistant.
+
+|INSTRUCTOR NOTES:
+- Introduce Amazon Q as a generative AI-powered assistant
+- Highlight its capabilities in software development acceleration
+- Mention integration with IDEs and internal data sources
+
+|STUDENT NOTES:
+Amazon Q is a powerful generative AI assistant designed to accelerate the software development lifecycle. It leverages advanced AI capabilities to assist developers with tasks like code generation, testing, debugging, and optimization. A key strength of Amazon Q is its ability to integrate with popular IDEs and leverage an organization's internal data sources, such as code repositories and documentation, to provide tailored and contextual assistance.
+</example>
+
+<outline/>
+Link copied to clipboard

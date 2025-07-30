@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Deal Finder - Grant Cardone Criteria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 1400px;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+        }
+        .search-panel {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .results-panel {
+            padding: 30px;
+            min-height: 400px;
+        }
+        .deal-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .deal-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .score-badge {
+            font-size: 0.9em;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .score-strong-buy { background-color: #d4edda; color: #155724; }
+        .score-buy { background-color: #d1ecf1; color: #0c5460; }
+        .score-consider { background-color: #fff3cd; color: #856404; }
+        .score-pass { background-color: #f8d7da; color: #721c24; }
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .metric-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            padding: 12px 15px;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-container">
+            <!-- Header -->
+            <div class="header">
+                <h1><i class="fas fa-building"></i> Real Estate Deal Finder</h1>
+                <p class="mb-0">Find multi-family properties meeting Grant Cardone's investment criteria</p>
+            </div>
+
+            <!-- Search Panel -->
+            <div class="search-panel">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="form-label">Location</label>
+                        <input type="text" class="form-control" id="location" value="Boise, ID">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Min Units</label>
+                        <input type="number" class="form-control" id="minUnits" value="5" min="1" max="100">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Max Units</label>
+                        <input type="number" class="form-control" id="maxUnits" value="50" min="1" max="200">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Min Cap Rate (%)</label>
+                        <input type="number" class="form-control" id="minCapRate" value="6.5" min="0" max="20" step="0.1">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label class="form-label">Min Cash-on-Cash (%)</label>
+                        <input type="number" class="form-control" id="minCashOnCash" value="8.0" min="0" max="50" step="0.1">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Min Price</label>
+                        <input type="number" class="form-control" id="minPrice" value="0" min="0">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Max Price</label>
+                        <input type="number" class="form-control" id="maxPrice" value="1000000" min="0">
+                    </div>
+                    <div class="col-md-3 d-flex align-items-end">
+                        <button class="btn btn-primary w-100" onclick="searchDeals()">
+                            <i class="fas fa-search"></i> Search Deals
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Panel -->
+            <div class="results-panel">
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Searching for qualifying properties...</p>
+                </div>
+                
+                <div id="results" style="display: none;">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3>Qualifying Deals (<span id="dealCount">0</span>)</h3>
+                        <button class="btn btn-success" onclick="exportDeals()">
+                            <i class="fas fa-download"></i> Export to CSV
+                        </button>
+                    </div>
+                    <div id="dealsList"></div>
+                </div>
+                
+                <div id="noResults" style="display: none;">
+                    <div class="text-center py-5">
+                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                        <h4>No qualifying properties found</h4>
+                        <p class="text-muted">Try adjusting your search criteria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentDeals = [];
+
+        async function searchDeals() {
+            const searchData = {
+                location: document.getElementById('location').value,
+                min_units: parseInt(document.getElementById('minUnits').value),
+                max_units: parseInt(document.getElementById('maxUnits').value),
+                min_cap_rate: parseFloat(document.getElementById('minCapRate').value),
+                min_cash_on_cash: parseFloat(document.getElementById('minCashOnCash').value),
+                min_price: parseInt(document.getElementById('minPrice').value),
+                max_price: parseInt(document.getElementById('maxPrice').value)
+            };
+
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('noResults').style.display = 'none';
+
+            try {
+                const response = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(searchData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    currentDeals = data.deals;
+                    displayDeals(data.deals);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('Network error: ' + error.message);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+
+        function displayDeals(deals) {
+            const dealsList = document.getElementById('dealsList');
+            const dealCount = document.getElementById('dealCount');
+            
+            dealCount.textContent = deals.length;
+
+            if (deals.length === 0) {
+                document.getElementById('noResults').style.display = 'block';
+                document.getElementById('results').style.display = 'none';
+                return;
+            }
+
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('noResults').style.display = 'none';
+
+            dealsList.innerHTML = deals.map((deal, index) => `
+                <div class="deal-card">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h5><i class="fas fa-map-marker-alt text-primary"></i> ${deal.address}</h5>
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-building"></i> ${deal.units} units | 
+                                <i class="fas fa-calendar"></i> Built: ${deal.year_built || 'N/A'} | 
+                                <i class="fas fa-tag"></i> Source: ${deal.source}
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <span class="score-badge score-${deal.recommendation.toLowerCase().replace(' ', '-')}">
+                                ${deal.recommendation}
+                            </span>
+                            <div class="mt-2">
+                                <span class="badge bg-primary">Score: ${deal.cardone_score}/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <div class="metric-value">$${deal.price.toLocaleString()}</div>
+                                <div class="metric-label">Price</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <div class="metric-value">${deal.cap_rate.toFixed(2)}%</div>
+                                <div class="metric-label">Cap Rate</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <div class="metric-value">${deal.cash_on_cash_return.toFixed(2)}%</div>
+                                <div class="metric-label">Cash-on-Cash</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <div class="metric-value">$${deal.monthly_gross_income.toLocaleString()}</div>
+                                <div class="metric-label">Gross Income</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <div class="metric-value">$${deal.monthly_net_income.toLocaleString()}</div>
+                                <div class="metric-label">Net Income</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <div class="metric-value">$${deal.monthly_cash_flow.toLocaleString()}</div>
+                                <div class="metric-label">Cash Flow</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <small class="text-muted">
+                                <strong>Down Payment:</strong> $${deal.down_payment.toLocaleString()} | 
+                                <strong>Price/Unit:</strong> $${deal.price_per_unit.toLocaleString()}
+                            </small>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <small class="text-muted">
+                                <strong>Annual Cash Flow:</strong> $${deal.annual_cash_flow.toLocaleString()}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function exportDeals() {
+            if (currentDeals.length === 0) {
+                alert('No deals to export');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/export', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ deals: currentDeals })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Download the file
+                    window.location.href = `/api/download/${data.filename}`;
+                } else {
+                    alert('Export failed: ' + data.error);
+                }
+            } catch (error) {
+                alert('Export error: ' + error.message);
+            }
+        }
+
+        function showError(message) {
+            document.getElementById('noResults').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('noResults').innerHTML = `
+                <div class="text-center py-5">
+                    <i class="fas fa-exclamation-triangle fa-3x text-danger mb-3"></i>
+                    <h4>Error occurred</h4>
+                    <p class="text-muted">${message}</p>
+                </div>
+            `;
+        }
+
+        // Auto-search on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            searchDeals();
+        });
+    </script>
+</body>
+</html> 

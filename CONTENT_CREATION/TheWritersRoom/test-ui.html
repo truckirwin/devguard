@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Writers Room - UI Test</title>
+    <style>
+        /* Import the styles */
+        @import url('src/renderer/styles/main.css');
+        @import url('src/renderer/styles/launch-screen.css');
+        @import url('src/renderer/styles/new-project-dialog.css');
+        @import url('src/renderer/styles/editor.css');
+        
+        /* Test-specific styles */
+        .test-info {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 10000;
+        }
+        
+        .test-info h3 {
+            margin: 0 0 10px 0;
+            color: #2563eb;
+        }
+        
+        .test-info ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .test-info li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-info">
+        <h3>🧪 UI Test Mode</h3>
+        <ul>
+            <li>✅ Launch screen visible</li>
+            <li>✅ Click "Create New Project"</li>
+            <li>✅ Test project type selection</li>
+            <li>✅ Test form navigation</li>
+            <li>⚠️  No file operations (requires Node.js)</li>
+        </ul>
+    </div>
+
+    <div id="app">
+        <!-- Launch Screen -->
+        <div id="launch-screen" class="launch-screen">
+            <div class="launch-header">
+                <div class="logo">
+                    <h1>The Writers Room</h1>
+                    <p>AI-Powered Creative Writing IDE</p>
+                </div>
+            </div>
+            
+            <div class="launch-content">
+                <div class="welcome-section">
+                    <h2>Welcome to The Writers Room</h2>
+                    <p>Your professional writing environment with AI agents</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="create-new-project" class="btn btn-primary btn-large">
+                        <span class="icon">📝</span>
+                        <span class="text">
+                            <strong>Create New Project</strong>
+                            <small>Start a fresh screenplay, novel, or creative project</small>
+                        </span>
+                    </button>
+                    
+                    <button id="resume-last-project" class="btn btn-secondary btn-large" disabled>
+                        <span class="icon">🔄</span>
+                        <span class="text">
+                            <strong>Resume Last Project</strong>
+                            <small>Continue where you left off</small>
+                        </span>
+                    </button>
+                    
+                    <button id="open-existing-project" class="btn btn-outline btn-large">
+                        <span class="icon">📁</span>
+                        <span class="text">
+                            <strong>Open Existing Project</strong>
+                            <small>Browse and open previous projects</small>
+                        </span>
+                    </button>
+                </div>
+                
+                <div class="recent-projects-section">
+                    <h3>Recent Projects</h3>
+                    <div id="recent-projects-list" class="recent-projects-list">
+                        <div class="no-projects">
+                            <p>No recent projects</p>
+                            <small>Create your first project to get started</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="launch-footer">
+                <div class="footer-links">
+                    <a href="#" id="show-about">About</a>
+                    <a href="#" id="show-help">Help</a>
+                    <a href="#" id="show-settings">Settings</a>
+                </div>
+                <div class="version">
+                    Version 1.0.0
+                </div>
+            </div>
+        </div>
+        
+        <!-- New Project Dialog -->
+        <div id="new-project-dialog" class="modal-overlay hidden">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h2>Create New Project</h2>
+                    <button id="close-new-project-dialog" class="btn-close">&times;</button>
+                </div>
+                
+                <div class="modal-content">
+                    <div class="form-step" id="step-1">
+                        <h3>Choose Project Type</h3>
+                        <div class="project-type-grid">
+                            <div class="project-type-card" data-type="screenplay">
+                                <div class="card-icon">🎬</div>
+                                <h4>Screenplay</h4>
+                                <p>Movie, TV series, or other visual media scripts</p>
+                            </div>
+                            <div class="project-type-card" data-type="novel">
+                                <div class="card-icon">📚</div>
+                                <h4>Novel</h4>
+                                <p>Long-form fiction or non-fiction books</p>
+                            </div>
+                            <div class="project-type-card" data-type="stageplay">
+                                <div class="card-icon">🎭</div>
+                                <h4>Stage Play</h4>
+                                <p>Theater scripts and plays</p>
+                            </div>
+                            <div class="project-type-card" data-type="podcast">
+                                <div class="card-icon">🎧</div>
+                                <h4>Podcast Script</h4>
+                                <p>Audio content and podcast episodes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step hidden" id="step-2">
+                        <h3>Project Details</h3>
+                        <div class="form-group">
+                            <label for="project-name">Project Name</label>
+                            <input type="text" id="project-name" placeholder="Enter project name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-subtype">Type</label>
+                            <select id="project-subtype" required>
+                                <option value="">Select type...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-genre">Genre</label>
+                            <select id="project-genre" required>
+                                <option value="">Select genre...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-description">Description (Optional)</label>
+                            <textarea id="project-description" placeholder="Brief description of your project"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step hidden" id="step-3">
+                        <h3>Project Setup</h3>
+                        <div class="setup-preview">
+                            <h4>Project Structure</h4>
+                            <div id="structure-preview" class="structure-preview">
+                                <!-- Structure will be populated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="ai-setup">
+                            <h4>AI Agent Setup</h4>
+                            <div id="ai-agents-preview" class="ai-agents-preview">
+                                <!-- AI agents will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button id="prev-step" class="btn btn-outline" disabled>Previous</button>
+                    <button id="next-step" class="btn btn-primary">Next</button>
+                    <button id="create-project" class="btn btn-primary hidden">Create Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple test functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Test project type selection
+            const projectTypeCards = document.querySelectorAll('.project-type-card');
+            projectTypeCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    projectTypeCards.forEach(c => c.classList.remove('selected'));
+                    this.classList.add('selected');
+                    document.getElementById('next-step').disabled = false;
+                });
+            });
+
+            // Test dialog navigation
+            document.getElementById('create-new-project').addEventListener('click', function() {
+                document.getElementById('new-project-dialog').classList.remove('hidden');
+            });
+
+            document.getElementById('close-new-project-dialog').addEventListener('click', function() {
+                document.getElementById('new-project-dialog').classList.add('hidden');
+            });
+
+            document.getElementById('next-step').addEventListener('click', function() {
+                const currentStep = document.querySelector('.form-step:not(.hidden)');
+                const nextStep = currentStep.nextElementSibling;
+                
+                if (nextStep && nextStep.classList.contains('form-step')) {
+                    currentStep.classList.add('hidden');
+                    nextStep.classList.remove('hidden');
+                    
+                    if (nextStep.id === 'step-3') {
+                        document.getElementById('next-step').style.display = 'none';
+                        document.getElementById('create-project').style.display = 'inline-flex';
+                    }
+                }
+            });
+
+            document.getElementById('prev-step').addEventListener('click', function() {
+                const currentStep = document.querySelector('.form-step:not(.hidden)');
+                const prevStep = currentStep.previousElementSibling;
+                
+                if (prevStep && prevStep.classList.contains('form-step')) {
+                    currentStep.classList.add('hidden');
+                    prevStep.classList.remove('hidden');
+                    
+                    document.getElementById('next-step').style.display = 'inline-flex';
+                    document.getElementById('create-project').style.display = 'none';
+                }
+            });
+
+            // Test footer links
+            document.getElementById('show-about').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('About The Writers Room\nVersion 1.0.0\n\nA desktop AI-powered creative writing IDE.');
+            });
+
+            document.getElementById('show-help').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Help documentation will be available in future versions.');
+            });
+
+            document.getElementById('show-settings').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Settings will be available in future versions.');
+            });
+        });
+    </script>
+</body>
+</html> 

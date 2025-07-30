@@ -1,0 +1,28 @@
+# Core FastAPI Dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database Dependencies - PostgreSQL ONLY
+# CRITICAL: This application now requires PostgreSQL exclusively
+# SQLite has been removed due to concurrency and performance issues
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.7  # PostgreSQL driver - REQUIRED for database connection
+
+# File and Web Dependencies
+python-multipart==0.0.6
+pillow==10.1.0
+python-pptx==0.6.23
+requests==2.31.0
+psutil==5.9.6
+
+# Authentication Dependencies
+bcrypt==4.1.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Configuration Dependencies
+python-dotenv==1.0.0
+
+# XML Processing Dependencies
+lxml==4.9.3 

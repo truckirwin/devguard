@@ -1,0 +1,98 @@
+{
+  "analysis_timestamp": "2025-06-25T17:17:15.740717",
+  "summary": {
+    "total_api_calls": 7,
+    "success_rate": 71.4,
+    "avg_response_time_ms": 963.0,
+    "total_slides_processed": 6,
+    "slides_with_content": 5
+  },
+  "detailed_metrics": {
+    "api_endpoints": {
+      "/api/ppt-text-editor/extract": 2,
+      "/api/v1/bulk-generate-notes": 1,
+      "/api/slide-images/ppt": 1,
+      "/api/slide-images/convert-sequential": 1,
+      "/api/slide-images/convert-background": 1,
+      "/api/ppt-analysis/analyze-or-get": 1
+    },
+    "error_distribution": {
+      "422_error": 2
+    },
+    "slide_performance": [
+      {
+        "slide_number": 1,
+        "success": true,
+        "processing_time_ms": 850,
+        "extracted_sections": 1
+      },
+      {
+        "slide_number": 2,
+        "success": false,
+        "processing_time_ms": 650,
+        "extracted_sections": 0
+      },
+      {
+        "slide_number": 3,
+        "success": true,
+        "processing_time_ms": 920,
+        "extracted_sections": 1
+      },
+      {
+        "slide_number": 4,
+        "success": true,
+        "processing_time_ms": 1100,
+        "extracted_sections": 1
+      },
+      {
+        "slide_number": 5,
+        "success": true,
+        "processing_time_ms": 745,
+        "extracted_sections": 1
+      },
+      {
+        "slide_number": 6,
+        "success": true,
+        "processing_time_ms": 890,
+        "extracted_sections": 1
+      }
+    ],
+    "response_time_distribution": [
+      120,
+      95,
+      2500,
+      1800,
+      300
+    ]
+  },
+  "performance_insights": [
+    "\ud83d\udcca Processed 6 slides with 71.4% success rate",
+    "\u26a1 Average API response time: 963.0ms",
+    "\ud83d\udd27 Most common errors: 422 Unprocessable Entity (2 occurrences)",
+    "\ud83d\ude80 Fastest endpoint: /api/ppt-text-editor/extract (avg 72ms)",
+    "\ud83d\udc0c Slowest operation: slide image conversion (avg 2.15s)"
+  ],
+  "optimization_recommendations": [
+    {
+      "type": "error_reduction",
+      "priority": "high",
+      "issue": "422 errors indicate tracking_id compatibility issues",
+      "recommendation": "Complete migration from numeric IDs to tracking_ids",
+      "impact": "Eliminate 422 errors and improve reliability"
+    },
+    {
+      "type": "performance",
+      "priority": "medium",
+      "issue": "Image conversion is the bottleneck (2+ seconds)",
+      "recommendation": "Implement image conversion caching and parallel processing",
+      "impact": "Reduce slide processing time by 60-80%"
+    },
+    {
+      "type": "reliability",
+      "priority": "low",
+      "issue": "Some slides return 0 content sections",
+      "recommendation": "Improve content extraction algorithms",
+      "impact": "Better content discovery and user experience"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="NotesGen - PowerPoint Notes Generator"
+    />
+    <!-- Cache control to prevent stale data issues -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>NotesGen</title>
+    <!-- Add Chakra UI CSS reset -->
+    <style>
+      /* CSS Reset */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Global theme variables */
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #1a202c;
+      }
+      
+      [data-theme="dark"] {
+        --bg-color: #0a0a0a;
+        --text-color: #d4d4d4;
+      }
+      
+      html, body, #root {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.2s ease, color 0.2s ease;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* For Heroicons */
+      .w-4 {
+        width: 1rem;
+      }
+      .h-4 {
+        height: 1rem;
+      }
+      .w-5 {
+        width: 1.25rem;
+      }
+      .h-5 {
+        height: 1.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html> 

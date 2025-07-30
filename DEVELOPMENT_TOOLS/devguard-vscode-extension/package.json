@@ -1,0 +1,217 @@
+{
+  "name": "devguard-backup",
+  "displayName": "DevGuard - Intelligent Code Backup",
+  "description": "Bulletproof backup protection with AI-powered auto-save detection",
+  "version": "1.0.0",
+  "publisher": "devguard",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "SCM Providers"
+  ],
+  "keywords": [
+    "backup",
+    "git",
+    "save",
+    "protection",
+    "auto-save",
+    "intelligent",
+    "phrase-detection"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "icon": "resources/icons/devguard-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devguard/vscode-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/devguard/vscode-extension/issues"
+  },
+  "homepage": "https://github.com/devguard/vscode-extension#readme",
+  "contributes": {
+    "commands": [
+      {
+        "command": "devguard.quickSave",
+        "title": "DevGuard: Quick Save",
+        "icon": "$(save)"
+      },
+      {
+        "command": "devguard.smartSave",
+        "title": "DevGuard: Smart Save with Message",
+        "icon": "$(save-as)"
+      },
+      {
+        "command": "devguard.dailyBackup",
+        "title": "DevGuard: Daily Backup",
+        "icon": "$(archive)"
+      },
+      {
+        "command": "devguard.openBackupLocation",
+        "title": "DevGuard: Open Backup Location",
+        "icon": "$(folder-opened)"
+      },
+      {
+        "command": "devguard.showStatus",
+        "title": "DevGuard: Show Backup Status",
+        "icon": "$(shield)"
+      },
+      {
+        "command": "devguard.toggleEnabled",
+        "title": "DevGuard: Toggle Protection",
+        "icon": "$(shield)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "devguard.quickSave",
+        "key": "ctrl+shift+s",
+        "mac": "cmd+shift+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "devguard.smartSave",
+        "key": "ctrl+shift+alt+s",
+        "mac": "cmd+shift+alt+s",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "DevGuard",
+      "properties": {
+        "devguard.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable DevGuard backup protection"
+        },
+        "devguard.backupLocation": {
+          "type": "string",
+          "default": "~/DevGuard-Backups",
+          "description": "Centralized backup location for all projects"
+        },
+        "devguard.completionPhrases": {
+          "type": "array",
+          "default": [
+            "that works",
+            "perfect",
+            "great that works",
+            "good that works",
+            "looks good",
+            "working now",
+            "fixed",
+            "done",
+            "completed",
+            "finished",
+            "success",
+            "excellent",
+            "brilliant",
+            "push it"
+          ],
+          "description": "Phrases that trigger automatic backup",
+          "items": {
+            "type": "string"
+          }
+        },
+        "devguard.autoCommitEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically commit changes to git"
+        },
+        "devguard.pushToRemote": {
+          "type": "boolean",
+          "default": true,
+          "description": "Push commits to remote repository"
+        },
+        "devguard.backupRetentionDays": {
+          "type": "number",
+          "default": 5,
+          "description": "Number of days to retain backups",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "devguard.phraseDetectionDelay": {
+          "type": "number",
+          "default": 2000,
+          "description": "Delay in milliseconds before analyzing typed text for completion phrases",
+          "minimum": 500,
+          "maximum": 10000
+        },
+        "devguard.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show backup notifications"
+        },
+        "devguard.excludePatterns": {
+          "type": "array",
+          "default": [
+            "node_modules",
+            ".git",
+            "venv",
+            "__pycache__",
+            "*.log",
+            "build",
+            "dist",
+            ".next",
+            "coverage",
+            ".DS_Store",
+            "*.tmp"
+          ],
+          "description": "Patterns to exclude from backups",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "devguard.quickSave"
+        },
+        {
+          "command": "devguard.smartSave"
+        },
+        {
+          "command": "devguard.dailyBackup"
+        },
+        {
+          "command": "devguard.openBackupLocation"
+        },
+        {
+          "command": "devguard.showStatus"
+        },
+        {
+          "command": "devguard.toggleEnabled"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "compile:watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.4",
+    "vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "archiver": "^5.3.1"
+  }
+}

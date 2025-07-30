@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-traincraftai-dev-fff6a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::073935708863:role/amplify-traincraftai-dev-fff6a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::073935708863:role/amplify-traincraftai-dev-fff6a-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-traincraftai-dev-fff6a-deployment",
+      "UnauthRoleName": "amplify-traincraftai-dev-fff6a-unauthRole",
+      "StackName": "amplify-traincraftai-dev-fff6a",
+      "StackId": "arn:aws:cloudformation:us-east-1:073935708863:stack/amplify-traincraftai-dev-fff6a/316ea4d0-2907-11f0-9849-0afffd11a7e7",
+      "AmplifyAppId": "d1my8p0rj3cd7b"
+    }
+  }
+}

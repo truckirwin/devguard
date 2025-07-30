@@ -1,0 +1,25 @@
+Here's a series of prompts to accomplish each bullet point for item 1, "Project Planning and Requirements Gathering":
+
+1. Generate a comprehensive project scope statement for an AWS-based chatbot application, including its primary objectives and key deliverables.
+
+2. Create a list of 10-15 essential questions to ask stakeholders and subject matter experts during the requirements gathering phase for the chatbot project.
+
+3. Develop a user persona template for the target audience of the chatbot application, including demographics, goals, pain points, and preferred communication styles.
+
+4. Outline a method for conducting a user needs analysis, including survey questions and interview topics to identify the primary requirements of the chatbot's target audience.
+
+5. Create a prioritized list of features and functionalities for the chatbot application, categorized into must-have, should-have, and nice-to-have items.
+
+6. Design a template for documenting functional requirements, including fields for requirement ID, description, priority, and acceptance criteria.
+
+7. Develop a set of measurable success criteria for the chatbot project, including metrics for user adoption, satisfaction, and business impact.
+
+8. Create a stakeholder analysis matrix, identifying key stakeholders, their roles, influence, and communication preferences for the chatbot project.
+
+9. Outline a requirements traceability matrix structure to link project requirements with their sources, test cases, and implementation status.
+
+10. Draft an agenda for a project kick-off meeting, including topics to cover, required attendees, and expected outcomes.
+
+11. Design a project charter template that includes sections for project background, objectives, scope, timeline, budget, and key stakeholders.
+
+12. Create a risk assessment template for identifying potential risks in the chatbot project, including fields for risk description, probability, impact, and mitigation strategies.

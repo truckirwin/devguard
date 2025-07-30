@@ -1,0 +1,356 @@
+================================================================================
+POWERPOINT SPEAKER NOTES XML ANALYSIS REPORT
+================================================================================
+
+File: ./uploads/ILT-TF-200-DEA-10-EN_M01.pptx
+Total Slides: 13
+Slides with Notes: 13
+
+FORMATTING PATTERNS FOUND:
+----------------------------------------
+Bullet Types: none, custom_character
+Special Characters: ~, |
+Indentation Levels: 1
+
+SLIDE 1 ANALYSIS:
+------------------------------
+Paragraphs: 1
+
+Raw Text:
+
+
+Formatted Text:
+
+
+
+SLIDE 2 ANALYSIS:
+------------------------------
+Paragraphs: 3
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices
+and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course ...
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices
+and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this cours...
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: none (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. 
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Introduce the course and its purpose||STUDENT NOTES:Welcome to the Data Engineering on AWS course. This comprehensive 3-day instructor-led training provides a deep dive into data engineering practices
+
+  Paragraph 3:
+    Text: and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engine
+    Bullet: none (None)
+    Indent: Level 0
+    Formatted: and solutions on AWS. Participants will learn how to design, build, optimize, and secure data engineering solutions using AWS services. From foundational concepts to hands-on implementation of data lakes, data warehouses, and both batch and streaming data pipelines, this course equips data professionals with the skills needed to architect and manage modern data solutions at scale
+
+
+SLIDE 3 ANALYSIS:
+------------------------------
+Paragraphs: 3
+
+Raw Text:
+|INSTRUCTOR NOTES:
+|Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• |Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: none (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: |Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data 
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Highlight the target audience and prerequisites||STUDENT NOTES:This course is appropriate for Data Engineers, Solution Architects, DevOps Engineers, IT Professionals, and  Data Analysts looking to expand into data engineering. To be successful, you should already have a basic understanding of AWS services, database concepts and data processing, and know at least one programming or scripting language.
+
+
+SLIDE 4 ANALYSIS:
+------------------------------
+Paragraphs: 2
+
+Raw Text:
+|INSTRUCTOR NOTES:
+Describe the high-level course objectives.|
+
+Formatted Text:
+|INSTRUCTOR NOTES:
+• Describe the high-level course objectives.|
+
+  Paragraph 1:
+    Text: |INSTRUCTOR NOTES:
+    Bullet: none (None)
+    Indent: Level 0
+    Formatted: |INSTRUCTOR NOTES:
+
+  Paragraph 2:
+    Text: Describe the high-level course objectives.|
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • Describe the high-level course objectives.|
+
+
+SLIDE 5 ANALYSIS:
+------------------------------
+Paragraphs: 2
+
+Raw Text:
+|Instructor notes
+|There will be a morning break, lunch about mid day and another break in the afternoon.
+
+Formatted Text:
+|Instructor notes
+|There will be a morning break, lunch about mid day and another break in the afternoon.
+
+  Paragraph 1:
+    Text: |Instructor notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes
+
+  Paragraph 2:
+    Text: |There will be a morning break, lunch about mid day and another break in the afternoon.
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |There will be a morning break, lunch about mid day and another break in the afternoon.
+
+
+SLIDE 6 ANALYSIS:
+------------------------------
+Paragraphs: 2
+
+Raw Text:
+|Instructor notes
+|There will be a morning break, lunch about mid day and another break in the afternoon.
+
+Formatted Text:
+|Instructor notes
+|There will be a morning break, lunch about mid day and another break in the afternoon.
+
+  Paragraph 1:
+    Text: |Instructor notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes
+
+  Paragraph 2:
+    Text: |There will be a morning break, lunch about mid day and another break in the afternoon.
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |There will be a morning break, lunch about mid day and another break in the afternoon.
+
+
+SLIDE 7 ANALYSIS:
+------------------------------
+Paragraphs: 2
+
+Raw Text:
+|Instructor notes
+|There will be a morning break, lunch about mid day and another break in the afternoon.
+
+Formatted Text:
+|Instructor notes
+|There will be a morning break, lunch about mid day and another break in the afternoon.
+
+  Paragraph 1:
+    Text: |Instructor notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes
+
+  Paragraph 2:
+    Text: |There will be a morning break, lunch about mid day and another break in the afternoon.
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |There will be a morning break, lunch about mid day and another break in the afternoon.
+
+
+SLIDE 8 ANALYSIS:
+------------------------------
+Paragraphs: 5
+
+Raw Text:
+~Dev notes
+~Information slide for instructor-led training (ILT) and virtual ILT
+|Student notes
+Your instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.
+
+Formatted Text:
+~Dev notes
+~Information slide for instructor-led training (ILT) and virtual ILT
+|Student notes
+Your instructor reviews expectations for breaks and lunch time. If you are attending your training virtually, review the virtual classroom software features with your instructor. They can explain to you how to use these features for class participation.
+
+  Paragraph 1:
+    Text: ~Dev notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Dev notes
+
+  Paragraph 2:
+    Text: ~Information slide for instructor-led training (ILT) and virtual ILT
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: ~Information slide for instructor-led training (ILT) and virtual ILT
+
+  Paragraph 3:
+    Text: |Student notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Student notes
+
+
+SLIDE 9 ANALYSIS:
+------------------------------
+Paragraphs: 3
+
+Raw Text:
+|Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|
+|Student notes
+Your introduction helps me understand the experience level of the class...
+
+Formatted Text:
+|Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|
+|Student notes
+Your introduction helps me understand the experience level of the class...
+
+  Paragraph 1:
+    Text: |Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beg
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes|Consider a poll to quickly gather role and knowledge levels of students at the beginning of class. Consider timing when selecting the mechanism for students to introduce themselves, particularly in a virtual setting or with many students. Twenty minutes is recommended for this module, including introductions. If you choose to spend longer on introductions, adjust timing elsewhere in the day.|
+
+  Paragraph 2:
+    Text: |Student notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Student notes
+
+  Paragraph 3:
+    Text: Your introduction helps me understand the experience level of the class and what you want to get out
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: Your introduction helps me understand the experience level of the class and what you want to get out of your time here.
+
+
+SLIDE 10 ANALYSIS:
+------------------------------
+Paragraphs: 4
+
+Raw Text:
+|Student notes
+Be an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.
+You are also welcome to ask questions.
+
+Formatted Text:
+|Student notes
+Be an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.
+You are also welcome to ask questions.
+
+  Paragraph 1:
+    Text: |Student notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Student notes
+
+  Paragraph 2:
+    Text: Be an active participant in this course to gain practical experience with MLOps. Use the discussions
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: Be an active participant in this course to gain practical experience with MLOps. Use the discussions, chat, whiteboards, and activities to check your knowledge and share your thoughts. Demonstrations will give you additional insight into different aspects of MLOps. Several labs will reinforce and apply what you are learning so that you are ready for real-life MLOps.
+
+
+SLIDE 11 ANALYSIS:
+------------------------------
+Paragraphs: 12
+
+Raw Text:
+|Instructor notes
+|Student access to labs
+|It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using t...
+
+Formatted Text:
+|Instructor notes
+• |Student access to labs
+  • |It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by u...
+
+  Paragraph 1:
+    Text: |Instructor notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes
+
+  Paragraph 2:
+    Text: |Student access to labs
+    Bullet: custom_character (•)
+    Indent: Level 0
+    Formatted: • |Student access to labs
+
+  Paragraph 3:
+    Text: |It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or
+    Bullet: custom_character (•)
+    Indent: Level 1
+    Formatted:   • |It is preferred that students create their AWS Builder Labs account by using their Amazon Retail or Partner Central login at the start of the class. It is highly encouraged for students to access their guides in this way so that the license code is auto-applied on behalf of the student. There is no need to purchase license codes from Gilmore if a student accesses their bookshelf account through the AWS Builder Labs dashboard. This can be done by using the unique student registration link provided at the beginning of class.
+
+
+SLIDE 12 ANALYSIS:
+------------------------------
+Paragraphs: 10
+
+Raw Text:
+|Instructor notes
+|You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.
+|
+|After the students choose the link to access their lab ...
+
+Formatted Text:
+|Instructor notes
+|You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.
+|
+|After the students choose the link to access their lab ...
+
+  Paragraph 1:
+    Text: |Instructor notes
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |Instructor notes
+
+  Paragraph 2:
+    Text: |You can log in to your instructor management view of the class details page in AWS Builder Labs and
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |You can log in to your instructor management view of the class details page in AWS Builder Labs and then switch to the Student View. In Student View, you can demo where to access their Lab Guide and Student Guide in the eVantage Bookshelf (VitalSource). Use the links shown in this slide. Labs will show as unavailable until you have preloaded the labs for the students, at which point they will be able to start the labs.
+
+  Paragraph 3:
+    Text: |
+    Bullet: None (None)
+    Indent: Level 0
+    Formatted: |
+
+
+SLIDE 13 ANALYSIS:
+------------------------------
+Paragraphs: 1
+
+Raw Text:
+
+
+Formatted Text:
+
+

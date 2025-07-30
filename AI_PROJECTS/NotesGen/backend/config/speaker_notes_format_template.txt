@@ -1,0 +1,77 @@
+# ==================================================================================
+# 🚨🚨🚨 PERFECT SPEAKER NOTES FORMAT TEMPLATE - NEVER CHANGE THIS FORMAT 🚨🚨🚨
+# ==================================================================================
+#
+# Date: 2025-06-28
+# Status: VALIDATED BY USER AS PERFECT
+# 
+# 🔥 CRITICAL WARNING: ANY CHANGES TO THIS FORMAT WILL BREAK DOWNSTREAM PROCESSING
+# 🔥 THIS IS THE EXACT FORMAT THAT MUST BE PRESERVED AT ALL COSTS
+# 🔥 USER CONFIRMED: "SAVE THAT FORMAT IT IS PERFECT"
+#
+# ==================================================================================
+
+~DEVELOPER NOTES
+~
+~ALT TEXT:
+~
+~REFERENCES:
+~
+~SLIDE DESCRIPTION:
+~
+~SCRIPT:
+~Welcome to Module 2 on Data Engineering Tools and Services on AWS.
+~
+|INSTRUCTOR NOTES
+|
+• |Review objectives briefly.
+|
+|STUDENT NOTES
+Welcome to this module. By the end of this session, you will be able to understand the key tools and services for data engineering on AWS.
+
+# ==================================================================================
+# 🚨🚨🚨 FORMAT RULES (ABSOLUTELY IMMUTABLE - NEVER CHANGE) 🚨🚨🚨
+# ==================================================================================
+
+# CRITICAL STRUCTURE REQUIREMENTS:
+# 1. Each section header is followed IMMEDIATELY by a delimiter line (~ or |)
+# 2. Between section header and delimiter: NO blank lines
+# 3. Between delimiter and content: NO blank lines  
+# 4. Between sections: NO blank lines EXCEPT in Student Notes
+# 5. All ~ sections end with ~ delimiter line
+# 6. All | sections end with | delimiter line (EXCEPT Student Notes which has no ending delimiter)
+
+# EXACT SECTION ORDER (NEVER CHANGE):
+# 1. ~DEVELOPER NOTES + ~ delimiter
+# 2. ~ALT TEXT: + ~ delimiter  
+# 3. ~REFERENCES: + ~ delimiter
+# 4. ~SLIDE DESCRIPTION: + ~ delimiter
+# 5. ~SCRIPT: + content with ~ prefixes + ~ delimiter
+# 6. |INSTRUCTOR NOTES + | delimiter + bullets with • | + | delimiter
+# 7. |STUDENT NOTES + clean content (no delimiters, no special characters)
+
+# SPACING RULES (NEVER CHANGE):
+# - Sections 1-6: NO blank lines anywhere
+# - Student Notes ONLY: blank lines between paragraphs
+# - List formatting: no blank lines before lists, no blank lines between items, one blank line after lists
+
+# SPECIAL CHARACTER PRESERVATION (CRITICAL):
+# - ALL ~ and | characters are REQUIRED for downstream PowerPoint processing
+# - Bullet format: • |content (bullet + space + pipe + content)
+# - ~ prefixed content lines in Script section
+# - Content sections (like Developer Notes, Alt Text) can be empty but MUST have delimiters
+
+# CONTENT GUIDELINES:
+# - DEVELOPER NOTES: Natural paragraph flow, NO numbered lists
+# - ALT TEXT: Actual visual descriptions for images/tables (empty if no visual elements)
+# - REFERENCES: URLs and documentation links
+# - SLIDE DESCRIPTION: Visual layout description for accessibility
+# - SCRIPT: Complete instructor delivery script by AWS Technical Trainers
+# - INSTRUCTOR NOTES: Bullet points with • | format
+# - STUDENT NOTES: Clean paragraphs, proper spacing, no special characters
+
+# ==================================================================================
+# 🔥 WARNING: THIS FORMAT HAS BEEN VALIDATED BY USER AS PERFECT
+# 🔥 ANY DEVIATION FROM THIS EXACT STRUCTURE WILL BREAK THE SYSTEM
+# 🔥 PRESERVE ALL SPACING, CHARACTERS, AND SECTION ORDER EXACTLY
+# ================================================================================== 

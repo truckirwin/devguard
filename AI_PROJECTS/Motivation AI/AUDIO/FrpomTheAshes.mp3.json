@@ -1,0 +1,1147 @@
+{
+  "language_code": null,
+  "segments": [
+    {
+      "text": "From the ashes of that old job, you're",
+      "start_time": 0.14,
+      "end_time": 3.319,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "From",
+          "start_time": 0.14,
+          "end_time": 0.28
+        },
+        {
+          "text": " ",
+          "start_time": 0.28,
+          "end_time": 0.299
+        },
+        {
+          "text": "the",
+          "start_time": 0.299,
+          "end_time": 0.439
+        },
+        {
+          "text": " ",
+          "start_time": 0.439,
+          "end_time": 0.56
+        },
+        {
+          "text": "ashes",
+          "start_time": 0.56,
+          "end_time": 1.24
+        },
+        {
+          "text": " ",
+          "start_time": 1.24,
+          "end_time": 1.48
+        },
+        {
+          "text": "of",
+          "start_time": 1.48,
+          "end_time": 1.6
+        },
+        {
+          "text": " ",
+          "start_time": 1.6,
+          "end_time": 1.62
+        },
+        {
+          "text": "that",
+          "start_time": 1.62,
+          "end_time": 1.86
+        },
+        {
+          "text": " ",
+          "start_time": 1.86,
+          "end_time": 1.919
+        },
+        {
+          "text": "old",
+          "start_time": 1.919,
+          "end_time": 2.139
+        },
+        {
+          "text": " ",
+          "start_time": 2.139,
+          "end_time": 2.24
+        },
+        {
+          "text": "job,",
+          "start_time": 2.24,
+          "end_time": 2.8
+        },
+        {
+          "text": " ",
+          "start_time": 2.8,
+          "end_time": 3.079
+        },
+        {
+          "text": "you're",
+          "start_time": 3.079,
+          "end_time": 3.319
+        }
+      ]
+    },
+    {
+      "text": "building something bigger, better, more",
+      "start_time": 3.319,
+      "end_time": 6.019,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "building",
+          "start_time": 3.319,
+          "end_time": 3.719
+        },
+        {
+          "text": " ",
+          "start_time": 3.719,
+          "end_time": 3.779
+        },
+        {
+          "text": "something",
+          "start_time": 3.779,
+          "end_time": 4.139
+        },
+        {
+          "text": " ",
+          "start_time": 4.139,
+          "end_time": 4.259
+        },
+        {
+          "text": "bigger,",
+          "start_time": 4.259,
+          "end_time": 4.719
+        },
+        {
+          "text": " ",
+          "start_time": 4.719,
+          "end_time": 5.039
+        },
+        {
+          "text": "better,",
+          "start_time": 5.039,
+          "end_time": 5.52
+        },
+        {
+          "text": " ",
+          "start_time": 5.52,
+          "end_time": 5.799
+        },
+        {
+          "text": "more",
+          "start_time": 5.799,
+          "end_time": 6.019
+        }
+      ]
+    },
+    {
+      "text": "badass. This isn't a setback, this is your",
+      "start_time": 6.119,
+      "end_time": 9.139,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "badass.",
+          "start_time": 6.119,
+          "end_time": 6.919
+        },
+        {
+          "text": " ",
+          "start_time": 6.919,
+          "end_time": 7.259
+        },
+        {
+          "text": "This",
+          "start_time": 7.259,
+          "end_time": 7.419
+        },
+        {
+          "text": " ",
+          "start_time": 7.419,
+          "end_time": 7.48
+        },
+        {
+          "text": "isn't",
+          "start_time": 7.48,
+          "end_time": 7.679
+        },
+        {
+          "text": " ",
+          "start_time": 7.679,
+          "end_time": 7.699
+        },
+        {
+          "text": "a",
+          "start_time": 7.699,
+          "end_time": 7.739
+        },
+        {
+          "text": " ",
+          "start_time": 7.739,
+          "end_time": 7.819
+        },
+        {
+          "text": "setback,",
+          "start_time": 7.819,
+          "end_time": 8.459
+        },
+        {
+          "text": " ",
+          "start_time": 8.459,
+          "end_time": 8.699
+        },
+        {
+          "text": "this",
+          "start_time": 8.699,
+          "end_time": 8.84
+        },
+        {
+          "text": " ",
+          "start_time": 8.84,
+          "end_time": 8.859
+        },
+        {
+          "text": "is",
+          "start_time": 8.859,
+          "end_time": 8.94
+        },
+        {
+          "text": " ",
+          "start_time": 8.94,
+          "end_time": 8.979
+        },
+        {
+          "text": "your",
+          "start_time": 8.979,
+          "end_time": 9.139
+        }
+      ]
+    },
+    {
+      "text": "comeback. That task list is your roadmap",
+      "start_time": 9.179,
+      "end_time": 12.159,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "comeback.",
+          "start_time": 9.179,
+          "end_time": 9.819
+        },
+        {
+          "text": " ",
+          "start_time": 9.819,
+          "end_time": 10.159
+        },
+        {
+          "text": "That",
+          "start_time": 10.159,
+          "end_time": 10.28
+        },
+        {
+          "text": " ",
+          "start_time": 10.28,
+          "end_time": 10.439
+        },
+        {
+          "text": "task",
+          "start_time": 10.439,
+          "end_time": 10.779
+        },
+        {
+          "text": " ",
+          "start_time": 10.779,
+          "end_time": 10.819
+        },
+        {
+          "text": "list",
+          "start_time": 10.819,
+          "end_time": 11.159
+        },
+        {
+          "text": " ",
+          "start_time": 11.159,
+          "end_time": 11.359
+        },
+        {
+          "text": "is",
+          "start_time": 11.359,
+          "end_time": 11.479
+        },
+        {
+          "text": " ",
+          "start_time": 11.479,
+          "end_time": 11.479
+        },
+        {
+          "text": "your",
+          "start_time": 11.479,
+          "end_time": 11.619
+        },
+        {
+          "text": " ",
+          "start_time": 11.619,
+          "end_time": 11.679
+        },
+        {
+          "text": "roadmap",
+          "start_time": 11.679,
+          "end_time": 12.159
+        }
+      ]
+    },
+    {
+      "text": "to victory. Every item checked off is",
+      "start_time": 12.219,
+      "end_time": 15.46,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "to",
+          "start_time": 12.219,
+          "end_time": 12.319
+        },
+        {
+          "text": " ",
+          "start_time": 12.319,
+          "end_time": 12.399
+        },
+        {
+          "text": "victory.",
+          "start_time": 12.399,
+          "end_time": 12.999
+        },
+        {
+          "text": " ",
+          "start_time": 12.999,
+          "end_time": 13.539
+        },
+        {
+          "text": "Every",
+          "start_time": 13.539,
+          "end_time": 13.899
+        },
+        {
+          "text": " ",
+          "start_time": 13.899,
+          "end_time": 14.079
+        },
+        {
+          "text": "item",
+          "start_time": 14.079,
+          "end_time": 14.359
+        },
+        {
+          "text": " ",
+          "start_time": 14.359,
+          "end_time": 14.439
+        },
+        {
+          "text": "checked",
+          "start_time": 14.439,
+          "end_time": 14.739
+        },
+        {
+          "text": " ",
+          "start_time": 14.739,
+          "end_time": 14.799
+        },
+        {
+          "text": "off",
+          "start_time": 14.799,
+          "end_time": 15.079
+        },
+        {
+          "text": " ",
+          "start_time": 15.079,
+          "end_time": 15.319
+        },
+        {
+          "text": "is",
+          "start_time": 15.319,
+          "end_time": 15.46
+        }
+      ]
+    },
+    {
+      "text": "another step closer to your new empire.",
+      "start_time": 15.5,
+      "end_time": 17.799,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "another",
+          "start_time": 15.5,
+          "end_time": 15.799
+        },
+        {
+          "text": " ",
+          "start_time": 15.799,
+          "end_time": 15.859
+        },
+        {
+          "text": "step",
+          "start_time": 15.859,
+          "end_time": 16.12
+        },
+        {
+          "text": " ",
+          "start_time": 16.12,
+          "end_time": 16.199
+        },
+        {
+          "text": "closer",
+          "start_time": 16.199,
+          "end_time": 16.559
+        },
+        {
+          "text": " ",
+          "start_time": 16.559,
+          "end_time": 16.639
+        },
+        {
+          "text": "to",
+          "start_time": 16.639,
+          "end_time": 16.7
+        },
+        {
+          "text": " ",
+          "start_time": 16.7,
+          "end_time": 16.739
+        },
+        {
+          "text": "your",
+          "start_time": 16.739,
+          "end_time": 16.86
+        },
+        {
+          "text": " ",
+          "start_time": 16.86,
+          "end_time": 16.94
+        },
+        {
+          "text": "new",
+          "start_time": 16.94,
+          "end_time": 17.079
+        },
+        {
+          "text": " ",
+          "start_time": 17.079,
+          "end_time": 17.159
+        },
+        {
+          "text": "empire.",
+          "start_time": 17.159,
+          "end_time": 17.799
+        }
+      ]
+    },
+    {
+      "text": "Every networking message sent is building",
+      "start_time": 18.239,
+      "end_time": 20.639,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "Every",
+          "start_time": 18.239,
+          "end_time": 18.48
+        },
+        {
+          "text": " ",
+          "start_time": 18.48,
+          "end_time": 18.559
+        },
+        {
+          "text": "networking",
+          "start_time": 18.559,
+          "end_time": 19.079
+        },
+        {
+          "text": " ",
+          "start_time": 19.079,
+          "end_time": 19.139
+        },
+        {
+          "text": "message",
+          "start_time": 19.139,
+          "end_time": 19.5
+        },
+        {
+          "text": " ",
+          "start_time": 19.5,
+          "end_time": 19.539
+        },
+        {
+          "text": "sent",
+          "start_time": 19.539,
+          "end_time": 19.879
+        },
+        {
+          "text": " ",
+          "start_time": 19.879,
+          "end_time": 20.119
+        },
+        {
+          "text": "is",
+          "start_time": 20.119,
+          "end_time": 20.279
+        },
+        {
+          "text": " ",
+          "start_time": 20.279,
+          "end_time": 20.319
+        },
+        {
+          "text": "building",
+          "start_time": 20.319,
+          "end_time": 20.639
+        }
+      ]
+    },
+    {
+      "text": "your army of supporters. You think",
+      "start_time": 20.68,
+      "end_time": 23.0,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "your",
+          "start_time": 20.68,
+          "end_time": 20.779
+        },
+        {
+          "text": " ",
+          "start_time": 20.779,
+          "end_time": 20.879
+        },
+        {
+          "text": "army",
+          "start_time": 20.879,
+          "end_time": 21.219
+        },
+        {
+          "text": " ",
+          "start_time": 21.219,
+          "end_time": 21.239
+        },
+        {
+          "text": "of",
+          "start_time": 21.239,
+          "end_time": 21.319
+        },
+        {
+          "text": " ",
+          "start_time": 21.319,
+          "end_time": 21.359
+        },
+        {
+          "text": "supporters.",
+          "start_time": 21.359,
+          "end_time": 22.14
+        },
+        {
+          "text": " ",
+          "start_time": 22.14,
+          "end_time": 22.6
+        },
+        {
+          "text": "You",
+          "start_time": 22.6,
+          "end_time": 22.719
+        },
+        {
+          "text": " ",
+          "start_time": 22.719,
+          "end_time": 22.76
+        },
+        {
+          "text": "think",
+          "start_time": 22.76,
+          "end_time": 23.0
+        }
+      ]
+    },
+    {
+      "text": "rebuilding is weakness? Fuck that.",
+      "start_time": 23.059,
+      "end_time": 25.679,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "rebuilding",
+          "start_time": 23.059,
+          "end_time": 23.68
+        },
+        {
+          "text": " ",
+          "start_time": 23.68,
+          "end_time": 23.699
+        },
+        {
+          "text": "is",
+          "start_time": 23.699,
+          "end_time": 23.84
+        },
+        {
+          "text": " ",
+          "start_time": 23.84,
+          "end_time": 23.899
+        },
+        {
+          "text": "weakness?",
+          "start_time": 23.899,
+          "end_time": 24.539
+        },
+        {
+          "text": " ",
+          "start_time": 24.539,
+          "end_time": 25.019
+        },
+        {
+          "text": "Fuck",
+          "start_time": 25.019,
+          "end_time": 25.26
+        },
+        {
+          "text": " ",
+          "start_time": 25.26,
+          "end_time": 25.34
+        },
+        {
+          "text": "that.",
+          "start_time": 25.34,
+          "end_time": 25.679
+        }
+      ]
+    },
+    {
+      "text": "Rebuilding is evolution. It's taking",
+      "start_time": 26.059,
+      "end_time": 28.399,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "Rebuilding",
+          "start_time": 26.059,
+          "end_time": 26.579
+        },
+        {
+          "text": " ",
+          "start_time": 26.579,
+          "end_time": 26.599
+        },
+        {
+          "text": "is",
+          "start_time": 26.599,
+          "end_time": 26.719
+        },
+        {
+          "text": " ",
+          "start_time": 26.719,
+          "end_time": 26.779
+        },
+        {
+          "text": "evolution.",
+          "start_time": 26.779,
+          "end_time": 27.559
+        },
+        {
+          "text": " ",
+          "start_time": 27.559,
+          "end_time": 27.84
+        },
+        {
+          "text": "It's",
+          "start_time": 27.84,
+          "end_time": 28.019
+        },
+        {
+          "text": " ",
+          "start_time": 28.019,
+          "end_time": 28.019
+        },
+        {
+          "text": "taking",
+          "start_time": 28.019,
+          "end_time": 28.399
+        }
+      ]
+    },
+    {
+      "text": "everything you learned and making it",
+      "start_time": 28.42,
+      "end_time": 30.019,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "everything",
+          "start_time": 28.42,
+          "end_time": 28.819
+        },
+        {
+          "text": " ",
+          "start_time": 28.819,
+          "end_time": 28.84
+        },
+        {
+          "text": "you",
+          "start_time": 28.84,
+          "end_time": 29.019
+        },
+        {
+          "text": " ",
+          "start_time": 29.019,
+          "end_time": 29.039
+        },
+        {
+          "text": "learned",
+          "start_time": 29.039,
+          "end_time": 29.359
+        },
+        {
+          "text": " ",
+          "start_time": 29.359,
+          "end_time": 29.5
+        },
+        {
+          "text": "and",
+          "start_time": 29.5,
+          "end_time": 29.619
+        },
+        {
+          "text": " ",
+          "start_time": 29.619,
+          "end_time": 29.639
+        },
+        {
+          "text": "making",
+          "start_time": 29.639,
+          "end_time": 29.899
+        },
+        {
+          "text": " ",
+          "start_time": 29.899,
+          "end_time": 29.92
+        },
+        {
+          "text": "it",
+          "start_time": 29.92,
+          "end_time": 30.019
+        }
+      ]
+    },
+    {
+      "text": "stronger, smarter, more strategic. Today's",
+      "start_time": 30.079,
+      "end_time": 33.52,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "stronger,",
+          "start_time": 30.079,
+          "end_time": 30.719
+        },
+        {
+          "text": " ",
+          "start_time": 30.719,
+          "end_time": 30.979
+        },
+        {
+          "text": "smarter,",
+          "start_time": 30.979,
+          "end_time": 31.579
+        },
+        {
+          "text": " ",
+          "start_time": 31.579,
+          "end_time": 31.76
+        },
+        {
+          "text": "more",
+          "start_time": 31.76,
+          "end_time": 31.94
+        },
+        {
+          "text": " ",
+          "start_time": 31.94,
+          "end_time": 31.979
+        },
+        {
+          "text": "strategic.",
+          "start_time": 31.979,
+          "end_time": 32.74
+        },
+        {
+          "text": " ",
+          "start_time": 32.74,
+          "end_time": 33.159
+        },
+        {
+          "text": "Today's",
+          "start_time": 33.159,
+          "end_time": 33.52
+        }
+      ]
+    },
+    {
+      "text": "not about finding any job, it's about",
+      "start_time": 33.52,
+      "end_time": 35.579,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "not",
+          "start_time": 33.52,
+          "end_time": 33.659
+        },
+        {
+          "text": " ",
+          "start_time": 33.659,
+          "end_time": 33.68
+        },
+        {
+          "text": "about",
+          "start_time": 33.68,
+          "end_time": 33.819
+        },
+        {
+          "text": " ",
+          "start_time": 33.819,
+          "end_time": 33.919
+        },
+        {
+          "text": "finding",
+          "start_time": 33.919,
+          "end_time": 34.2
+        },
+        {
+          "text": " ",
+          "start_time": 34.2,
+          "end_time": 34.36
+        },
+        {
+          "text": "any",
+          "start_time": 34.36,
+          "end_time": 34.54
+        },
+        {
+          "text": " ",
+          "start_time": 34.54,
+          "end_time": 34.639
+        },
+        {
+          "text": "job,",
+          "start_time": 34.639,
+          "end_time": 35.079
+        },
+        {
+          "text": " ",
+          "start_time": 35.079,
+          "end_time": 35.279
+        },
+        {
+          "text": "it's",
+          "start_time": 35.279,
+          "end_time": 35.4
+        },
+        {
+          "text": " ",
+          "start_time": 35.4,
+          "end_time": 35.419
+        },
+        {
+          "text": "about",
+          "start_time": 35.419,
+          "end_time": 35.579
+        }
+      ]
+    },
+    {
+      "text": "finding your job. The one that makes you",
+      "start_time": 35.7,
+      "end_time": 38.279,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "finding",
+          "start_time": 35.7,
+          "end_time": 36.099
+        },
+        {
+          "text": " ",
+          "start_time": 36.099,
+          "end_time": 36.419
+        },
+        {
+          "text": "your",
+          "start_time": 36.419,
+          "end_time": 36.659
+        },
+        {
+          "text": " ",
+          "start_time": 36.659,
+          "end_time": 36.779
+        },
+        {
+          "text": "job.",
+          "start_time": 36.779,
+          "end_time": 37.2
+        },
+        {
+          "text": " ",
+          "start_time": 37.2,
+          "end_time": 37.599
+        },
+        {
+          "text": "The",
+          "start_time": 37.599,
+          "end_time": 37.7
+        },
+        {
+          "text": " ",
+          "start_time": 37.7,
+          "end_time": 37.719
+        },
+        {
+          "text": "one",
+          "start_time": 37.719,
+          "end_time": 37.84
+        },
+        {
+          "text": " ",
+          "start_time": 37.84,
+          "end_time": 37.84
+        },
+        {
+          "text": "that",
+          "start_time": 37.84,
+          "end_time": 37.979
+        },
+        {
+          "text": " ",
+          "start_time": 37.979,
+          "end_time": 38.02
+        },
+        {
+          "text": "makes",
+          "start_time": 38.02,
+          "end_time": 38.2
+        },
+        {
+          "text": " ",
+          "start_time": 38.2,
+          "end_time": 38.219
+        },
+        {
+          "text": "you",
+          "start_time": 38.219,
+          "end_time": 38.279
+        }
+      ]
+    },
+    {
+      "text": "jump out of bed excited to dominate. Stop",
+      "start_time": 38.34,
+      "end_time": 41.079,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "jump",
+          "start_time": 38.34,
+          "end_time": 38.559
+        },
+        {
+          "text": " ",
+          "start_time": 38.559,
+          "end_time": 38.579
+        },
+        {
+          "text": "out",
+          "start_time": 38.579,
+          "end_time": 38.659
+        },
+        {
+          "text": " ",
+          "start_time": 38.659,
+          "end_time": 38.659
+        },
+        {
+          "text": "of",
+          "start_time": 38.659,
+          "end_time": 38.76
+        },
+        {
+          "text": " ",
+          "start_time": 38.76,
+          "end_time": 38.779
+        },
+        {
+          "text": "bed",
+          "start_time": 38.779,
+          "end_time": 38.9
+        },
+        {
+          "text": " ",
+          "start_time": 38.9,
+          "end_time": 38.919
+        },
+        {
+          "text": "excited",
+          "start_time": 38.919,
+          "end_time": 39.439
+        },
+        {
+          "text": " ",
+          "start_time": 39.439,
+          "end_time": 39.439
+        },
+        {
+          "text": "to",
+          "start_time": 39.439,
+          "end_time": 39.599
+        },
+        {
+          "text": " ",
+          "start_time": 39.599,
+          "end_time": 39.639
+        },
+        {
+          "text": "dominate.",
+          "start_time": 39.639,
+          "end_time": 40.299
+        },
+        {
+          "text": " ",
+          "start_time": 40.299,
+          "end_time": 40.759
+        },
+        {
+          "text": "Stop",
+          "start_time": 40.759,
+          "end_time": 41.079
+        }
+      ]
+    },
+    {
+      "text": "analyzing and start attacking.",
+      "start_time": 41.159,
+      "end_time": 42.819,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "analyzing",
+          "start_time": 41.159,
+          "end_time": 41.72
+        },
+        {
+          "text": " ",
+          "start_time": 41.72,
+          "end_time": 41.739
+        },
+        {
+          "text": "and",
+          "start_time": 41.739,
+          "end_time": 41.819
+        },
+        {
+          "text": " ",
+          "start_time": 41.819,
+          "end_time": 41.879
+        },
+        {
+          "text": "start",
+          "start_time": 41.879,
+          "end_time": 42.159
+        },
+        {
+          "text": " ",
+          "start_time": 42.159,
+          "end_time": 42.2
+        },
+        {
+          "text": "attacking.",
+          "start_time": 42.2,
+          "end_time": 42.819
+        }
+      ]
+    },
+    {
+      "text": "Let's go.",
+      "start_time": 43.439,
+      "end_time": 44.799,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "Let's",
+          "start_time": 43.439,
+          "end_time": 43.9
+        },
+        {
+          "text": " ",
+          "start_time": 43.9,
+          "end_time": 44.36
+        },
+        {
+          "text": "go.",
+          "start_time": 44.36,
+          "end_time": 44.799
+        }
+      ]
+    }
+  ]
+}
